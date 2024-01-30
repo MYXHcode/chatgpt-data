@@ -1,0 +1,39 @@
+24-01-30.12:10:39.928 [main            ] INFO  ApiTest                - Starting ApiTest using Java 1.8.0_391 on MYXH-PC with PID 12452 (started by MYXH in D:\CodeProjects\Java\ChatGPT\chatgpt-data\chatgpt-data-app)
+24-01-30.12:10:39.930 [main            ] INFO  ApiTest                - The following 1 profile is active: "dev"
+24-01-30.12:10:46.592 [main            ] INFO  ApiTest                - Started ApiTest in 7.628 seconds (JVM running for 10.715)
+24-01-30.12:10:47.320 [main            ] INFO  OkHttpClient           - --> POST https://api.xfg.im/b8b6/v1/chat/completions
+24-01-30.12:10:47.320 [main            ] INFO  OkHttpClient           - Content-Type: application/json; charset=UTF-8
+24-01-30.12:10:47.320 [main            ] INFO  OkHttpClient           - Content-Length: 172
+24-01-30.12:10:47.320 [main            ] INFO  OkHttpClient           - --> END POST
+24-01-30.12:10:49.333 [main            ] INFO  OkHttpClient           - <-- HTTP FAILED: javax.net.ssl.SSLPeerUnverifiedException: Hostname api.xfg.im not verified:
+    certificate: sha256/uXbVB2Aa2XTcPpbDmEUE+matj880dVoo4bV9bcHM5YE=
+    DN: CN=*.wpmudev.host
+    subjectAltNames: [*.wpmudev.host, wpmudev.host]
+24-01-30.12:11:51.267 [main            ] INFO  ApiTest                - Starting ApiTest using Java 1.8.0_391 on MYXH-PC with PID 13696 (started by MYXH in D:\CodeProjects\Java\ChatGPT\chatgpt-data\chatgpt-data-app)
+24-01-30.12:11:51.269 [main            ] INFO  ApiTest                - The following 1 profile is active: "dev"
+24-01-30.12:11:58.851 [main            ] INFO  ApiTest                - Started ApiTest in 9.065 seconds (JVM running for 11.956)
+24-01-30.12:11:59.613 [OkHttp https://api.xfg.im/...] INFO  OkHttpClient           - --> POST https://api.xfg.im/b8b6/v1/chat/completions
+24-01-30.12:11:59.614 [OkHttp https://api.xfg.im/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-01-30.12:11:59.615 [OkHttp https://api.xfg.im/...] INFO  OkHttpClient           - Content-Length: 171
+24-01-30.12:11:59.615 [OkHttp https://api.xfg.im/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-01-30.12:11:59.615 [OkHttp https://api.xfg.im/...] INFO  OkHttpClient           - --> END POST
+24-01-30.12:12:00.966 [OkHttp https://api.xfg.im/...] INFO  OkHttpClient           - <-- HTTP FAILED: javax.net.ssl.SSLPeerUnverifiedException: Hostname api.xfg.im not verified:
+    certificate: sha256/uXbVB2Aa2XTcPpbDmEUE+matj880dVoo4bV9bcHM5YE=
+    DN: CN=*.wpmudev.host
+    subjectAltNames: [*.wpmudev.host, wpmudev.host]
+24-01-30.12:13:37.644 [main            ] INFO  ApiTest                - Starting ApiTest using Java 1.8.0_391 on MYXH-PC with PID 22188 (started by MYXH in D:\CodeProjects\Java\ChatGPT\chatgpt-data\chatgpt-data-app)
+24-01-30.12:13:37.647 [main            ] INFO  ApiTest                - The following 1 profile is active: "dev"
+24-01-30.12:13:44.218 [main            ] INFO  ApiTest                - Started ApiTest in 7.802 seconds (JVM running for 10.467)
+24-01-30.12:13:44.770 [OkHttp https://api.xfg.im/...] INFO  OkHttpClient           - --> POST https://api.xfg.im/b8b6/v1/chat/completions
+24-01-30.12:13:44.770 [OkHttp https://api.xfg.im/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-01-30.12:13:44.771 [OkHttp https://api.xfg.im/...] INFO  OkHttpClient           - Content-Length: 171
+24-01-30.12:13:44.771 [OkHttp https://api.xfg.im/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-01-30.12:13:44.771 [OkHttp https://api.xfg.im/...] INFO  OkHttpClient           - --> END POST
+24-01-30.12:13:45.996 [OkHttp https://api.xfg.im/...] INFO  OkHttpClient           - <-- HTTP FAILED: javax.net.ssl.SSLPeerUnverifiedException: Hostname api.xfg.im not verified:
+    certificate: sha256/uXbVB2Aa2XTcPpbDmEUE+matj880dVoo4bV9bcHM5YE=
+    DN: CN=*.wpmudev.host
+    subjectAltNames: [*.wpmudev.host, wpmudev.host]
+24-01-30.12:14:31.706 [main            ] INFO  ApiTest                - Starting ApiTest using Java 1.8.0_391 on MYXH-PC with PID 2392 (started by MYXH in D:\CodeProjects\Java\ChatGPT\chatgpt-data\chatgpt-data-app)
+24-01-30.12:14:31.708 [main            ] INFO  ApiTest                - The following 1 profile is active: "dev"
+24-01-30.12:14:37.832 [main            ] INFO  ApiTest                - Started ApiTest in 7.18 seconds (JVM running for 9.81)
+24-01-30.12:14:38.628 [main            ] INFO  ApiTest                - {"messages":[{"content":"你是一个非常专业的 Java 开发工程师，具备世界一流水平，曾在多家世界级互联网公司任职，可以写出非常优秀易于扩展和迭代的代码。","role":"user"},{"content":"写一个java冒泡排序","role":"user"}],"model":"gpt-3.5-turbo"}

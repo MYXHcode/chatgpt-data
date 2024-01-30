@@ -1,0 +1,1 @@
+docker build -f ./Dockerfile -t myxh/chatgpt-data-app:1.1 .
