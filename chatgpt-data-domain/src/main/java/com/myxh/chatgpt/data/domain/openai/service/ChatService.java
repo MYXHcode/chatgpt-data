@@ -46,7 +46,7 @@ public class ChatService extends AbstractChatService
                 .builder()
                 .stream(true)
                 .messages(messages)
-                .model(ChatCompletionRequest.Model.GPT_3_5_TURBO.getCode())
+                .model(chatProcess.getModel())
                 .build();
 
         // 3. 请求应答

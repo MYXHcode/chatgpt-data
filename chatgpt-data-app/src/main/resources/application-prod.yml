@@ -1,5 +1,5 @@
 server:
-  port: 80
+  port: 8090
 
 # 应用配置
 app:
@@ -10,15 +10,37 @@ app:
     # 跨域，开发阶段可以设置为 * 不限制
     cross-origin: *
 
+
+# 线程池配置
+thread:
+  pool:
+    executor:
+      config:
+        core-pool-size: 20
+        max-pool-size: 50
+        keep-alive-time: 5000
+        block-queue-size: 5000
+        policy: CallerRunsPolicy
+
 # ChatGPT SDK Config
 chatgpt:
   sdk:
     config:
       # 官网地址 https://api.openai.com/
-      api-host: https://api.openai.com/
+      api-host: https://pro-share-api.zcyai.com/
 
       # 官网申请 https://platform.openai.com/account/api-keys
-      api-key: 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
+      api-key: sk-PmMVgo7VKyJSBMAPCb4037F53bE84c6b9106Dc939971Ea9b
+
+# 微信公众号配置信息
+# originalid：原始 ID
+# appid：个人 AppID
+# token：开通接口服务自定义设置
+wx:
+  config:
+    originalid: gh_8aed07a01479
+    appid: wxa175a0b560bd00a2
+    token: MYXH
 
 # 日志
 logging:

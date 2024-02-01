@@ -26,13 +26,23 @@ chatgpt:
   sdk:
     config:
       # 官网地址 https://api.openai.com/
-      api-host: https://api.xfg.im/b8b6/
+      api-host: https://pro-share-api.zcyai.com/
 
       # 官网申请 https://platform.openai.com/account/api-keys
-      api-key: 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
+      api-key: sk-PmMVgo7VKyJSBMAPCb4037F53bE84c6b9106Dc939971Ea9b
 
       # 自主申请 http://api.xfg.im:8080/authorize?username=xfg&password=123
-      auth-token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs
+      # auth-token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs
+
+# 微信公众号配置信息
+# originalid：原始 ID
+# appid：个人 AppID
+# token：开通接口服务自定义设置
+wx:
+  config:
+    originalid: gh_8aed07a01479
+    appid: wxa175a0b560bd00a2
+    token: MYXH
 
 # 日志
 logging:

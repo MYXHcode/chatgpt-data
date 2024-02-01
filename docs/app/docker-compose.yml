@@ -1,0 +1,45 @@
+# /usr/local/bin/docker-compose -f /docs/dev-ops/environment/environment-docker-compose.yml up -d
+version: '3.8'
+
+# docker-compose -f environment-docker-compose.yml up -d
+services:
+  chatgpt-data-app:
+    image: myxh/chatgpt-data-app:1.1
+    container_name: chatgpt-data-app
+    ports:
+      - "8090:8090"
+    environment:
+      - TZ=PRC
+      - SERVER_PORT=8090
+      - APP_CONFIG_API_VERSION=v1
+      - APP_CONFIG_CROSS_ORIGIN=*
+      - THREAD_POOL_EXECUTOR_CONFIG_CORE_POOL_SIZE=20
+      - THREAD_POOL_EXECUTOR_CONFIG_MAX_POOL_SIZE=50
+      - THREAD_POOL_EXECUTOR_CONFIG_KEEP_ALIVE_TIME=5000
+      - THREAD_POOL_EXECUTOR_CONFIG_BLOCK_QUEUE_SIZE=5000
+      - THREAD_POOL_EXECUTOR_CONFIG_POLICY=CallerRunsPolicy
+      - CHATGPT_SDK_CONFIG_API_HOST=https://pro-share-api.zcyai.com/
+      - CHATGPT_SDK_CONFIG_API_KEY=sk-PmMVgo7VKyJSBMAPCb4037F53bE84c6b9106Dc939971Ea9b
+      - WX_CONFIG_ORIGINALID=gh_8aed07a01479
+      - WX_CONFIG_APPID=wxa175a0b560bd00a2
+      - WX_CONFIG_TOKEN=MYXH
+    volumes:
+      - ./log:/data/log
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    restart: always
+
+  chatgpt-web:
+    container_name: chatgpt-web-local
+    # container_name: chatgpt-web-cloud
+    image: myxh/chatgpt-web-local:1.0
+    # image: myxh/chatgpt-web-cloud:1.0
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_HOST_URL=http://localhost:8090
+      # - NEXT_PUBLIC_API_HOST_URL=http://43.143.161.125:8090
+    restart: always
