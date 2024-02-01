@@ -46,13 +46,13 @@ public class ChatGPTAIServiceControllerOld
      * 流式问题，ChatGPT 请求接口
      * <p>
      * curl -X POST \
-     * http://localhost:8080/api/v1/chat/completions \
+     * http://localhost:8090/api/v1/chat/completions \
      * -H 'Content-Type: application/json;charset=utf-8' \
-     * -H 'Authorization: b8b6' \
+     * -H 'Authorization: MYXH' \
      * -d '{
      * "messages": [
      * {
-     * "content": "写一个java冒泡排序",
+     * "content": "写一个 java 冒泡排序",
      * "role": "user"
      * }
      * ],
@@ -71,7 +71,7 @@ public class ChatGPTAIServiceControllerOld
             response.setCharacterEncoding("UTF-8");
             response.setHeader("Cache-Control", "no-cache");
 
-            if (!token.equals("b8b6"))
+            if (!token.equals("MYXH"))
             {
                 throw new RuntimeException("token err!");
             }

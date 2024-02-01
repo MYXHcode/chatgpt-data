@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.myxh.chatgpt.common.Constants;
 import com.myxh.chatgpt.data.domain.openai.model.aggregates.ChatProcessAggregate;
+import com.myxh.chatgpt.data.types.exception.ChatGPTException;
 import com.myxh.chatgpt.domain.chat.ChatChoice;
 import com.myxh.chatgpt.domain.chat.ChatCompletionRequest;
 import com.myxh.chatgpt.domain.chat.ChatCompletionResponse;
@@ -82,7 +83,7 @@ public class ChatService extends AbstractChatService
                     }
                     catch (Exception e)
                     {
-                        throw new RuntimeException(e);
+                        throw new ChatGPTException(e.getMessage());
                     }
                 }
             }
