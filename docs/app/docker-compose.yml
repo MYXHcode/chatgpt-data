@@ -33,13 +33,13 @@ services:
     restart: always
 
   chatgpt-web:
-    container_name: chatgpt-web-local
-    # container_name: chatgpt-web-cloud
-    image: myxh/chatgpt-web-local:1.0
-    # image: myxh/chatgpt-web-cloud:1.0
+    # container_name: chatgpt-web-local
+    container_name: chatgpt-web-cloud
+    # image: myxh/chatgpt-web-local:1.0
+    image: myxh/chatgpt-web-cloud:1.0
     ports:
       - "3000:3000"
     environment:
-      - NEXT_PUBLIC_API_HOST_URL=http://localhost:8090
-      # - NEXT_PUBLIC_API_HOST_URL=http://43.143.161.125:8090
+      # - NEXT_PUBLIC_API_HOST_URL=http://localhost:8090
+      - NEXT_PUBLIC_API_HOST_URL=http://43.143.161.125:8090
     restart: always
