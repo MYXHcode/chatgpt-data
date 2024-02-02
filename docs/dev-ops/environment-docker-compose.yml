@@ -10,7 +10,7 @@ services:
 
     environment:
       MYSQL_ROOT_PASSWORD: 520.ILY!
-      MYSQL_DATABASE: chatgpt-data
+      MYSQL_DATABASE: chatgpt-data-app
       MYSQL_USER: MYXH
       MYSQL_PASSWORD: 520.ILY!
 

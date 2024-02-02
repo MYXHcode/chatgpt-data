@@ -1,4 +1,4 @@
-CONTAINER_NAME=chatgpt-data
+CONTAINER_NAME=chatgpt-data-app
 IMAGE_NAME=myxh/chatgpt-data-app:1.0
 PORT=8090
 
