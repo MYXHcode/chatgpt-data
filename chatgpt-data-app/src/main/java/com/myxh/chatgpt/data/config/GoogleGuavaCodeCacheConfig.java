@@ -23,4 +23,12 @@ public class GoogleGuavaCodeCacheConfig
                 .expireAfterWrite(3, TimeUnit.MINUTES)
                 .build();
     }
+
+    @Bean(name = "visitCache")
+    public Cache<String, Integer> visitCache()
+    {
+        return CacheBuilder.newBuilder()
+                .expireAfterWrite(12, TimeUnit.HOURS)
+                .build();
+    }
 }

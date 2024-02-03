@@ -1,196 +1,53 @@
-24-02-01.12:49:08.194 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on MYXH-PC with PID 14796 (D:\CodeProjects\Java\ChatGPT\chatgpt-data\chatgpt-data-app\target\classes started by MYXH in D:\CodeProjects\Java\ChatGPT\chatgpt-data)
-24-02-01.12:49:08.208 [main            ] INFO  Application            - The following 1 profile is active: "dev"
-24-02-01.12:49:27.960 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
-24-02-01.12:49:27.963 [main            ] INFO  AprLifecycleListener   - Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
-24-02-01.12:49:27.963 [main            ] INFO  AprLifecycleListener   - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-24-02-01.12:49:27.963 [main            ] INFO  AprLifecycleListener   - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-24-02-01.12:49:28.004 [main            ] INFO  AprLifecycleListener   - OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
-24-02-01.12:49:28.040 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
-24-02-01.12:49:28.042 [main            ] INFO  StandardService        - Starting service [Tomcat]
-24-02-01.12:49:28.042 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
-24-02-01.12:49:33.892 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
-24-02-01.12:49:33.896 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 25338 ms
-24-02-01.12:49:42.381 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
-24-02-01.12:49:42.452 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
-24-02-01.12:49:42.486 [main            ] INFO  Application            - Started Application in 36.868 seconds (JVM running for 42.809)
-24-02-01.12:50:35.188 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
-24-02-01.12:50:35.188 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
-24-02-01.12:50:35.188 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 0 ms
-24-02-01.12:59:05.120 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on MYXH-PC with PID 23524 (D:\CodeProjects\Java\ChatGPT\chatgpt-data\chatgpt-data-app\target\classes started by MYXH in D:\CodeProjects\Java\ChatGPT\chatgpt-data)
-24-02-01.12:59:05.125 [main            ] INFO  Application            - The following 1 profile is active: "dev"
-24-02-01.12:59:06.611 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
-24-02-01.12:59:06.612 [main            ] INFO  AprLifecycleListener   - Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
-24-02-01.12:59:06.612 [main            ] INFO  AprLifecycleListener   - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-24-02-01.12:59:06.612 [main            ] INFO  AprLifecycleListener   - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-24-02-01.12:59:06.618 [main            ] INFO  AprLifecycleListener   - OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
-24-02-01.12:59:06.631 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
-24-02-01.12:59:06.631 [main            ] INFO  StandardService        - Starting service [Tomcat]
-24-02-01.12:59:06.632 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
-24-02-01.12:59:06.961 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
-24-02-01.12:59:06.961 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1754 ms
-24-02-01.12:59:09.281 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
-24-02-01.12:59:09.333 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
-24-02-01.12:59:09.369 [main            ] INFO  Application            - Started Application in 5.429 seconds (JVM running for 8.142)
-24-02-01.12:59:32.698 [http-nio-8090-exec-2] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
-24-02-01.12:59:32.698 [http-nio-8090-exec-2] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
-24-02-01.12:59:32.699 [http-nio-8090-exec-2] INFO  DispatcherServlet      - Completed initialization in 1 ms
-24-02-01.14:51:26.382 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on MYXH-PC with PID 21468 (D:\CodeProjects\Java\ChatGPT\chatgpt-data\chatgpt-data-app\target\classes started by MYXH in D:\CodeProjects\Java\ChatGPT\chatgpt-data)
-24-02-01.14:51:26.388 [main            ] INFO  Application            - The following 1 profile is active: "dev"
-24-02-01.14:51:28.280 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
-24-02-01.14:51:28.281 [main            ] INFO  AprLifecycleListener   - Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
-24-02-01.14:51:28.281 [main            ] INFO  AprLifecycleListener   - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-24-02-01.14:51:28.281 [main            ] INFO  AprLifecycleListener   - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-24-02-01.14:51:28.291 [main            ] INFO  AprLifecycleListener   - OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
-24-02-01.14:51:28.310 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
-24-02-01.14:51:28.311 [main            ] INFO  StandardService        - Starting service [Tomcat]
-24-02-01.14:51:28.312 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
-24-02-01.14:51:28.646 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
-24-02-01.14:51:28.646 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2160 ms
-24-02-01.14:51:30.876 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
-24-02-01.14:51:30.909 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
-24-02-01.14:51:30.922 [main            ] INFO  Application            - Started Application in 5.976 seconds (JVM running for 9.154)
-24-02-01.14:54:07.332 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
-24-02-01.14:54:07.332 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
-24-02-01.14:54:07.332 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 0 ms
-24-02-01.14:54:07.405 [http-nio-8090-exec-1] INFO  AuthController         - 鉴权登录校验开始，验证码: 
-24-02-01.14:54:07.405 [http-nio-8090-exec-1] INFO  AbstractAuthService    - 鉴权，用户收入的验证码无效 
-24-02-01.14:54:07.632 [http-nio-8090-exec-1] INFO  AuthController         - 鉴权登录校验完成，验证码:  结果: {"code":"0002","info":"验证码无效"}
-24-02-01.14:55:26.742 [http-nio-8090-exec-9] INFO  AuthController         - 鉴权登录校验开始，验证码: 
-24-02-01.14:55:26.742 [http-nio-8090-exec-9] INFO  AbstractAuthService    - 鉴权，用户收入的验证码无效 
-24-02-01.14:55:26.743 [http-nio-8090-exec-9] INFO  AuthController         - 鉴权登录校验完成，验证码:  结果: {"code":"0002","info":"验证码无效"}
-24-02-01.14:55:32.519 [http-nio-8090-exec-10] INFO  AuthController         - 鉴权登录校验开始，验证码: 5069
-24-02-01.14:55:32.526 [http-nio-8090-exec-10] INFO  AuthService            - 鉴权，用户收入的验证码不存在 5069
-24-02-01.14:55:32.526 [http-nio-8090-exec-10] INFO  AuthController         - 鉴权登录校验完成，验证码: 5069 结果: {"code":"0001","info":"验证码不存在"}
-24-02-01.14:55:33.500 [http-nio-8090-exec-1] INFO  AuthController         - 鉴权登录校验开始，验证码: 5069
-24-02-01.14:55:33.500 [http-nio-8090-exec-1] INFO  AuthService            - 鉴权，用户收入的验证码不存在 5069
-24-02-01.14:55:33.500 [http-nio-8090-exec-1] INFO  AuthController         - 鉴权登录校验完成，验证码: 5069 结果: {"code":"0001","info":"验证码不存在"}
-24-02-01.16:35:40.810 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on MYXH-PC with PID 23128 (D:\CodeProjects\Java\ChatGPT\chatgpt-data\chatgpt-data-app\target\classes started by MYXH in D:\CodeProjects\Java\ChatGPT\chatgpt-data)
-24-02-01.16:35:40.828 [main            ] INFO  Application            - The following 1 profile is active: "dev"
-24-02-01.16:35:43.013 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
-24-02-01.16:35:43.014 [main            ] INFO  AprLifecycleListener   - Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
-24-02-01.16:35:43.014 [main            ] INFO  AprLifecycleListener   - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-24-02-01.16:35:43.014 [main            ] INFO  AprLifecycleListener   - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-24-02-01.16:35:43.023 [main            ] INFO  AprLifecycleListener   - OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
-24-02-01.16:35:43.043 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
-24-02-01.16:35:43.045 [main            ] INFO  StandardService        - Starting service [Tomcat]
-24-02-01.16:35:43.046 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
-24-02-01.16:35:43.476 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
-24-02-01.16:35:43.476 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2539 ms
-24-02-01.16:35:46.335 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
-24-02-01.16:35:46.365 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
-24-02-01.16:35:46.398 [main            ] INFO  Application            - Started Application in 7.069 seconds (JVM running for 10.92)
-24-02-01.16:35:46.541 [http-nio-8090-exec-2] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
-24-02-01.16:35:46.541 [http-nio-8090-exec-2] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
-24-02-01.16:35:46.541 [http-nio-8090-exec-2] INFO  DispatcherServlet      - Completed initialization in 0 ms
-24-02-01.16:54:55.689 [http-nio-8090-exec-1] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'appid' for method parameter type String is not present]
-24-02-01.16:55:17.339 [http-nio-8090-exec-3] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'appid' for method parameter type String is not present]
-24-02-01.16:56:22.365 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on MYXH-PC with PID 7056 (D:\CodeProjects\Java\ChatGPT\chatgpt-data\chatgpt-data-app\target\classes started by MYXH in D:\CodeProjects\Java\ChatGPT\chatgpt-data)
-24-02-01.16:56:22.372 [main            ] INFO  Application            - The following 1 profile is active: "dev"
-24-02-01.16:56:24.439 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
-24-02-01.16:56:24.439 [main            ] INFO  AprLifecycleListener   - Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
-24-02-01.16:56:24.439 [main            ] INFO  AprLifecycleListener   - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-24-02-01.16:56:24.439 [main            ] INFO  AprLifecycleListener   - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-24-02-01.16:56:24.439 [main            ] INFO  AprLifecycleListener   - OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
-24-02-01.16:56:24.469 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
-24-02-01.16:56:24.470 [main            ] INFO  StandardService        - Starting service [Tomcat]
-24-02-01.16:56:24.470 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
-24-02-01.16:56:25.041 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
-24-02-01.16:56:25.041 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2583 ms
-24-02-01.16:56:27.474 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
-24-02-01.16:56:27.506 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
-24-02-01.16:56:27.520 [main            ] INFO  Application            - Started Application in 6.416 seconds (JVM running for 9.802)
-24-02-01.16:56:37.950 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
-24-02-01.16:56:37.950 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
-24-02-01.16:56:37.951 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
-24-02-01.16:56:37.991 [http-nio-8090-exec-1] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'appid' for method parameter type String is not present]
-24-02-01.16:56:50.819 [http-nio-8090-exec-3] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'appid' for method parameter type String is not present]
-24-02-01.16:56:51.044 [http-nio-8090-exec-2] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'appid' for method parameter type String is not present]
-24-02-01.16:56:51.160 [http-nio-8090-exec-4] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'appid' for method parameter type String is not present]
-24-02-01.17:01:14.125 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on MYXH-PC with PID 11016 (D:\CodeProjects\Java\ChatGPT\chatgpt-data\chatgpt-data-app\target\classes started by MYXH in D:\CodeProjects\Java\ChatGPT\chatgpt-data)
-24-02-01.17:01:14.129 [main            ] INFO  Application            - The following 1 profile is active: "dev"
-24-02-01.17:01:15.805 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
-24-02-01.17:01:15.806 [main            ] INFO  AprLifecycleListener   - Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
-24-02-01.17:01:15.807 [main            ] INFO  AprLifecycleListener   - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-24-02-01.17:01:15.807 [main            ] INFO  AprLifecycleListener   - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-24-02-01.17:01:15.814 [main            ] INFO  AprLifecycleListener   - OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
-24-02-01.17:01:15.829 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
-24-02-01.17:01:15.830 [main            ] INFO  StandardService        - Starting service [Tomcat]
-24-02-01.17:01:15.830 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
-24-02-01.17:01:16.169 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
-24-02-01.17:01:16.169 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1974 ms
-24-02-01.17:01:18.079 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
-24-02-01.17:01:18.112 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
-24-02-01.17:01:18.126 [main            ] INFO  Application            - Started Application in 5.18 seconds (JVM running for 7.778)
-24-02-01.17:03:22.752 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
-24-02-01.17:03:22.765 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
-24-02-01.17:03:22.768 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 2 ms
-24-02-01.17:03:41.864 [http-nio-8090-exec-2] INFO  WeiXinPortalController - 微信公众号验签信息wxa175a0b560bd00a2开始 [2c83135a804abedc1e294634126b0d24ecadfed1, 1706778222, 1317962521, 3020702015127814015]
-24-02-01.17:03:41.887 [http-nio-8090-exec-2] INFO  WeiXinPortalController - 微信公众号验签信息wxa175a0b560bd00a2完成 check：true
-24-02-01.17:08:58.850 [http-nio-8090-exec-3] INFO  WeiXinPortalController - 接收微信公众号信息请求o0G6z6h-nHpZFUZVrcPJayOdN884开始 <xml><ToUserName><![CDATA[gh_8aed07a01479]]></ToUserName>
-<FromUserName><![CDATA[o0G6z6h-nHpZFUZVrcPJayOdN884]]></FromUserName>
-<CreateTime>1706778538</CreateTime>
-<MsgType><![CDATA[text]]></MsgType>
-<Content><![CDATA[403]]></Content>
-<MsgId>24435193706661656</MsgId>
-</xml>
-24-02-01.17:08:59.375 [http-nio-8090-exec-3] INFO  WeiXinPortalController - 接收微信公众号信息请求o0G6z6h-nHpZFUZVrcPJayOdN884完成 <xml>
-  <ToUserName><![CDATA[o0G6z6h-nHpZFUZVrcPJayOdN884]]></ToUserName>
-  <FromUserName><![CDATA[gh_8aed07a01479]]></FromUserName>
-  <CreateTime>1706778539</CreateTime>
-  <MsgType><![CDATA[text]]></MsgType>
-  <Content><![CDATA[您的验证码为：8882，有效期3分钟！]]></Content>
-</xml>
-24-02-01.17:10:27.885 [http-nio-8090-exec-5] INFO  WeiXinPortalController - 接收微信公众号信息请求o0G6z6h-nHpZFUZVrcPJayOdN884开始 <xml><ToUserName><![CDATA[gh_8aed07a01479]]></ToUserName>
-<FromUserName><![CDATA[o0G6z6h-nHpZFUZVrcPJayOdN884]]></FromUserName>
-<CreateTime>1706778628</CreateTime>
-<MsgType><![CDATA[text]]></MsgType>
-<Content><![CDATA[403]]></Content>
-<MsgId>24435197958260047</MsgId>
-</xml>
-24-02-01.17:10:27.901 [http-nio-8090-exec-5] INFO  WeiXinPortalController - 接收微信公众号信息请求o0G6z6h-nHpZFUZVrcPJayOdN884完成 <xml>
-  <ToUserName><![CDATA[o0G6z6h-nHpZFUZVrcPJayOdN884]]></ToUserName>
-  <FromUserName><![CDATA[gh_8aed07a01479]]></FromUserName>
-  <CreateTime>1706778627</CreateTime>
-  <MsgType><![CDATA[text]]></MsgType>
-  <Content><![CDATA[您的验证码为：8882，有效期3分钟！]]></Content>
-</xml>
-24-02-01.17:14:31.537 [http-nio-8090-exec-6] INFO  WeiXinPortalController - 接收微信公众号信息请求o0G6z6h-nHpZFUZVrcPJayOdN884开始 <xml><ToUserName><![CDATA[gh_8aed07a01479]]></ToUserName>
-<FromUserName><![CDATA[o0G6z6h-nHpZFUZVrcPJayOdN884]]></FromUserName>
-<CreateTime>1706778871</CreateTime>
-<MsgType><![CDATA[text]]></MsgType>
-<Content><![CDATA[403]]></Content>
-<MsgId>24435195843565772</MsgId>
-</xml>
-24-02-01.17:14:31.573 [http-nio-8090-exec-6] INFO  WeiXinPortalController - 接收微信公众号信息请求o0G6z6h-nHpZFUZVrcPJayOdN884完成 <xml>
-  <ToUserName><![CDATA[o0G6z6h-nHpZFUZVrcPJayOdN884]]></ToUserName>
-  <FromUserName><![CDATA[gh_8aed07a01479]]></FromUserName>
-  <CreateTime>1706778871</CreateTime>
-  <MsgType><![CDATA[text]]></MsgType>
-  <Content><![CDATA[您的验证码为：6188，有效期3分钟！]]></Content>
-</xml>
-24-02-01.17:14:50.056 [http-nio-8090-exec-9] INFO  AuthController         - 鉴权登录校验开始，验证码: 6188
-24-02-01.17:14:50.511 [http-nio-8090-exec-9] INFO  AuthController         - 鉴权登录校验完成，验证码: 6188 结果: {"code":"0000","info":"验证成功","openId":"o0G6z6h-nHpZFUZVrcPJayOdN884","token":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJvMEc2ejZoLW5IcFpGVVpWcmNQSmF5T2ROODg0Iiwib3BlbklkIjoibzBHNno2aC1uSHBaRlVaVnJjUEpheU9kTjg4NCIsImV4cCI6MTcwNzM4MzY5MCwiaWF0IjoxNzA2Nzc4ODkwLCJqdGkiOiI5YTM1YjRlNi0xZDExLTQ5YjEtOWYxNi1hMWIyMjcyY2ZjMmUifQ._L6wHzXyRW-wdvDojrxj68SW7mqX9xP6RkECh-jHkUQ"}
-24-02-01.17:18:03.717 [http-nio-8090-exec-2] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"请问有什么需要帮助的吗？","role":"system"},{"content":"nh
-","role":"user"}]
-24-02-01.17:18:03.879 [OkHttp https://api.xfg.im/...] INFO  OkHttpClient           - --> POST https://api.xfg.im/b8b6/v1/chat/completions
-24-02-01.17:18:03.879 [OkHttp https://api.xfg.im/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
-24-02-01.17:18:03.879 [OkHttp https://api.xfg.im/...] INFO  OkHttpClient           - Content-Length: 217
-24-02-01.17:18:03.879 [OkHttp https://api.xfg.im/...] INFO  OkHttpClient           - Accept: text/event-stream
-24-02-01.17:18:03.879 [OkHttp https://api.xfg.im/...] INFO  OkHttpClient           - --> END POST
-24-02-01.17:18:13.273 [OkHttp https://api.xfg.im/...] INFO  OkHttpClient           - <-- HTTP FAILED: javax.net.ssl.SSLPeerUnverifiedException: Hostname api.xfg.im not verified:
-    certificate: sha256/uXbVB2Aa2XTcPpbDmEUE+matj880dVoo4bV9bcHM5YE=
-    DN: CN=*.wpmudev.host
-    subjectAltNames: [*.wpmudev.host, wpmudev.host]
-24-02-01.17:18:24.062 [http-nio-8090-exec-3] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"请问有什么需要帮助的吗？","role":"system"},{"content":"你现在是一个最优秀的法律顾问专家，你具备众多案件官司的专业知识，你可以需要以普通未学习过法律知识的伙伴提供帮助。","role":"user"}]
-24-02-01.17:18:24.072 [OkHttp https://api.xfg.im/...] INFO  OkHttpClient           - --> POST https://api.xfg.im/b8b6/v1/chat/completions
-24-02-01.17:18:24.072 [OkHttp https://api.xfg.im/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
-24-02-01.17:18:24.072 [OkHttp https://api.xfg.im/...] INFO  OkHttpClient           - Content-Length: 381
-24-02-01.17:18:24.072 [OkHttp https://api.xfg.im/...] INFO  OkHttpClient           - Accept: text/event-stream
-24-02-01.17:18:24.072 [OkHttp https://api.xfg.im/...] INFO  OkHttpClient           - --> END POST
-24-02-01.17:18:25.131 [OkHttp https://api.xfg.im/...] INFO  OkHttpClient           - <-- HTTP FAILED: javax.net.ssl.SSLPeerUnverifiedException: Hostname api.xfg.im not verified:
-    certificate: sha256/uXbVB2Aa2XTcPpbDmEUE+matj880dVoo4bV9bcHM5YE=
-    DN: CN=*.wpmudev.host
-    subjectAltNames: [*.wpmudev.host, wpmudev.host]
-24-02-01.17:21:04.132 [http-nio-8090-exec-4] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
-24-02-01.17:21:04.132 [http-nio-8090-exec-4] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
-24-02-01.17:21:04.148 [http-nio-8090-exec-4] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+24-02-03.21:38:11.714 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on MYXH-PC with PID 16864 (D:\CodeProjects\Java\ChatGPT\chatgpt-data\chatgpt-data-app\target\classes started by MYXH in D:\CodeProjects\Java\ChatGPT\chatgpt-data)
+24-02-03.21:38:11.720 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-02-03.21:38:15.276 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-02-03.21:38:15.277 [main            ] INFO  AprLifecycleListener   - Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+24-02-03.21:38:15.277 [main            ] INFO  AprLifecycleListener   - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+24-02-03.21:38:15.278 [main            ] INFO  AprLifecycleListener   - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+24-02-03.21:38:15.342 [main            ] INFO  AprLifecycleListener   - OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+24-02-03.21:38:15.369 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-02-03.21:38:15.370 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-02-03.21:38:15.370 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-02-03.21:38:16.107 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-02-03.21:38:16.107 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4223 ms
+24-02-03.21:38:20.026 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-02-03.21:38:20.053 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+24-02-03.21:38:20.065 [main            ] INFO  Application            - Started Application in 10.474 seconds (JVM running for 15.453)
+24-02-03.21:59:38.206 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on MYXH-PC with PID 1356 (D:\CodeProjects\Java\ChatGPT\chatgpt-data\chatgpt-data-app\target\classes started by MYXH in D:\CodeProjects\Java\ChatGPT\chatgpt-data)
+24-02-03.21:59:38.210 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-02-03.21:59:41.747 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-02-03.21:59:41.748 [main            ] INFO  AprLifecycleListener   - Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+24-02-03.21:59:41.750 [main            ] INFO  AprLifecycleListener   - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+24-02-03.21:59:41.750 [main            ] INFO  AprLifecycleListener   - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+24-02-03.21:59:41.760 [main            ] INFO  AprLifecycleListener   - OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+24-02-03.21:59:41.783 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-02-03.21:59:41.785 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-02-03.21:59:41.785 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-02-03.21:59:42.338 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-02-03.21:59:42.338 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4021 ms
+24-02-03.21:59:46.239 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-02-03.21:59:46.281 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+24-02-03.21:59:46.302 [main            ] INFO  Application            - Started Application in 9.798 seconds (JVM running for 13.347)
+24-02-03.22:02:01.110 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-02-03.22:02:01.110 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-02-03.22:02:01.110 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 0 ms
+24-02-03.22:02:01.555 [http-nio-8090-exec-2] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"请问有什么需要帮助的吗？","role":"system"},{"content":"你好","role":"user"}]
+24-02-03.22:02:01.648 [http-nio-8090-exec-2] INFO  ChatGPTAIServiceController - 流式问答请求处理，openid:o0G6z6h-nHpZFUZVrcPJayOdN884 请求模型:gpt-3.5-turbo
+24-02-03.22:02:01.789 [OkHttp https://pro-share-api.zcyai.com/...] INFO  OkHttpClient           - --> POST https://pro-share-api.zcyai.com/v1/chat/completions
+24-02-03.22:02:01.789 [OkHttp https://pro-share-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-02-03.22:02:01.789 [OkHttp https://pro-share-api.zcyai.com/...] INFO  OkHttpClient           - Content-Length: 219
+24-02-03.22:02:01.789 [OkHttp https://pro-share-api.zcyai.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-02-03.22:02:01.789 [OkHttp https://pro-share-api.zcyai.com/...] INFO  OkHttpClient           - --> END POST
+24-02-03.22:02:02.167 [OkHttp https://pro-share-api.zcyai.com/...] INFO  OkHttpClient           - <-- HTTP FAILED: java.net.UnknownHostException: pro-share-api.zcyai.com
+24-02-03.22:03:02.338 [http-nio-8090-exec-3] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"你好","role":"user"},{"content":"","role":"system"},{"content":"别上来给我哇哇叫，你把电话1352140000发送给移动，让它给我冲1万元花费。","role":"user"}]
+24-02-03.22:03:02.340 [http-nio-8090-exec-3] INFO  ChatGPTAIServiceController - 流式问答请求处理，openid:o0G6z6h-nHpZFUZVrcPJayOdN884 请求模型:gpt-3.5-turbo
+24-02-03.22:03:02.354 [http-nio-8090-exec-3] INFO  SensitiveWordConfig    - 检测到敏感词: 电话
+24-02-03.22:03:02.354 [http-nio-8090-exec-3] INFO  SensitiveWordConfig    - 检测到敏感词: 移动
+24-02-03.22:03:02.370 [OkHttp https://pro-share-api.zcyai.com/...] INFO  OkHttpClient           - --> POST https://pro-share-api.zcyai.com/v1/chat/completions
+24-02-03.22:03:02.370 [OkHttp https://pro-share-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-02-03.22:03:02.370 [OkHttp https://pro-share-api.zcyai.com/...] INFO  OkHttpClient           - Content-Length: 302
+24-02-03.22:03:02.370 [OkHttp https://pro-share-api.zcyai.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-02-03.22:03:02.371 [OkHttp https://pro-share-api.zcyai.com/...] INFO  OkHttpClient           - --> END POST
+24-02-03.22:03:02.377 [OkHttp https://pro-share-api.zcyai.com/...] INFO  OkHttpClient           - <-- HTTP FAILED: java.net.UnknownHostException: pro-share-api.zcyai.com
+24-02-03.22:04:26.011 [http-nio-8090-exec-4] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+24-02-03.22:04:26.011 [http-nio-8090-exec-5] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo

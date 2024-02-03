@@ -58,6 +58,11 @@
             <artifactId>commons-codec</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.github.houbb</groupId>
+            <artifactId>sensitive-word</artifactId>
+        </dependency>
+
         <!-- chatgpt-sdk-java https://github.com/MYXHcode/chatgpt-sdk-java-->
         <dependency>
             <groupId>com.myxh.chatgpt</groupId>

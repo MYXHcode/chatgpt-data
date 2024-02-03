@@ -41,5 +41,5 @@ services:
       - "3000:3000"
     environment:
       # - NEXT_PUBLIC_API_HOST_URL=http://localhost:8090
-      - NEXT_PUBLIC_API_HOST_URL=http://10.0.16.6:8090
+      - NEXT_PUBLIC_API_HOST_URL=http://43.143.161.125:8090
     restart: always

@@ -10,6 +10,12 @@ app:
     # 跨域，开发阶段可以设置为 * 不限制
     cross-origin: '*'
 
+    # 访问频次限制
+    limit-count: 10
+
+    # 白名单，不做频次拦截【微信的 openid】o0G6z6h-nHpZFUZVrcPJayOdN884
+    white-list: o0G6z6h-nHpZFUZVrcPJayOdN884
+
 # 线程池配置
 thread:
   pool:
