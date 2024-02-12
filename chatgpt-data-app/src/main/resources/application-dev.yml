@@ -35,7 +35,7 @@ chatgpt:
       api-host: https://pro-share-api.zcyai.com/
 
       # 官网申请 https://platform.openai.com/account/api-keys
-      api-key: sk-PmMVgo7VKyJSBMAPCb4037F53bE84c6b9106Dc939971Ea9b
+      api-key: sk-b0A0eSKTNxgBqrHv7aAa0808EdB849C89499D928648bD416
 
       # 自主申请 http://api.xfg.im:8080/authorize?username=xfg&password=123 - 有时效性，主要为了大家学习使用
       # auth-token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs
@@ -49,6 +49,40 @@ wx:
     originalid: gh_8aed07a01479
     appid: wxa175a0b560bd00a2
     token: MYXH
+
+# 数据库配置：SpringBoot 默认连接池为 HikariDataSource
+spring:
+  datasource:
+    username: MYXH
+    password: 520.ILY!
+    url: jdbc:mysql://127.0.0.1:3306/openai?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&useSSL=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  hikari:
+    pool-name: Retail_HikariCP
+
+    # 最小空闲连接数量
+    minimum-idle: 15
+
+    # 空闲连接存活最大时间，默认 600000（10 分钟）
+    idle-timeout: 180000
+
+    # 连接池最大连接数，默认是 10
+    maximum-pool-size: 25
+
+    # 此属性控制从池返回的连接的默认自动提交行为，默认值：true
+    auto-commit: true
+
+    # 此属性控制池中连接的最长生命周期，值 0 表示无限生命周期，默认 1800000 即 30 分钟
+    max-lifetime: 1800000
+
+    # 数据库连接超时时间，默认 30 秒，即 30000
+    connection-timeout: 30000
+    connection-test-query: SELECT 1
+  type: com.zaxxer.hikari.HikariDataSource
+
+mybatis:
+  mapper-locations: classpath:/mybatis/mapper/*.xml
+  config-location: classpath:/mybatis/config/mybatis-config.xml
 
 # 日志
 logging:

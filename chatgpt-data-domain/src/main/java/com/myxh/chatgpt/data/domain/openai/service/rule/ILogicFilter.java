@@ -9,7 +9,7 @@ import com.myxh.chatgpt.data.domain.openai.model.entity.RuleLogicEntity;
  * @description 规则过滤接口
  * @GitHub <a href="https://github.com/MYXHcode">MYXHcode</a>
  */
-public interface ILogicFilter
+public interface ILogicFilter<T>
 {
-    RuleLogicEntity<ChatProcessAggregate> filter(ChatProcessAggregate chatProcess) throws Exception;
+    RuleLogicEntity<ChatProcessAggregate> filter(ChatProcessAggregate chatProcess, T data) throws Exception;
 }

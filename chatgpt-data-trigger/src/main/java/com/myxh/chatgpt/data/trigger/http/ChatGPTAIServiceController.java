@@ -46,7 +46,7 @@ public class ChatGPTAIServiceController
      * -d '{
      * "messages": [
      * {
-     * "content": "写一个 java 冒泡排序",
+     * "content": "1+1",
      * "role": "user"
      * }
      * ],
@@ -60,7 +60,7 @@ public class ChatGPTAIServiceController
      * -d '{
      * "messages": [
      * {
-     * "content": "写一个 java 冒泡排序",
+     * "content": "1+1",
      * "role": "user"
      * }
      * ],
