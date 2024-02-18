@@ -20,9 +20,18 @@
 
     <update id="subAccountQuota" parameterType="java.lang.String">
         UPDATE user_account
-        SET surplus_quota = surplus_quota - 1
+        SET surplus_quota = surplus_quota - 1,
+            update_time   = now()
         WHERE openid = #{openid}
           AND surplus_quota > 0
           AND status = 0
+    </update>
+
+    <update id="addAccountQuota" parameterType="com.myxh.chatgpt.data.infrastructure.po.UserAccountPO">
+        UPDATE user_account
+        SET total_quota   = total_quota + #{totalQuota},
+            surplus_quota = surplus_quota + #{surplusQuota},
+            update_time   = now()
+        WHERE openid = #{openid}
     </update>
 </mapper>

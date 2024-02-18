@@ -63,6 +63,11 @@
             <artifactId>sensitive-word</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.github.wechatpay-apiv3</groupId>
+            <artifactId>wechatpay-java</artifactId>
+        </dependency>
+
         <!-- chatgpt-sdk-java https://github.com/MYXHcode/chatgpt-sdk-java-->
         <dependency>
             <groupId>com.myxh.chatgpt</groupId>
