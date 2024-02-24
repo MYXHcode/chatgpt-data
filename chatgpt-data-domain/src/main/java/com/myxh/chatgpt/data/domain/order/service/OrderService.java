@@ -60,7 +60,7 @@ public class OrderService extends AbstractOrderService
                 .order(orderEntity)
                 .build();
 
-        // 保存订单：订单和支付，是 2 个操作。
+        // 保存订单：订单和支付，是 2 个操作
         // 一个是数据库操作，一个是 HTTP 操作。所以不能一个事务处理，只能先保存订单再操作创建支付单，如果失败则需要任务补偿
         orderRepository.saveOrder(aggregate);
 

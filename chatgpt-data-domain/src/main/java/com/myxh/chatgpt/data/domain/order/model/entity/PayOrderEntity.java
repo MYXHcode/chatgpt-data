@@ -29,7 +29,7 @@ public class PayOrderEntity
     private String orderId;
 
     /**
-     * 支付地址：创建支付后，获得的URL地址
+     * 支付地址：创建支付后，获得的 URL 地址
      */
     private String payUrl;
 

@@ -27,7 +27,7 @@
                                  pay_time, create_time, update_time)
         VALUES (#{openid}, #{productId}, #{productName}, #{productQuota}, #{orderId},
                 #{orderTime}, #{orderStatus}, #{totalAmount}, #{payType}, #{payStatus},
-                #{payTime}, now(), now())
+                #{payTime}, NOW(), NOW())
     </insert>
 
     <select id="queryUnpaidOrder" parameterType="com.myxh.chatgpt.data.infrastructure.po.OpenAIOrderPO"
@@ -45,7 +45,7 @@
         UPDATE openai_order
         SET pay_url     = #{payUrl},
             pay_status  = #{payStatus},
-            update_time = now()
+            update_time = NOW()
         WHERE openid = #{openid}
           AND order_id = #{orderId}
     </update>
@@ -57,7 +57,7 @@
             pay_amount     = #{payAmount},
             pay_time       = #{payTime},
             transaction_id = #{transactionId},
-            update_time    = now()
+            update_time    = NOW()
         WHERE order_id = #{orderId}
           AND pay_time is null
     </update>
@@ -120,7 +120,7 @@
         UPDATE openai_order
         SET order_status = 3,
             pay_status   = 3,
-            update_time  = now()
+            update_time  = NOW()
         WHERE order_id = #{orderId}
           AND pay_status = 0
     </update>
