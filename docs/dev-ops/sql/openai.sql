@@ -168,7 +168,9 @@ LOCK TABLES `user_account` WRITE;
 
 INSERT INTO `user_account` (`id`, `openid`, `total_quota`, `surplus_quota`, `model_types`, `status`, `create_time`,
                             `update_time`)
-VALUES (1, 'o0G6z6h-nHpZFUZVrcPJayOdN884', 10, 5, 'gpt-3.5-turbo,gpt-3.5-turbo-16k', 0, '2024-2-12 18:55:00',
+VALUES (1, 'o0G6z6h-nHpZFUZVrcPJayOdN884', 10, 5,
+        'gpt-3.5-turbo,gpt-3.5-turbo-16k,gpt-4,gpt-4-32k,chatGLM_6b_SSE,chatglm_lite,chatglm_lite_32k,chatglm_std,chatglm_pro',
+        0, '2024-2-12 18:55:00',
         '2024-2-12 19:00:00');
 
 /*!40000 ALTER TABLE `user_account`

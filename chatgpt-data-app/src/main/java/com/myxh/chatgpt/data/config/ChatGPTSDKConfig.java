@@ -17,7 +17,7 @@ import org.springframework.context.annotation.Configuration;
 @EnableConfigurationProperties(ChatGPTSDKConfigProperties.class)
 public class ChatGPTSDKConfig
 {
-    @Bean
+    @Bean(name = "chatGPTOpenAiSession")
     public OpenAiSession openAiSession(ChatGPTSDKConfigProperties properties)
     {
         // 1. 配置文件

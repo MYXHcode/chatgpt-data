@@ -3,6 +3,7 @@ package com.myxh.chatgpt.data.domain.openai.model.aggregates;
 import com.myxh.chatgpt.data.domain.openai.model.entity.MessageEntity;
 import com.myxh.chatgpt.data.types.common.Constants;
 import com.myxh.chatgpt.data.types.enums.ChatGPTModel;
+import com.myxh.chatgpt.data.types.enums.OpenAiChannel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -55,5 +56,10 @@ public class ChatProcessAggregate
         }
 
         return false;
+    }
+
+    public OpenAiChannel getChannel()
+    {
+        return OpenAiChannel.getChannel(this.model);
     }
 }

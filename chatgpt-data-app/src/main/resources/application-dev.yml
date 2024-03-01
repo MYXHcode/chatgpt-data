@@ -16,7 +16,6 @@ app:
     # 白名单，不做频次拦截【微信的 openid】o0G6z6h-nHpZFUZVrcPJayOdN884
     white-list: o0G6z6h-nHpZFUZVrcPJayOdN884
 
-
 # 支付配置：如果你申请了支付渠道，则可以配置 enable = true，否则就配置 false 走流程测试
 wxpay:
   config:
@@ -60,10 +59,21 @@ chatgpt:
       api-host: https://pro-share-api.zcyai.com/
 
       # 官网申请 https://platform.openai.com/account/api-keys
-      api-key: sk-b0A0eSKTNxgBqrHv7aAa0808EdB849C89499D928648bD416
+      api-key: sk-e8Dgomrqhd2OZvx1Ef9f1a1e17D348F0A0E11a374cEdB398
 
       # 自主申请 http://api.xfg.im:8080/authorize?username=xfg&password=123 - 有时效性，主要为了大家学习使用
       # auth-token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs
+
+# ChatGLM SDK Config
+chatglm:
+  sdk:
+    config:
+      # 状态；true = 开启、false 关闭
+      enabled: true
+      # 官网地址
+      api-host: https://open.bigmodel.cn/
+      # 官网申请 https://open.bigmodel.cn/usercenter/apikeys - 自己可申请
+      api-secret-key: 2abbbc41b164c2f21740e82582ed44b5.YQcsJ0j4CMwuLVfL
 
 # 微信公众号配置信息
 # originalid：原始 ID

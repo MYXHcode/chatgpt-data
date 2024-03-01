@@ -1,0 +1,175 @@
+24-02-25.11:08:07.336 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on MYXH-PC with PID 22636 (D:\CodeProjects\Java\ChatGPT\chatgpt-data\chatgpt-data-app\target\classes started by MYXH in D:\CodeProjects\Java\ChatGPT\chatgpt-data)
+24-02-25.11:08:07.344 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-02-25.11:08:13.041 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-02-25.11:08:13.043 [main            ] INFO  AprLifecycleListener   - Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+24-02-25.11:08:13.043 [main            ] INFO  AprLifecycleListener   - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+24-02-25.11:08:13.043 [main            ] INFO  AprLifecycleListener   - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+24-02-25.11:08:13.086 [main            ] INFO  AprLifecycleListener   - OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+24-02-25.11:08:13.113 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-02-25.11:08:13.114 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-02-25.11:08:13.114 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-02-25.11:08:13.725 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-02-25.11:08:13.725 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6148 ms
+24-02-25.11:08:18.191 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-02-25.11:08:18.244 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+24-02-25.11:08:18.275 [main            ] INFO  Application            - Started Application in 13.525 seconds (JVM running for 20.444)
+24-02-25.11:09:00.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.11:10:00.109 [scheduling-1    ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-02-25.11:10:00.797 [scheduling-1    ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-02-25.11:10:00.921 [scheduling-1    ] INFO  OrderReplenishmentJob  - 定时任务，订单补货不存在，查询 orderIds is null
+24-02-25.11:10:00.921 [scheduling-1    ] INFO  TimeoutCloseOrderJob   - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.11:10:00.922 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.11:10:01.839 [http-nio-8090-exec-2] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-02-25.11:10:01.840 [http-nio-8090-exec-2] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-02-25.11:10:01.843 [http-nio-8090-exec-2] INFO  DispatcherServlet      - Completed initialization in 3 ms
+24-02-25.11:10:02.061 [http-nio-8090-exec-1] ERROR AbstractAuthService    - jwt isVerify Err
+com.auth0.jwt.exceptions.TokenExpiredException: The Token has expired on 2024-02-08T09:14:50Z.
+	at com.auth0.jwt.JWTVerifier$BaseVerification.assertValidInstantClaim(JWTVerifier.java:346)
+	at com.auth0.jwt.JWTVerifier$BaseVerification.lambda$addMandatoryClaimChecks$17(JWTVerifier.java:308)
+	at com.auth0.jwt.JWTVerifier$BaseVerification$1.verify(JWTVerifier.java:405)
+	at com.auth0.jwt.JWTVerifier.verifyClaims(JWTVerifier.java:482)
+	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:464)
+	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:445)
+	at com.myxh.chatgpt.data.domain.auth.service.AbstractAuthService.isVerify(AbstractAuthService.java:146)
+	at com.myxh.chatgpt.data.domain.auth.service.AuthService.checkToken(AuthService.java:58)
+	at com.myxh.chatgpt.data.trigger.http.SaleController.queryProductList(SaleController.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+24-02-25.11:11:00.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.11:12:00.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.11:13:00.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.11:14:00.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.11:15:00.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.11:16:00.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.11:17:00.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.11:18:00.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.11:19:00.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.11:20:00.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.11:20:00.009 [scheduling-1    ] INFO  TimeoutCloseOrderJob   - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.11:20:00.019 [scheduling-1    ] INFO  OrderReplenishmentJob  - 定时任务，订单补货不存在，查询 orderIds is null
+24-02-25.11:21:00.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.11:22:00.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.11:23:00.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.11:24:00.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.11:25:00.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.11:26:00.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.11:27:00.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.11:28:00.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.11:29:00.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.11:30:00.016 [scheduling-1    ] INFO  OrderReplenishmentJob  - 定时任务，订单补货不存在，查询 orderIds is null
+24-02-25.11:30:00.017 [scheduling-1    ] INFO  TimeoutCloseOrderJob   - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.11:30:00.017 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.11:31:00.015 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.11:32:00.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.11:33:00.017 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.11:34:00.020 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.11:35:00.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.11:36:00.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.11:37:00.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.11:38:00.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.11:39:00.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.12:47:02.087 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h7m30s702ms859µs800ns).
+24-02-25.12:47:05.769 [scheduling-1    ] INFO  OrderReplenishmentJob  - 定时任务，订单补货不存在，查询 orderIds is null
+24-02-25.12:47:05.769 [scheduling-1    ] INFO  TimeoutCloseOrderJob   - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.12:47:05.769 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.12:48:00.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.12:49:00.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.12:50:00.015 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.12:50:00.018 [scheduling-1    ] INFO  OrderReplenishmentJob  - 定时任务，订单补货不存在，查询 orderIds is null
+24-02-25.12:50:00.018 [scheduling-1    ] INFO  TimeoutCloseOrderJob   - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.12:50:20.077 [http-nio-8090-exec-5] INFO  AuthController         - 生成验证码开始，用户ID: o0G6z6h-nHpZFUZVrcPJayOdN884
+24-02-25.12:50:20.750 [http-nio-8090-exec-5] INFO  AuthController         - 生成验证码完成，用户ID: o0G6z6h-nHpZFUZVrcPJayOdN884 生成结果：您的验证码为：2844，有效期3分钟！
+24-02-25.12:50:39.057 [http-nio-8090-exec-4] INFO  AuthController         - 鉴权登录校验开始，验证码: 2844
+24-02-25.12:50:39.497 [http-nio-8090-exec-4] INFO  AuthController         - 鉴权登录校验完成，验证码: 2844 结果: {"code":"0000","info":"验证成功","openId":"o0G6z6h-nHpZFUZVrcPJayOdN884","token":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJvMEc2ejZoLW5IcFpGVVpWcmNQSmF5T2ROODg0Iiwib3BlbklkIjoibzBHNno2aC1uSHBaRlVaVnJjUEpheU9kTjg4NCIsImV4cCI6MTcwOTQ0MTQzOSwiaWF0IjoxNzA4ODM2NjM5LCJqdGkiOiIyNmUyNjQ3My0yOGIxLTRkZjEtYmFlYi04NDRkZDA1YjgzYzAifQ.ChswDLio0x87IB8euL0Lz2Zx5XEcG0f_9V_i-aMYdZ4"}
+24-02-25.12:50:42.459 [http-nio-8090-exec-7] INFO  SaleController         - 商品查询 [{"available":false,"price":0.01,"productDesc":"测试商品请勿下单","productId":1001,"productName":"测试商品","quota":100},{"available":false,"price":0.01,"productDesc":"测试商品请勿下单","productId":1002,"productName":"OpenAi 测试商品(3.5)","quota":100},{"available":false,"price":10.00,"productDesc":"测试商品请勿下单","productId":1003,"productName":"OpenAi 测试商品(3.5&4.0)","quota":100},{"available":false,"price":19.99,"productDesc":"测试商品请勿下单","productId":1004,"productName":"OpenAi 测试商品(3.5&4.0)","quota":200}]
+24-02-25.12:50:45.400 [http-nio-8090-exec-9] INFO  SaleController         - 用户商品下单，根据商品ID创建支付单开始 openid:o0G6z6h-nHpZFUZVrcPJayOdN884 productId:1001
+24-02-25.12:50:45.425 [http-nio-8090-exec-9] INFO  AbstractOrderService   - 创建订单-存在，已生成微信支付，返回 openid: o0G6z6h-nHpZFUZVrcPJayOdN884 orderId: 759913647201 payUrl: 因你未配置支付渠道，所以暂时不能生成有效的支付 URL。请配置支付渠道后，在 application-dev.yml 中配置支付渠道信息
+24-02-25.12:50:45.429 [http-nio-8090-exec-9] INFO  SaleController         - 用户商品下单，根据商品ID创建支付单完成 openid: o0G6z6h-nHpZFUZVrcPJayOdN884 productId: 1001 orderPay: PayOrderEntity{openid='o0G6z6h-nHpZFUZVrcPJayOdN884', orderId='759913647201', payUrl='因你未配置支付渠道，所以暂时不能生成有效的支付 URL。请配置支付渠道后，在 application-dev.yml 中配置支付渠道信息', payStatus=0: 等待支付}
+24-02-25.12:50:53.244 [http-nio-8090-exec-10] INFO  SaleController         - 用户商品下单，根据商品ID创建支付单开始 openid:o0G6z6h-nHpZFUZVrcPJayOdN884 productId:1001
+24-02-25.12:50:53.249 [http-nio-8090-exec-10] INFO  AbstractOrderService   - 创建订单-存在，已生成微信支付，返回 openid: o0G6z6h-nHpZFUZVrcPJayOdN884 orderId: 759913647201 payUrl: 因你未配置支付渠道，所以暂时不能生成有效的支付 URL。请配置支付渠道后，在 application-dev.yml 中配置支付渠道信息
+24-02-25.12:50:53.249 [http-nio-8090-exec-10] INFO  SaleController         - 用户商品下单，根据商品ID创建支付单完成 openid: o0G6z6h-nHpZFUZVrcPJayOdN884 productId: 1001 orderPay: PayOrderEntity{openid='o0G6z6h-nHpZFUZVrcPJayOdN884', orderId='759913647201', payUrl='因你未配置支付渠道，所以暂时不能生成有效的支付 URL。请配置支付渠道后，在 application-dev.yml 中配置支付渠道信息', payStatus=0: 等待支付}
+24-02-25.12:51:00.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.12:51:27.643 [http-nio-8090-exec-3] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"请问有什么需要帮助的吗？","role":"system"},{"content":"1+1","role":"user"}]
+24-02-25.12:51:27.647 [http-nio-8090-exec-3] INFO  ChatGPTAIServiceController - 流式问答请求处理，openid:o0G6z6h-nHpZFUZVrcPJayOdN884 请求模型:gpt-3.5-turbo
+24-02-25.12:52:00.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.12:52:03.059 [http-nio-8090-exec-5] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+24-02-25.12:52:03.083 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-02-25.12:52:03.104 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-02-25.17:10:13.458 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on MYXH-PC with PID 19480 (D:\CodeProjects\Java\ChatGPT\chatgpt-data\chatgpt-data-app\target\classes started by MYXH in D:\CodeProjects\Java\ChatGPT\chatgpt-data)
+24-02-25.17:10:13.501 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-02-25.17:10:22.151 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-02-25.17:10:22.163 [main            ] INFO  AprLifecycleListener   - Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+24-02-25.17:10:22.164 [main            ] INFO  AprLifecycleListener   - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+24-02-25.17:10:22.164 [main            ] INFO  AprLifecycleListener   - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+24-02-25.17:10:22.207 [main            ] INFO  AprLifecycleListener   - OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+24-02-25.17:10:22.237 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-02-25.17:10:22.239 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-02-25.17:10:22.240 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-02-25.17:10:23.398 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-02-25.17:10:23.398 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 9428 ms
+24-02-25.17:10:31.972 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-02-25.17:10:32.039 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+24-02-25.17:10:32.078 [main            ] INFO  Application            - Started Application in 22.012 seconds (JVM running for 27.827)
+24-02-25.17:11:00.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.17:12:00.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.17:12:55.234 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-02-25.17:12:55.234 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-02-25.17:12:55.241 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 6 ms
+24-02-25.17:12:55.512 [http-nio-8090-exec-3] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-02-25.17:12:55.968 [http-nio-8090-exec-3] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-02-25.17:12:56.353 [http-nio-8090-exec-3] INFO  SaleController         - 商品查询 [{"available":false,"price":0.01,"productDesc":"测试商品请勿下单","productId":1001,"productName":"测试商品","quota":100},{"available":false,"price":0.01,"productDesc":"测试商品请勿下单","productId":1002,"productName":"OpenAi 测试商品(3.5)","quota":100},{"available":false,"price":10.00,"productDesc":"测试商品请勿下单","productId":1003,"productName":"OpenAi 测试商品(3.5&4.0)","quota":100},{"available":false,"price":19.99,"productDesc":"测试商品请勿下单","productId":1004,"productName":"OpenAi 测试商品(3.5&4.0)","quota":200}]
+24-02-25.17:13:00.016 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.17:13:10.229 [http-nio-8090-exec-2] INFO  SaleController         - 用户商品下单，根据商品ID创建支付单开始 openid:o0G6z6h-nHpZFUZVrcPJayOdN884 productId:1001
+24-02-25.17:13:10.248 [http-nio-8090-exec-2] INFO  AbstractOrderService   - 创建订单-存在，已生成微信支付，返回 openid: o0G6z6h-nHpZFUZVrcPJayOdN884 orderId: 759913647201 payUrl: 因你未配置支付渠道，所以暂时不能生成有效的支付 URL。请配置支付渠道后，在 application-dev.yml 中配置支付渠道信息
+24-02-25.17:13:10.251 [http-nio-8090-exec-2] INFO  SaleController         - 用户商品下单，根据商品ID创建支付单完成 openid: o0G6z6h-nHpZFUZVrcPJayOdN884 productId: 1001 orderPay: PayOrderEntity{openid='o0G6z6h-nHpZFUZVrcPJayOdN884', orderId='759913647201', payUrl='因你未配置支付渠道，所以暂时不能生成有效的支付 URL。请配置支付渠道后，在 application-dev.yml 中配置支付渠道信息', payStatus=0: 等待支付}
+24-02-25.17:14:00.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-25.17:14:45.801 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-02-25.17:14:45.824 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
