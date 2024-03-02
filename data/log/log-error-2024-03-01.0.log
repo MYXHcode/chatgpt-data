@@ -1,0 +1,4 @@
+24-03-01.19:31:11.898 [http-nio-8090-exec-9] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+24-03-01.19:31:36.880 [http-nio-8090-exec-10] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+24-03-01.19:37:19.283 [http-nio-8090-exec-6] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+24-03-01.19:39:19.202 [http-nio-8090-exec-6] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]

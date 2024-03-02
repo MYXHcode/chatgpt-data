@@ -1,0 +1,398 @@
+24-03-01.19:26:25.025 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on MYXH-PC with PID 7084 (D:\CodeProjects\Java\ChatGPT\chatgpt-data\chatgpt-data-app\target\classes started by MYXH in D:\CodeProjects\Java\ChatGPT\chatgpt-data)
+24-03-01.19:26:25.034 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-03-01.19:26:28.581 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-03-01.19:26:28.582 [main            ] INFO  AprLifecycleListener   - Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+24-03-01.19:26:28.582 [main            ] INFO  AprLifecycleListener   - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+24-03-01.19:26:28.583 [main            ] INFO  AprLifecycleListener   - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+24-03-01.19:26:28.625 [main            ] INFO  AprLifecycleListener   - OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+24-03-01.19:26:28.650 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-03-01.19:26:28.650 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-03-01.19:26:28.651 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-03-01.19:26:29.313 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-03-01.19:26:29.313 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4144 ms
+24-03-01.19:26:34.816 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-03-01.19:26:34.867 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+24-03-01.19:26:34.893 [main            ] INFO  Application            - Started Application in 11.448 seconds (JVM running for 15.308)
+24-03-01.19:27:00.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-01.19:28:00.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-01.19:28:09.338 [http-nio-8090-exec-2] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-03-01.19:28:09.338 [http-nio-8090-exec-2] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-03-01.19:28:09.338 [http-nio-8090-exec-2] INFO  DispatcherServlet      - Completed initialization in 0 ms
+24-03-01.19:28:09.991 [http-nio-8090-exec-1] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"请问有什么需要帮助的吗？","role":"system"},{"content":"1+1","role":"user"}]
+24-03-01.19:28:10.138 [http-nio-8090-exec-1] INFO  ChatGPTAIServiceController - 流式问答请求处理，openid:o0G6z6h-nHpZFUZVrcPJayOdN884 请求模型:gpt-3.5-turbo
+24-03-01.19:28:10.266 [http-nio-8090-exec-1] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-03-01.19:28:11.069 [http-nio-8090-exec-1] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-03-01.19:28:36.447 [http-nio-8090-exec-3] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo-16k 请求信息：[{"content":"1+1","role":"user"}]
+24-03-01.19:28:36.448 [http-nio-8090-exec-3] INFO  ChatGPTAIServiceController - 流式问答请求处理，openid:o0G6z6h-nHpZFUZVrcPJayOdN884 请求模型:gpt-3.5-turbo-16k
+24-03-01.19:28:58.937 [http-nio-8090-exec-4] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：chatGLM_6b_SSE 请求信息：[{"content":"1+1","role":"user"}]
+24-03-01.19:28:58.940 [http-nio-8090-exec-4] INFO  ChatGPTAIServiceController - 流式问答请求处理，openid:o0G6z6h-nHpZFUZVrcPJayOdN884 请求模型:chatGLM_6b_SSE
+24-03-01.19:29:00.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-01.19:29:19.652 [http-nio-8090-exec-5] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：chatglm_lite 请求信息：[{"content":"1+1","role":"user"}]
+24-03-01.19:29:19.654 [http-nio-8090-exec-5] INFO  ChatGPTAIServiceController - 流式问答请求处理，openid:o0G6z6h-nHpZFUZVrcPJayOdN884 请求模型:chatglm_lite
+24-03-01.19:29:27.678 [http-nio-8090-exec-6] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：chatglm_std 请求信息：[{"content":"1+1","role":"user"}]
+24-03-01.19:29:27.679 [http-nio-8090-exec-6] INFO  ChatGPTAIServiceController - 流式问答请求处理，openid:o0G6z6h-nHpZFUZVrcPJayOdN884 请求模型:chatglm_std
+24-03-01.19:29:34.710 [http-nio-8090-exec-7] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：chatglm_pro 请求信息：[{"content":"1+1","role":"user"}]
+24-03-01.19:29:34.712 [http-nio-8090-exec-7] INFO  ChatGPTAIServiceController - 流式问答请求处理，openid:o0G6z6h-nHpZFUZVrcPJayOdN884 请求模型:chatglm_pro
+24-03-01.19:30:00.013 [scheduling-1    ] INFO  TimeoutCloseOrderJob   - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-01.19:30:00.015 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-01.19:30:00.061 [scheduling-1    ] INFO  OrderReplenishmentJob  - 定时任务，订单补货不存在，查询 orderIds is null
+24-03-01.19:31:00.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-01.19:31:11.898 [http-nio-8090-exec-9] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+24-03-01.19:31:11.899 [http-nio-8090-exec-9] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+24-03-01.19:31:36.880 [http-nio-8090-exec-10] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+24-03-01.19:31:36.880 [http-nio-8090-exec-10] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo-16k
+24-03-01.19:32:00.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-01.19:33:00.000 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-01.19:33:32.620 [http-nio-8090-exec-2] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：chatGLM_6b_SSE 请求信息：[{"content":"请问有什么需要帮助的吗？","role":"system"},{"content":"1+1","role":"user"}]
+24-03-01.19:33:32.623 [http-nio-8090-exec-2] INFO  ChatGPTAIServiceController - 流式问答请求处理，openid:o0G6z6h-nHpZFUZVrcPJayOdN884 请求模型:chatGLM_6b_SSE
+24-03-01.19:33:32.645 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - --> POST https://open.bigmodel.cn/api/paas/v3/model-api/chatGLM_6b_SSE/sse-invoke
+24-03-01.19:33:32.645 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-03-01.19:33:32.645 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Content-Length: 210
+24-03-01.19:33:32.645 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-03-01.19:33:32.645 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - --> END POST
+24-03-01.19:33:33.522 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - <-- 200 https://open.bigmodel.cn/api/paas/v3/model-api/chatGLM_6b_SSE/sse-invoke (872ms)
+24-03-01.19:33:33.522 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - date: Fri, 01 Mar 2024 11:33:32 GMT
+24-03-01.19:33:33.522 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - content-type: text/event-stream;charset=UTF-8
+24-03-01.19:33:33.522 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - set-cookie: acw_tc=2760774e17092928126652345ebe0911a2488c0122a98aaf28ae31329dfd48;path=/;HttpOnly;Max-Age=1800
+24-03-01.19:33:33.522 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - server: nginx/1.21.6
+24-03-01.19:33:33.522 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - x-trace-id: 
+24-03-01.19:33:33.522 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Origin
+24-03-01.19:33:33.522 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Access-Control-Request-Method
+24-03-01.19:33:33.522 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Access-Control-Request-Headers
+24-03-01.19:33:33.522 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - <-- END HTTP
+24-03-01.19:33:33.589 [http-nio-8090-exec-1] INFO  AbstractChatService    - 流式问答请求完成，使用模型：chatGLM_6b_SSE
+24-03-01.19:34:00.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-01.19:35:00.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-01.19:36:00.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-01.19:37:00.017 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-01.19:37:06.245 [http-nio-8090-exec-4] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：chatGLM_6b_SSE 请求信息：[{"content":"1+1","role":"user"}]
+24-03-01.19:37:06.251 [http-nio-8090-exec-4] INFO  ChatGPTAIServiceController - 流式问答请求处理，openid:o0G6z6h-nHpZFUZVrcPJayOdN884 请求模型:chatGLM_6b_SSE
+24-03-01.19:37:06.275 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - --> POST https://open.bigmodel.cn/api/paas/v3/model-api/chatGLM_6b_SSE/sse-invoke
+24-03-01.19:37:06.276 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-03-01.19:37:06.277 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Content-Length: 145
+24-03-01.19:37:06.277 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-03-01.19:37:06.277 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - --> END POST
+24-03-01.19:37:06.933 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - <-- 200 https://open.bigmodel.cn/api/paas/v3/model-api/chatGLM_6b_SSE/sse-invoke (656ms)
+24-03-01.19:37:06.933 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - date: Fri, 01 Mar 2024 11:37:06 GMT
+24-03-01.19:37:06.933 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - content-type: text/event-stream;charset=UTF-8
+24-03-01.19:37:06.933 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - set-cookie: acw_tc=2760820a17092930260196299e57626712c8d0c7b56e930d3a5155ce1d06a3;path=/;HttpOnly;Max-Age=1800
+24-03-01.19:37:06.933 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - server: nginx/1.21.6
+24-03-01.19:37:06.933 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - x-trace-id: N/A
+24-03-01.19:37:06.933 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Origin
+24-03-01.19:37:06.933 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Access-Control-Request-Method
+24-03-01.19:37:06.933 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Access-Control-Request-Headers
+24-03-01.19:37:06.933 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - <-- END HTTP
+24-03-01.19:37:07.207 [OkHttp https://open.bigmodel.cn/...] INFO  ChatGLMService         - [输出结束] Tokens {"request_id":"xfg-1709293026266","task_id":"8439411106646197152","task_status":"SUCCESS","usage":{"completion_tokens":6,"prompt_tokens":4,"total_tokens":10}}
+24-03-01.19:37:07.207 [http-nio-8090-exec-5] INFO  AbstractChatService    - 流式问答请求完成，使用模型：chatGLM_6b_SSE
+24-03-01.19:37:19.283 [http-nio-8090-exec-6] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+24-03-01.19:37:55.375 [http-nio-8090-exec-8] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：chatGLM_6b_SSE 请求信息：[{"content":"1+1","role":"user"},{"content":" 1+1=2","role":"system"}]
+24-03-01.19:37:55.379 [http-nio-8090-exec-8] INFO  ChatGPTAIServiceController - 流式问答请求处理，openid:o0G6z6h-nHpZFUZVrcPJayOdN884 请求模型:chatGLM_6b_SSE
+24-03-01.19:37:55.402 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - --> POST https://open.bigmodel.cn/api/paas/v3/model-api/chatGLM_6b_SSE/sse-invoke
+24-03-01.19:37:55.402 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-03-01.19:37:55.402 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Content-Length: 180
+24-03-01.19:37:55.402 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-03-01.19:37:55.402 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - --> END POST
+24-03-01.19:37:55.701 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - <-- 200 https://open.bigmodel.cn/api/paas/v3/model-api/chatGLM_6b_SSE/sse-invoke (299ms)
+24-03-01.19:37:55.701 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - date: Fri, 01 Mar 2024 11:37:55 GMT
+24-03-01.19:37:55.701 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - content-type: text/event-stream;charset=UTF-8
+24-03-01.19:37:55.701 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - set-cookie: acw_tc=2760820a17092930748727185e5762db9ec0d8ca3e6c533906a819688f4732;path=/;HttpOnly;Max-Age=1800
+24-03-01.19:37:55.701 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - server: nginx/1.21.6
+24-03-01.19:37:55.701 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - x-trace-id: 
+24-03-01.19:37:55.701 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Origin
+24-03-01.19:37:55.701 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Access-Control-Request-Method
+24-03-01.19:37:55.701 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Access-Control-Request-Headers
+24-03-01.19:37:55.701 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - <-- END HTTP
+24-03-01.19:37:55.701 [http-nio-8090-exec-9] INFO  AbstractChatService    - 流式问答请求完成，使用模型：chatGLM_6b_SSE
+24-03-01.19:37:59.446 [http-nio-8090-exec-10] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：chatGLM_6b_SSE 请求信息：[{"content":"1+1","role":"user"},{"content":" 1+1=2","role":"system"}]
+24-03-01.19:37:59.448 [http-nio-8090-exec-10] INFO  ChatGPTAIServiceController - 流式问答请求处理，openid:o0G6z6h-nHpZFUZVrcPJayOdN884 请求模型:chatGLM_6b_SSE
+24-03-01.19:37:59.466 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - --> POST https://open.bigmodel.cn/api/paas/v3/model-api/chatGLM_6b_SSE/sse-invoke
+24-03-01.19:37:59.466 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-03-01.19:37:59.466 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Content-Length: 180
+24-03-01.19:37:59.466 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-03-01.19:37:59.466 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - --> END POST
+24-03-01.19:37:59.764 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - <-- 200 https://open.bigmodel.cn/api/paas/v3/model-api/chatGLM_6b_SSE/sse-invoke (295ms)
+24-03-01.19:37:59.764 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - date: Fri, 01 Mar 2024 11:37:59 GMT
+24-03-01.19:37:59.764 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - content-type: text/event-stream;charset=UTF-8
+24-03-01.19:37:59.764 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - set-cookie: acw_tc=2760820a17092930789417253e57621402ad7529b534ac8fe8395cf5a485eb;path=/;HttpOnly;Max-Age=1800
+24-03-01.19:37:59.764 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - server: nginx/1.21.6
+24-03-01.19:37:59.764 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - x-trace-id: 
+24-03-01.19:37:59.769 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Origin
+24-03-01.19:37:59.769 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Access-Control-Request-Method
+24-03-01.19:37:59.769 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Access-Control-Request-Headers
+24-03-01.19:37:59.769 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - <-- END HTTP
+24-03-01.19:37:59.771 [http-nio-8090-exec-2] INFO  AbstractChatService    - 流式问答请求完成，使用模型：chatGLM_6b_SSE
+24-03-01.19:38:00.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-01.19:38:59.336 [http-nio-8090-exec-4] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：chatglm_lite 请求信息：[{"content":"请问有什么需要帮助的吗？","role":"system"},{"content":"1+1","role":"user"}]
+24-03-01.19:38:59.340 [http-nio-8090-exec-4] INFO  ChatGPTAIServiceController - 流式问答请求处理，openid:o0G6z6h-nHpZFUZVrcPJayOdN884 请求模型:chatglm_lite
+24-03-01.19:38:59.358 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - --> POST https://open.bigmodel.cn/api/paas/v3/model-api/chatglm_lite/sse-invoke
+24-03-01.19:38:59.358 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-03-01.19:38:59.358 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Content-Length: 210
+24-03-01.19:38:59.358 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-03-01.19:38:59.358 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - --> END POST
+24-03-01.19:38:59.679 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - <-- 200 https://open.bigmodel.cn/api/paas/v3/model-api/chatglm_lite/sse-invoke (325ms)
+24-03-01.19:38:59.679 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - date: Fri, 01 Mar 2024 11:38:59 GMT
+24-03-01.19:38:59.679 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - content-type: text/event-stream;charset=UTF-8
+24-03-01.19:38:59.679 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - set-cookie: acw_tc=2760820a17092931388418654e5762613eaceb8f1e1591fc67c7c71344bc71;path=/;HttpOnly;Max-Age=1800
+24-03-01.19:38:59.679 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - server: nginx/1.21.6
+24-03-01.19:38:59.679 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - x-trace-id: 
+24-03-01.19:38:59.679 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Origin
+24-03-01.19:38:59.679 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Access-Control-Request-Method
+24-03-01.19:38:59.679 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Access-Control-Request-Headers
+24-03-01.19:38:59.679 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - <-- END HTTP
+24-03-01.19:38:59.686 [http-nio-8090-exec-5] INFO  AbstractChatService    - 流式问答请求完成，使用模型：chatglm_lite
+24-03-01.19:39:00.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-01.19:39:19.202 [http-nio-8090-exec-6] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+24-03-01.19:39:36.493 [http-nio-8090-exec-7] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：chatglm_lite 请求信息：[{"content":"1+1","role":"user"}]
+24-03-01.19:39:36.495 [http-nio-8090-exec-7] INFO  ChatGPTAIServiceController - 流式问答请求处理，openid:o0G6z6h-nHpZFUZVrcPJayOdN884 请求模型:chatglm_lite
+24-03-01.19:40:00.008 [scheduling-1    ] INFO  TimeoutCloseOrderJob   - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-01.19:40:00.016 [scheduling-1    ] INFO  OrderReplenishmentJob  - 定时任务，订单补货不存在，查询 orderIds is null
+24-03-01.19:40:00.018 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-01.19:40:07.157 [http-nio-8090-exec-8] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：chatglm_lite 请求信息：[{"content":"请问有什么需要帮助的吗？","role":"system"},{"content":"1+1","role":"user"}]
+24-03-01.19:40:07.158 [http-nio-8090-exec-8] INFO  ChatGPTAIServiceController - 流式问答请求处理，openid:o0G6z6h-nHpZFUZVrcPJayOdN884 请求模型:chatglm_lite
+24-03-01.19:40:46.750 [http-nio-8090-exec-2] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：chatglm_lite 请求信息：[{"content":"请问有什么需要帮助的吗？","role":"system"},{"content":"1+1","role":"user"}]
+24-03-01.19:40:46.752 [http-nio-8090-exec-2] INFO  ChatGPTAIServiceController - 流式问答请求处理，openid:o0G6z6h-nHpZFUZVrcPJayOdN884 请求模型:chatglm_lite
+24-03-01.19:40:46.772 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - --> POST https://open.bigmodel.cn/api/paas/v3/model-api/chatglm_lite/sse-invoke
+24-03-01.19:40:46.772 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-03-01.19:40:46.772 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Content-Length: 210
+24-03-01.19:40:46.772 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-03-01.19:40:46.772 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - --> END POST
+24-03-01.19:40:47.071 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - <-- 200 https://open.bigmodel.cn/api/paas/v3/model-api/chatglm_lite/sse-invoke (300ms)
+24-03-01.19:40:47.071 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - date: Fri, 01 Mar 2024 11:40:46 GMT
+24-03-01.19:40:47.071 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - content-type: text/event-stream;charset=UTF-8
+24-03-01.19:40:47.071 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - set-cookie: acw_tc=2760820a17092932462563057e57628f6491806523601f01b1ee70b9c613e7;path=/;HttpOnly;Max-Age=1800
+24-03-01.19:40:47.071 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - server: nginx/1.21.6
+24-03-01.19:40:47.071 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - x-trace-id: 
+24-03-01.19:40:47.071 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Origin
+24-03-01.19:40:47.071 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Access-Control-Request-Method
+24-03-01.19:40:47.071 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Access-Control-Request-Headers
+24-03-01.19:40:47.071 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - <-- END HTTP
+24-03-01.19:40:47.075 [http-nio-8090-exec-1] INFO  AbstractChatService    - 流式问答请求完成，使用模型：chatglm_lite
+24-03-01.19:40:58.159 [http-nio-8090-exec-3] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：chatglm_lite 请求信息：[{"content":"1+1","role":"user"},{"content":"","role":"system"},{"content":"1+1","role":"user"}]
+24-03-01.19:40:58.160 [http-nio-8090-exec-3] INFO  ChatGPTAIServiceController - 流式问答请求处理，openid:o0G6z6h-nHpZFUZVrcPJayOdN884 请求模型:chatglm_lite
+24-03-01.19:40:58.177 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - --> POST https://open.bigmodel.cn/api/paas/v3/model-api/chatglm_lite/sse-invoke
+24-03-01.19:40:58.177 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-03-01.19:40:58.178 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Content-Length: 206
+24-03-01.19:40:58.178 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-03-01.19:40:58.178 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - --> END POST
+24-03-01.19:40:58.554 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - <-- 200 https://open.bigmodel.cn/api/paas/v3/model-api/chatglm_lite/sse-invoke (377ms)
+24-03-01.19:40:58.556 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - date: Fri, 01 Mar 2024 11:40:57 GMT
+24-03-01.19:40:58.556 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - content-type: text/event-stream;charset=UTF-8
+24-03-01.19:40:58.556 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - set-cookie: acw_tc=2760820a17092932576263453e5762d6792b53069cddab271d6fba379f7422;path=/;HttpOnly;Max-Age=1800
+24-03-01.19:40:58.556 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - server: nginx/1.21.6
+24-03-01.19:40:58.556 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - x-trace-id: 
+24-03-01.19:40:58.556 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Origin
+24-03-01.19:40:58.556 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Access-Control-Request-Method
+24-03-01.19:40:58.556 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Access-Control-Request-Headers
+24-03-01.19:40:58.556 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - <-- END HTTP
+24-03-01.19:40:58.953 [OkHttp https://open.bigmodel.cn/...] INFO  ChatGLMService         - [输出结束] Tokens {"request_id":"xfg-1709293258174","task_id":"8439400798724428004","task_status":"SUCCESS","usage":{"completion_tokens":10,"prompt_tokens":7,"total_tokens":17}}
+24-03-01.19:40:58.955 [http-nio-8090-exec-4] INFO  AbstractChatService    - 流式问答请求完成，使用模型：chatglm_lite
+24-03-01.19:41:00.000 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-01.19:41:10.806 [http-nio-8090-exec-5] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：chatglm_std 请求信息：[{"content":"1+1","role":"user"}]
+24-03-01.19:41:10.808 [http-nio-8090-exec-5] INFO  ChatGPTAIServiceController - 流式问答请求处理，openid:o0G6z6h-nHpZFUZVrcPJayOdN884 请求模型:chatglm_std
+24-03-01.19:41:10.826 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - --> POST https://open.bigmodel.cn/api/paas/v3/model-api/chatglm_std/sse-invoke
+24-03-01.19:41:10.826 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-03-01.19:41:10.826 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Content-Length: 145
+24-03-01.19:41:10.826 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-03-01.19:41:10.826 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - --> END POST
+24-03-01.19:41:11.239 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - <-- 200 https://open.bigmodel.cn/api/paas/v3/model-api/chatglm_std/sse-invoke (415ms)
+24-03-01.19:41:11.239 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - date: Fri, 01 Mar 2024 11:41:10 GMT
+24-03-01.19:41:11.239 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - content-type: text/event-stream;charset=UTF-8
+24-03-01.19:41:11.239 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - set-cookie: acw_tc=2760820a17092932703063734e576221b13c595d7a7d748014ebb11840f947;path=/;HttpOnly;Max-Age=1800
+24-03-01.19:41:11.239 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - server: nginx/1.21.6
+24-03-01.19:41:11.239 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - x-trace-id: 
+24-03-01.19:41:11.239 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Origin
+24-03-01.19:41:11.242 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Access-Control-Request-Method
+24-03-01.19:41:11.242 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Access-Control-Request-Headers
+24-03-01.19:41:11.242 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - <-- END HTTP
+24-03-01.19:41:11.670 [OkHttp https://open.bigmodel.cn/...] INFO  ChatGLMService         - [输出结束] Tokens {"request_id":"xfg-1709293270822","task_id":"8439405231130766556","task_status":"SUCCESS","usage":{"completion_tokens":6,"prompt_tokens":4,"total_tokens":10}}
+24-03-01.19:41:11.670 [http-nio-8090-exec-6] INFO  AbstractChatService    - 流式问答请求完成，使用模型：chatglm_std
+24-03-01.19:41:19.277 [http-nio-8090-exec-7] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：chatglm_pro 请求信息：[{"content":"1+1","role":"user"}]
+24-03-01.19:41:19.281 [http-nio-8090-exec-7] INFO  ChatGPTAIServiceController - 流式问答请求处理，openid:o0G6z6h-nHpZFUZVrcPJayOdN884 请求模型:chatglm_pro
+24-03-01.19:41:19.302 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - --> POST https://open.bigmodel.cn/api/paas/v3/model-api/chatglm_pro/sse-invoke
+24-03-01.19:41:19.302 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-03-01.19:41:19.302 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Content-Length: 145
+24-03-01.19:41:19.302 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-03-01.19:41:19.302 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - --> END POST
+24-03-01.19:41:19.788 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - <-- 200 https://open.bigmodel.cn/api/paas/v3/model-api/chatglm_pro/sse-invoke (488ms)
+24-03-01.19:41:19.788 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - date: Fri, 01 Mar 2024 11:41:19 GMT
+24-03-01.19:41:19.788 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - content-type: text/event-stream;charset=UTF-8
+24-03-01.19:41:19.788 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - set-cookie: acw_tc=2760820a17092932787413902e576237fe213777c43121c3353845de3949f2;path=/;HttpOnly;Max-Age=1800
+24-03-01.19:41:19.788 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - server: nginx/1.21.6
+24-03-01.19:41:19.788 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - x-trace-id: 
+24-03-01.19:41:19.788 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Origin
+24-03-01.19:41:19.788 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Access-Control-Request-Method
+24-03-01.19:41:19.788 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Access-Control-Request-Headers
+24-03-01.19:41:19.788 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - <-- END HTTP
+24-03-01.19:41:20.186 [OkHttp https://open.bigmodel.cn/...] INFO  ChatGLMService         - [输出结束] Tokens {"request_id":"xfg-1709293279298","task_id":"8439400798724419804","task_status":"SUCCESS","usage":{"completion_tokens":6,"prompt_tokens":4,"total_tokens":10}}
+24-03-01.19:41:20.205 [http-nio-8090-exec-8] INFO  AbstractChatService    - 流式问答请求完成，使用模型：chatglm_pro
+24-03-01.19:42:00.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-01.19:43:00.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-01.19:44:00.112 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-01.19:45:00.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-01.19:46:00.000 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-01.19:47:00.015 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-01.19:48:00.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-01.19:49:00.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-01.19:50:00.009 [scheduling-1    ] INFO  OrderReplenishmentJob  - 定时任务，订单补货不存在，查询 orderIds is null
+24-03-01.19:50:00.010 [scheduling-1    ] INFO  TimeoutCloseOrderJob   - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-01.19:50:00.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-01.19:51:00.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-01.19:52:00.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-01.19:53:00.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-01.19:53:28.470 [http-nio-8090-exec-10] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：chatglm_lite 请求信息：[{"content":"请问有什么需要帮助的吗？","role":"system"},{"content":"1+1","role":"user"}]
+24-03-01.19:53:28.472 [http-nio-8090-exec-10] INFO  ChatGPTAIServiceController - 流式问答请求处理，openid:o0G6z6h-nHpZFUZVrcPJayOdN884 请求模型:chatglm_lite
+24-03-01.19:53:28.485 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - --> POST https://open.bigmodel.cn/api/paas/v3/model-api/chatglm_lite/sse-invoke
+24-03-01.19:53:28.485 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-03-01.19:53:28.485 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Content-Length: 210
+24-03-01.19:53:28.485 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-03-01.19:53:28.485 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - --> END POST
+24-03-01.19:53:29.137 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - <-- 200 https://open.bigmodel.cn/api/paas/v3/model-api/chatglm_lite/sse-invoke (651ms)
+24-03-01.19:53:29.137 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - date: Fri, 01 Mar 2024 11:53:28 GMT
+24-03-01.19:53:29.137 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - content-type: text/event-stream;charset=UTF-8
+24-03-01.19:53:29.137 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - set-cookie: acw_tc=2760775e17092940082971035ea55b13f79590e7fac08b12f05d56ad912eab;path=/;HttpOnly;Max-Age=1800
+24-03-01.19:53:29.137 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - server: nginx/1.21.6
+24-03-01.19:53:29.137 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - x-trace-id: N/A
+24-03-01.19:53:29.137 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Origin
+24-03-01.19:53:29.137 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Access-Control-Request-Method
+24-03-01.19:53:29.138 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Access-Control-Request-Headers
+24-03-01.19:53:29.138 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - <-- END HTTP
+24-03-01.19:53:29.140 [http-nio-8090-exec-2] INFO  AbstractChatService    - 流式问答请求完成，使用模型：chatglm_lite
+24-03-01.19:54:00.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-01.19:54:10.259 [http-nio-8090-exec-3] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：chatglm_lite 请求信息：[{"content":"请问有什么需要帮助的吗？","role":"system"},{"content":"1+1","role":"user"}]
+24-03-01.19:54:10.262 [http-nio-8090-exec-3] INFO  ChatGPTAIServiceController - 流式问答请求处理，openid:o0G6z6h-nHpZFUZVrcPJayOdN884 请求模型:chatglm_lite
+24-03-01.19:54:10.307 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - --> POST https://open.bigmodel.cn/api/paas/v3/model-api/chatglm_lite/sse-invoke
+24-03-01.19:54:10.308 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-03-01.19:54:10.308 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Content-Length: 210
+24-03-01.19:54:10.308 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-03-01.19:54:10.308 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - --> END POST
+24-03-01.19:54:11.487 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - <-- 200 https://open.bigmodel.cn/api/paas/v3/model-api/chatglm_lite/sse-invoke (1180ms)
+24-03-01.19:54:11.488 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - date: Fri, 01 Mar 2024 11:54:10 GMT
+24-03-01.19:54:11.488 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - content-type: text/event-stream;charset=UTF-8
+24-03-01.19:54:11.488 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - set-cookie: acw_tc=2760775e17092940497821761ea55b969e49456d0bb405adfe021a2c7956dd;path=/;HttpOnly;Max-Age=1800
+24-03-01.19:54:11.488 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - server: nginx/1.21.6
+24-03-01.19:54:11.488 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - x-trace-id: N/A
+24-03-01.19:54:11.488 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Origin
+24-03-01.19:54:11.488 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Access-Control-Request-Method
+24-03-01.19:54:11.488 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Access-Control-Request-Headers
+24-03-01.19:54:11.488 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - <-- END HTTP
+24-03-01.19:54:11.492 [http-nio-8090-exec-4] INFO  AbstractChatService    - 流式问答请求完成，使用模型：chatglm_lite
+24-03-01.19:54:38.528 [http-nio-8090-exec-6] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：chatglm_lite 请求信息：[{"content":"1+1","role":"user"}]
+24-03-01.19:54:38.529 [http-nio-8090-exec-6] INFO  ChatGPTAIServiceController - 流式问答请求处理，openid:o0G6z6h-nHpZFUZVrcPJayOdN884 请求模型:chatglm_lite
+24-03-01.19:54:38.540 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - --> POST https://open.bigmodel.cn/api/paas/v3/model-api/chatglm_lite/sse-invoke
+24-03-01.19:54:38.540 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-03-01.19:54:38.540 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Content-Length: 145
+24-03-01.19:54:38.540 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-03-01.19:54:38.540 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - --> END POST
+24-03-01.19:54:38.941 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - <-- 200 https://open.bigmodel.cn/api/paas/v3/model-api/chatglm_lite/sse-invoke (400ms)
+24-03-01.19:54:38.942 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - date: Fri, 01 Mar 2024 11:54:38 GMT
+24-03-01.19:54:38.942 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - content-type: text/event-stream;charset=UTF-8
+24-03-01.19:54:38.942 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - set-cookie: acw_tc=2760775e17092940780322335ea55bcb989cb724804cebb698965ef43ae03b;path=/;HttpOnly;Max-Age=1800
+24-03-01.19:54:38.942 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - server: nginx/1.21.6
+24-03-01.19:54:38.942 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - x-trace-id: 
+24-03-01.19:54:38.942 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Origin
+24-03-01.19:54:38.942 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Access-Control-Request-Method
+24-03-01.19:54:38.942 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Access-Control-Request-Headers
+24-03-01.19:54:38.942 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - <-- END HTTP
+24-03-01.19:54:39.241 [OkHttp https://open.bigmodel.cn/...] INFO  ChatGLMService         - [输出结束] Tokens {"request_id":"xfg-1709294078538","task_id":"8439406296282717073","task_status":"SUCCESS","usage":{"completion_tokens":6,"prompt_tokens":4,"total_tokens":10}}
+24-03-01.19:54:39.245 [http-nio-8090-exec-7] INFO  AbstractChatService    - 流式问答请求完成，使用模型：chatglm_lite
+24-03-01.19:54:48.002 [http-nio-8090-exec-9] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：chatglm_lite 请求信息：[{"content":"请问有什么需要帮助的吗？","role":"system"},{"content":"1+1","role":"user"}]
+24-03-01.19:54:48.002 [http-nio-8090-exec-9] INFO  ChatGPTAIServiceController - 流式问答请求处理，openid:o0G6z6h-nHpZFUZVrcPJayOdN884 请求模型:chatglm_lite
+24-03-01.19:54:48.012 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - --> POST https://open.bigmodel.cn/api/paas/v3/model-api/chatglm_lite/sse-invoke
+24-03-01.19:54:48.012 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-03-01.19:54:48.012 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Content-Length: 210
+24-03-01.19:54:48.012 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-03-01.19:54:48.012 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - --> END POST
+24-03-01.19:54:48.299 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - <-- 200 https://open.bigmodel.cn/api/paas/v3/model-api/chatglm_lite/sse-invoke (286ms)
+24-03-01.19:54:48.299 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - date: Fri, 01 Mar 2024 11:54:47 GMT
+24-03-01.19:54:48.299 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - content-type: text/event-stream;charset=UTF-8
+24-03-01.19:54:48.299 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - set-cookie: acw_tc=2760775e17092940874822517ea55bece6cc9005abf448321f347421c04492;path=/;HttpOnly;Max-Age=1800
+24-03-01.19:54:48.299 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - server: nginx/1.21.6
+24-03-01.19:54:48.299 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - x-trace-id: 
+24-03-01.19:54:48.300 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Origin
+24-03-01.19:54:48.300 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Access-Control-Request-Method
+24-03-01.19:54:48.300 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Access-Control-Request-Headers
+24-03-01.19:54:48.300 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - <-- END HTTP
+24-03-01.19:54:48.326 [http-nio-8090-exec-10] INFO  AbstractChatService    - 流式问答请求完成，使用模型：chatglm_lite
+24-03-01.19:54:54.835 [http-nio-8090-exec-1] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：chatglm_lite 请求信息：[{"content":"1+1","role":"user"},{"content":"","role":"system"},{"content":"1+1","role":"user"}]
+24-03-01.19:54:54.836 [http-nio-8090-exec-1] INFO  ChatGPTAIServiceController - 流式问答请求处理，openid:o0G6z6h-nHpZFUZVrcPJayOdN884 请求模型:chatglm_lite
+24-03-01.19:54:54.844 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - --> POST https://open.bigmodel.cn/api/paas/v3/model-api/chatglm_lite/sse-invoke
+24-03-01.19:54:54.845 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-03-01.19:54:54.845 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Content-Length: 206
+24-03-01.19:54:54.845 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-03-01.19:54:54.845 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - --> END POST
+24-03-01.19:54:55.202 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - <-- 200 https://open.bigmodel.cn/api/paas/v3/model-api/chatglm_lite/sse-invoke (357ms)
+24-03-01.19:54:55.203 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - date: Fri, 01 Mar 2024 11:54:54 GMT
+24-03-01.19:54:55.203 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - content-type: text/event-stream;charset=UTF-8
+24-03-01.19:54:55.203 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - set-cookie: acw_tc=2760775e17092940943222648ea55b1c8f354b119c6296a2de36dc62177541;path=/;HttpOnly;Max-Age=1800
+24-03-01.19:54:55.203 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - server: nginx/1.21.6
+24-03-01.19:54:55.203 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - x-trace-id: 
+24-03-01.19:54:55.203 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Origin
+24-03-01.19:54:55.203 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Access-Control-Request-Method
+24-03-01.19:54:55.203 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Access-Control-Request-Headers
+24-03-01.19:54:55.203 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - <-- END HTTP
+24-03-01.19:54:55.471 [OkHttp https://open.bigmodel.cn/...] INFO  ChatGLMService         - [输出结束] Tokens {"request_id":"xfg-1709294094842","task_id":"8439406708599610591","task_status":"SUCCESS","usage":{"completion_tokens":6,"prompt_tokens":7,"total_tokens":13}}
+24-03-01.19:54:55.473 [http-nio-8090-exec-3] INFO  AbstractChatService    - 流式问答请求完成，使用模型：chatglm_lite
+24-03-01.19:55:00.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-01.19:55:21.653 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-03-01.19:55:21.679 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-03-01.19:55:45.249 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on MYXH-PC with PID 2172 (D:\CodeProjects\Java\ChatGPT\chatgpt-data\chatgpt-data-app\target\classes started by MYXH in D:\CodeProjects\Java\ChatGPT\chatgpt-data)
+24-03-01.19:55:45.256 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-03-01.19:55:49.317 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-03-01.19:55:49.319 [main            ] INFO  AprLifecycleListener   - Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+24-03-01.19:55:49.320 [main            ] INFO  AprLifecycleListener   - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+24-03-01.19:55:49.320 [main            ] INFO  AprLifecycleListener   - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+24-03-01.19:55:49.330 [main            ] INFO  AprLifecycleListener   - OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+24-03-01.19:55:49.353 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-03-01.19:55:49.354 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-03-01.19:55:49.354 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-03-01.19:55:49.789 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-03-01.19:55:49.791 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4403 ms
+24-03-01.19:55:54.861 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-03-01.19:55:54.932 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+24-03-01.19:55:54.968 [main            ] INFO  Application            - Started Application in 11.332 seconds (JVM running for 15.002)
+24-03-01.19:56:00.368 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-01.19:56:35.200 [http-nio-8090-exec-4] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-03-01.19:56:35.200 [http-nio-8090-exec-4] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-03-01.19:56:35.201 [http-nio-8090-exec-4] INFO  DispatcherServlet      - Completed initialization in 1 ms
+24-03-01.19:56:35.612 [http-nio-8090-exec-4] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：chatglm_lite 请求信息：[{"content":"请问有什么需要帮助的吗？","role":"system"},{"content":"1+1","role":"user"}]
+24-03-01.19:56:35.733 [http-nio-8090-exec-4] INFO  ChatGPTAIServiceController - 流式问答请求处理，openid:o0G6z6h-nHpZFUZVrcPJayOdN884 请求模型:chatglm_lite
+24-03-01.19:56:35.784 [http-nio-8090-exec-4] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-03-01.19:56:36.268 [http-nio-8090-exec-4] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-03-01.19:56:36.456 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - --> POST https://open.bigmodel.cn/api/paas/v3/model-api/chatglm_lite/sse-invoke
+24-03-01.19:56:36.457 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-03-01.19:56:36.457 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Content-Length: 211
+24-03-01.19:56:36.458 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-03-01.19:56:36.458 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - --> END POST
+24-03-01.19:56:37.140 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - <-- 200 https://open.bigmodel.cn/api/paas/v3/model-api/chatglm_lite/sse-invoke (682ms)
+24-03-01.19:56:37.140 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - date: Fri, 01 Mar 2024 11:56:36 GMT
+24-03-01.19:56:37.140 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - content-type: text/event-stream;charset=UTF-8
+24-03-01.19:56:37.140 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - set-cookie: acw_tc=2760775917092941963582775eb0a8dfea9ba78fa62afac4cc1c8412683859;path=/;HttpOnly;Max-Age=1800
+24-03-01.19:56:37.140 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - server: nginx/1.21.6
+24-03-01.19:56:37.141 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - x-trace-id: 
+24-03-01.19:56:37.141 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Origin
+24-03-01.19:56:37.141 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Access-Control-Request-Method
+24-03-01.19:56:37.141 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Access-Control-Request-Headers
+24-03-01.19:56:37.141 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - <-- END HTTP
+24-03-01.19:56:37.206 [http-nio-8090-exec-3] INFO  AbstractChatService    - 流式问答请求完成，使用模型：chatglm_lite
+24-03-01.19:56:52.163 [http-nio-8090-exec-8] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：chatglm_lite 请求信息：[{"content":"1+1","role":"user"},{"content":"","role":"system"},{"content":"1+1","role":"user"}]
+24-03-01.19:56:52.165 [http-nio-8090-exec-8] INFO  ChatGPTAIServiceController - 流式问答请求处理，openid:o0G6z6h-nHpZFUZVrcPJayOdN884 请求模型:chatglm_lite
+24-03-01.19:56:52.181 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - --> POST https://open.bigmodel.cn/api/paas/v3/model-api/chatglm_lite/sse-invoke
+24-03-01.19:56:52.182 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-03-01.19:56:52.182 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Content-Length: 207
+24-03-01.19:56:52.182 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-03-01.19:56:52.182 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - --> END POST
+24-03-01.19:56:52.554 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - <-- 200 https://open.bigmodel.cn/api/paas/v3/model-api/chatglm_lite/sse-invoke (374ms)
+24-03-01.19:56:52.554 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - date: Fri, 01 Mar 2024 11:56:51 GMT
+24-03-01.19:56:52.554 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - content-type: text/event-stream;charset=UTF-8
+24-03-01.19:56:52.554 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - set-cookie: acw_tc=2760775917092942116883049eb0a868170a9302f23cca59d0c65b0a1e243f;path=/;HttpOnly;Max-Age=1800
+24-03-01.19:56:52.554 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - server: nginx/1.21.6
+24-03-01.19:56:52.554 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - x-trace-id: 
+24-03-01.19:56:52.554 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Origin
+24-03-01.19:56:52.554 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Access-Control-Request-Method
+24-03-01.19:56:52.554 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - vary: Access-Control-Request-Headers
+24-03-01.19:56:52.554 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - <-- END HTTP
+24-03-01.19:56:52.845 [OkHttp https://open.bigmodel.cn/...] INFO  ChatGLMService         - [输出结束] Tokens {"request_id":"myxh-1709294212173","task_id":"8439410591250094958","task_status":"SUCCESS","usage":{"completion_tokens":6,"prompt_tokens":7,"total_tokens":13}}
+24-03-01.19:56:52.848 [http-nio-8090-exec-1] INFO  AbstractChatService    - 流式问答请求完成，使用模型：chatglm_lite
+24-03-01.19:57:00.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-01.19:57:09.393 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-03-01.19:57:09.417 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.

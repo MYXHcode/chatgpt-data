@@ -42,6 +42,45 @@ wx:
     appid: wxa175a0b560bd00a2
     token: MYXH
 
+# 监控
+management:
+  endpoints:
+    web:
+      exposure:
+        # 暴露所有端点，包括自定义端点
+        include: "*"
+
+  endpoint:
+    metrics:
+      enabled: true
+
+    health:
+      # 显示详细的健康检查信息
+      show-details: always
+
+  metrics:
+    export:
+      prometheus:
+        # 启用 Prometheus
+        enabled: true
+
+  prometheus:
+    # 启用 Prometheus 端点
+    enabled: true
+
+  jmx:
+    # 启用 JMX 监控
+    enabled: true
+
+  system:
+    cpu:
+      # 启用 CPU 监控
+      enabled: true
+
+    memory:
+      # 启用内存监控
+      enabled: true
+
 # 日志
 logging:
   level:
