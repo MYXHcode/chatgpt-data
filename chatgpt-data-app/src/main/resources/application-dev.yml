@@ -125,7 +125,6 @@ redis:
     config:
       host: 127.0.0.1
       port: 6379
-      password: 520.ILY!
       pool-size: 10
       min-idle-size: 5
       idle-timeout: 30000
