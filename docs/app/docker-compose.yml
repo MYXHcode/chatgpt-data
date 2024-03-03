@@ -6,8 +6,10 @@ services:
   chatgpt-data-app:
     image: myxh/chatgpt-data-app:1.1
     container_name: chatgpt-data-app
+
     ports:
       - "8090:8090"
+
     environment:
       - TZ=PRC
       - SERVER_PORT=8090
@@ -23,23 +25,31 @@ services:
       - WX_CONFIG_ORIGINALID=gh_8aed07a01479
       - WX_CONFIG_APPID=wxa175a0b560bd00a2
       - WX_CONFIG_TOKEN=MYXH
+
     volumes:
       - ./log:/data/log
+
     logging:
       driver: "json-file"
+
       options:
         max-size: "10m"
         max-file: "3"
+
     restart: always
 
   chatgpt-web:
     # container_name: chatgpt-web-local
     container_name: chatgpt-web-cloud
+
     # image: myxh/chatgpt-web-local:1.0
     image: myxh/chatgpt-web-cloud:1.0
+
     ports:
       - "3000:3000"
+
     environment:
       # - NEXT_PUBLIC_API_HOST_URL=http://localhost:8090
       - NEXT_PUBLIC_API_HOST_URL=http://43.143.161.125:8090
+
     restart: always

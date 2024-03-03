@@ -30,9 +30,8 @@ public class AuthTest
     private Cache<String, String> cache;
 
     @Test
-    public void test_AuthService()
+    public void testAuthService()
     {
-
         cache.put("1000", "MYXH");
         cache.put("MYXH", "1000");
 

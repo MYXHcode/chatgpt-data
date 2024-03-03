@@ -36,8 +36,8 @@ public abstract class AbstractAuthService implements IAuthService
     @Override
     public AuthStateEntity doLogin(String code)
     {
-        // 1. 如果不是 4 位有效数字字符串，则返回验证码无效
-        if (!code.matches("\\d{4}"))
+        // 1. 如果不是 4 位到 8 位有效数字字符串，则返回验证码无效
+        if (!code.matches("\\d{4,8}"))
         {
             log.info("鉴权，用户收入的验证码无效 {}", code);
 

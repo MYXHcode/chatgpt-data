@@ -1,0 +1,130 @@
+24-03-02.15:00:06.684 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on MYXH-PC with PID 3672 (D:\CodeProjects\Java\ChatGPT\chatgpt-data\chatgpt-data-app\target\classes started by MYXH in D:\CodeProjects\Java\ChatGPT\chatgpt-data)
+24-03-02.15:00:06.690 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-03-02.15:00:11.753 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-03-02.15:00:11.755 [main            ] INFO  AprLifecycleListener   - Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+24-03-02.15:00:11.755 [main            ] INFO  AprLifecycleListener   - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+24-03-02.15:00:11.755 [main            ] INFO  AprLifecycleListener   - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+24-03-02.15:00:11.794 [main            ] INFO  AprLifecycleListener   - OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+24-03-02.15:00:11.824 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-03-02.15:00:11.825 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-03-02.15:00:11.825 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-03-02.15:00:12.447 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-03-02.15:00:12.447 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5627 ms
+24-03-02.15:00:19.624 [main            ] INFO  EndpointLinksResolver  - Exposing 14 endpoint(s) beneath base path '/actuator'
+24-03-02.15:00:19.698 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-03-02.15:00:19.739 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+24-03-02.15:00:19.774 [main            ] INFO  Application            - Started Application in 14.863 seconds (JVM running for 19.255)
+24-03-02.15:00:20.145 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-03-02.15:00:20.145 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-03-02.15:00:20.152 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 7 ms
+24-03-02.15:00:21.233 [RMI TCP Connection(6)-192.168.164.7] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-03-02.15:00:21.940 [RMI TCP Connection(6)-192.168.164.7] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-03-02.15:01:00.049 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:02:00.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:03:00.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:04:00.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:05:00.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:06:00.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:07:00.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:08:00.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:09:00.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:10:00.584 [scheduling-1    ] INFO  OrderReplenishmentJob  - 定时任务，订单补货不存在，查询 orderIds is null
+24-03-02.15:10:00.586 [scheduling-1    ] INFO  TimeoutCloseOrderJob   - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:10:00.587 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:11:00.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:12:00.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:13:00.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:14:00.017 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:15:00.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:16:00.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:17:00.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:18:00.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:19:00.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:20:00.041 [scheduling-1    ] INFO  OrderReplenishmentJob  - 定时任务，订单补货不存在，查询 orderIds is null
+24-03-02.15:20:00.041 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:20:00.041 [scheduling-1    ] INFO  TimeoutCloseOrderJob   - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:21:00.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:22:00.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:23:00.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:24:00.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:25:00.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:26:00.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:27:00.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:28:00.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:29:00.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:30:00.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:30:00.037 [scheduling-1    ] INFO  OrderReplenishmentJob  - 定时任务，订单补货不存在，查询 orderIds is null
+24-03-02.15:30:00.039 [scheduling-1    ] INFO  TimeoutCloseOrderJob   - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:31:00.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:32:00.024 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:33:00.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:34:00.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:35:00.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:36:00.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:37:00.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:38:00.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:39:00.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:40:00.016 [scheduling-1    ] INFO  OrderReplenishmentJob  - 定时任务，订单补货不存在，查询 orderIds is null
+24-03-02.15:40:00.016 [scheduling-1    ] INFO  TimeoutCloseOrderJob   - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:40:00.021 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:41:00.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:42:00.125 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:43:00.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:44:00.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:45:00.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:46:00.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:47:00.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:48:00.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:49:00.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:50:00.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:50:00.020 [scheduling-1    ] INFO  OrderReplenishmentJob  - 定时任务，订单补货不存在，查询 orderIds is null
+24-03-02.15:50:00.027 [scheduling-1    ] INFO  TimeoutCloseOrderJob   - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:51:00.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:52:00.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:53:00.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:54:00.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:55:00.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:56:00.015 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:57:00.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:58:00.021 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.15:59:00.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.16:00:00.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.16:00:00.009 [scheduling-1    ] INFO  TimeoutCloseOrderJob   - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.16:00:00.018 [scheduling-1    ] INFO  OrderReplenishmentJob  - 定时任务，订单补货不存在，查询 orderIds is null
+24-03-02.16:01:00.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.16:02:00.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.16:03:00.019 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.16:04:00.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.16:05:00.017 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.16:06:00.015 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.16:07:00.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.16:08:00.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.16:09:00.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.16:10:00.012 [scheduling-1    ] INFO  TimeoutCloseOrderJob   - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.16:10:00.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.16:10:00.021 [scheduling-1    ] INFO  OrderReplenishmentJob  - 定时任务，订单补货不存在，查询 orderIds is null
+24-03-02.16:11:00.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.16:12:00.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.16:13:00.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.16:14:00.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.16:15:00.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.16:16:00.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.16:17:00.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.16:18:00.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.16:19:00.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.16:20:00.008 [scheduling-1    ] INFO  TimeoutCloseOrderJob   - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.16:20:00.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.16:20:00.017 [scheduling-1    ] INFO  OrderReplenishmentJob  - 定时任务，订单补货不存在，查询 orderIds is null
+24-03-02.16:21:00.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.16:21:43.118 [http-nio-8090-exec-2] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"请问有什么需要帮助的吗？","role":"system"},{"content":"1+1","role":"user"}]
+24-03-02.16:21:43.285 [http-nio-8090-exec-2] INFO  ChatGPTAIServiceController - 流式问答请求处理，openid:o0G6z6h-nHpZFUZVrcPJayOdN884 请求模型:gpt-3.5-turbo
+24-03-02.16:22:00.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.16:23:00.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.16:24:00.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.16:24:43.777 [http-nio-8090-exec-5] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+24-03-02.16:24:43.777 [http-nio-8090-exec-5] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+24-03-02.16:24:43.796 [http-nio-8090-exec-5] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+24-03-02.16:25:00.015 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.16:26:00.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-03-02.16:26:05.726 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-03-02.16:26:05.748 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
