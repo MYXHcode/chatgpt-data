@@ -6,7 +6,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter
 /**
  * @author MYXH
  * @date 2024/1/29
- * @description ChatService 聊天服务
+ * @description OpenAi 应答请求
  * @GitHub <a href="https://github.com/MYXHcode">MYXHcode</a>
  */
 public interface IChatService

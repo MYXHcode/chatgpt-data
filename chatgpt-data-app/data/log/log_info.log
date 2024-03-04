@@ -1,9 +1,21 @@
-24-02-24.14:52:05.453 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 1.8.0_391 on MYXH-PC with PID 29948 (started by MYXH in D:\CodeProjects\Java\ChatGPT\chatgpt-data\chatgpt-data-app)
-24-02-24.14:52:05.455 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
-24-02-24.14:52:16.793 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 12.679 seconds (JVM running for 16.197)
-24-02-24.14:52:17.448 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-02-24.14:52:18.167 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-02-24.14:52:18.361 [main            ] INFO  AbstractOrderService   - 创建订单-完成，生成支付单。openid: o0G6z6h-nHpZFUZVrcPJayOdN884 orderId: 759913647201 payUrl: 因你未配置支付渠道，所以暂时不能生成有效的支付 URL。请配置支付渠道后，在 application-dev.yml 中配置支付渠道信息
-24-02-24.14:52:18.361 [main            ] INFO  OrderServiceTest       - 请求参数：ShopCartEntity{openid='o0G6z6h-nHpZFUZVrcPJayOdN884', productId=1001} 测试结果: PayOrderEntity{openid='o0G6z6h-nHpZFUZVrcPJayOdN884', orderId='759913647201', payUrl='因你未配置支付渠道，所以暂时不能生成有效的支付 URL。请配置支付渠道后，在 application-dev.yml 中配置支付渠道信息', payStatus=0: 等待支付}
-24-02-24.14:52:18.395 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-02-24.14:52:18.424 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-03-04.19:30:51.288 [main            ] INFO  ChatServiceTest        - Starting ChatServiceTest using Java 1.8.0_391 on MYXH-PC with PID 13576 (started by MYXH in D:\CodeProjects\Java\ChatGPT\chatgpt-data\chatgpt-data-app)
+24-03-04.19:30:51.291 [main            ] INFO  ChatServiceTest        - The following 1 profile is active: "dev"
+24-03-04.19:30:55.091 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-03-04.19:30:55.105 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-03-04.19:30:55.609 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 448 ms. Found 0 Redis repository interfaces.
+24-03-04.19:31:01.980 [main            ] INFO  Version                - Redisson 3.23.4
+24-03-04.19:31:03.970 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-03-04.19:31:04.007 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-03-04.19:31:19.754 [main            ] INFO  EndpointLinksResolver  - Exposing 14 endpoint(s) beneath base path '/actuator'
+24-03-04.19:31:20.054 [main            ] INFO  ChatServiceTest        - Started ChatServiceTest in 30.281 seconds (JVM running for 34.148)
+24-03-04.19:31:21.246 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-03-04.19:31:21.820 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-03-04.19:31:22.481 [main            ] INFO  OkHttpClient           - --> POST https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/v1/images/generations
+24-03-04.19:31:22.481 [main            ] INFO  OkHttpClient           - Content-Type: application/json; charset=UTF-8
+24-03-04.19:31:22.482 [main            ] INFO  OkHttpClient           - Content-Length: 100
+24-03-04.19:31:22.482 [main            ] INFO  OkHttpClient           - 
+24-03-04.19:31:22.484 [main            ] INFO  OkHttpClient           - {"model":"dall-e-3","prompt":"画一条小狗\r\n","n":1,"size":"1024x1024","response_format":"url"}
+24-03-04.19:31:22.484 [main            ] INFO  OkHttpClient           - --> END POST (100-byte body)
+24-03-04.19:31:22.775 [main            ] INFO  OkHttpClient           - <-- HTTP FAILED: javax.net.ssl.SSLException: Received fatal alert: internal_error
+24-03-04.19:31:22.825 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-03-04.19:31:22.861 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.

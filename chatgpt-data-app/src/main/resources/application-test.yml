@@ -8,7 +8,71 @@ app:
     api-version: v1
 
     # 跨域，开发阶段可以设置为 * 不限制
-    cross-origin: *
+    cross-origin: '*'
+
+    # 访问频次限制
+    limit-count: 10
+
+    # 白名单，不做频次拦截【微信的 openid】o0G6z6h-nHpZFUZVrcPJayOdN884
+    white-list: o0G6z6h-nHpZFUZVrcPJayOdN884
+
+# ChatGPT SDK Config
+chatgpt:
+  sdk:
+    config:
+      # 官网地址 https://api.openai.com/
+      api-host: https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/
+
+      # 官网申请 https://platform.openai.com/account/api-keys
+      api-key: sk-cxFtovolwcSmPElG5867C634010448AfA6Eb2b942d3a2aDc
+
+      # 自主申请 http://api.xfg.im:8080/authorize?username=xfg&password=123 - 有时效性，主要为了大家学习使用
+      # auth-token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs
+
+# ChatGLM SDK Config
+chatglm:
+  sdk:
+    config:
+      # 状态；true = 开启、false 关闭
+      enabled: true
+      # 官网地址
+      api-host: https://open.bigmodel.cn/
+      # 官网申请 https://open.bigmodel.cn/usercenter/apikeys - 自己可申请
+      api-secret-key: 2abbbc41b164c2f21740e82582ed44b5.YQcsJ0j4CMwuLVfL
+
+# 微信公众号配置信息
+# originalid：原始 ID
+# appid：个人 AppID
+# token：开通接口服务自定义设置
+wx:
+  config:
+    originalid: gh_8aed07a01479
+    appid: wxa175a0b560bd00a2
+    token: MYXH
+
+# 支付配置：如果你申请了支付渠道，则可以配置 enable = true，否则就配置 false 走流程测试
+wxpay:
+  config:
+    # 状态：true = 开启、false 关闭
+    enabled: true
+
+    # 申请支付主体的 appid
+    appid: wx4bd388e42758df34
+
+    # 商户号
+    mchid: 1649876094
+
+    # 回调地址
+    notify-url: http://myxh-chatqpt.nat300.top/api/v1/mall/pay_notify
+
+    # 商户 API 私钥路径
+    private-key-path: cert/apiclient_key.pem
+
+    # 商户证书序列号：openssl x509 -in apiclient_cert.pem -noout -serial
+    merchant-serial-number: 3D1FE714D0FE79E87139D4FF9782AD98A5103D30
+
+    # 商户 APIV3 密钥
+    api-v3-key: ERfdoklp309876uhjDDDD00poi91EDDl
 
 # 线程池配置
 thread:
@@ -21,28 +85,57 @@ thread:
         block-queue-size: 5000
         policy: CallerRunsPolicy
 
-# ChatGPT SDK Config
-chatgpt:
+# 数据库配置：SpringBoot 默认连接池为 HikariDataSource
+spring:
+  datasource:
+    # username: MYXH
+    username: root
+    password: 520.ILY!
+    # url: jdbc:mysql://127.0.0.1:3306/openai?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&useSSL=true
+    url: jdbc:mysql://127.0.0.1:13306/openai?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&useSSL=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  hikari:
+    pool-name: Retail_HikariCP
+
+    # 最小空闲连接数量
+    minimum-idle: 15
+
+    # 空闲连接存活最大时间，默认 600000（10 分钟）
+    idle-timeout: 180000
+
+    # 连接池最大连接数，默认是 10
+    maximum-pool-size: 25
+
+    # 此属性控制从池返回的连接的默认自动提交行为，默认值：true
+    auto-commit: true
+
+    # 此属性控制池中连接的最长生命周期，值 0 表示无限生命周期，默认 1800000 即 30 分钟
+    max-lifetime: 1800000
+
+    # 数据库连接超时时间，默认 30 秒，即 30000
+    connection-timeout: 30000
+    connection-test-query: SELECT 1
+  type: com.zaxxer.hikari.HikariDataSource
+
+mybatis:
+  mapper-locations: classpath:/mybatis/mapper/*.xml
+  config-location: classpath:/mybatis/config/mybatis-config.xml
+
+# Redis
+redis:
   sdk:
     config:
-      # 官网地址 https://api.openai.com/
-      api-host: https://pro-share-api.zcyai.com/
-
-      # 官网申请 https://platform.openai.com/account/api-keys
-      api-key: sk-sk-b0A0eSKTNxgBqrHv7aAa0808EdB849C89499D928648bD416
-
-      # 自主申请 http://api.xfg.im:8080/authorize?username=xfg&password=123
-      # auth-token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs
-
-# 微信公众号配置信息
-# originalid：原始 ID
-# appid：个人 AppID
-# token：开通接口服务自定义设置
-wx:
-  config:
-    originalid: gh_8aed07a01479
-    appid: wxa175a0b560bd00a2
-    token: MYXH
+      host: 127.0.0.1
+      port: 6379
+      pool-size: 10
+      min-idle-size: 5
+      idle-timeout: 30000
+      connect-timeout: 5000
+      retry-attempts: 3
+      retry-interval: 1000
+      ping-interval: 60000
+      keep-alive: true
 
 # 监控
 management:

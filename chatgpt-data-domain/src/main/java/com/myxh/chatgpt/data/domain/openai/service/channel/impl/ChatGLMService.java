@@ -34,6 +34,12 @@ public class ChatGLMService implements OpenAiGroupService
     @Override
     public void doMessageResponse(ChatProcessAggregate chatProcess, ResponseBodyEmitter emitter) throws Exception
     {
+        if (null == chatGlMOpenAiSession) {
+            emitter.send("ChatGLM 通道，模型调用未开启，可以选择其他模型对话！");
+
+            return;
+        }
+
         // 1. 请求消息
         List<ChatCompletionRequest.Prompt> prompts = chatProcess.getMessages().stream()
                 .map(entity -> ChatCompletionRequest.Prompt.builder()

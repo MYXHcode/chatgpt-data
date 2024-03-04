@@ -1,0 +1,9 @@
+24-02-24.14:52:05.453 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 1.8.0_391 on MYXH-PC with PID 29948 (started by MYXH in D:\CodeProjects\Java\ChatGPT\chatgpt-data\chatgpt-data-app)
+24-02-24.14:52:05.455 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+24-02-24.14:52:16.793 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 12.679 seconds (JVM running for 16.197)
+24-02-24.14:52:17.448 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-02-24.14:52:18.167 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-02-24.14:52:18.361 [main            ] INFO  AbstractOrderService   - 创建订单-完成，生成支付单。openid: o0G6z6h-nHpZFUZVrcPJayOdN884 orderId: 759913647201 payUrl: 因你未配置支付渠道，所以暂时不能生成有效的支付 URL。请配置支付渠道后，在 application-dev.yml 中配置支付渠道信息
+24-02-24.14:52:18.361 [main            ] INFO  OrderServiceTest       - 请求参数：ShopCartEntity{openid='o0G6z6h-nHpZFUZVrcPJayOdN884', productId=1001} 测试结果: PayOrderEntity{openid='o0G6z6h-nHpZFUZVrcPJayOdN884', orderId='759913647201', payUrl='因你未配置支付渠道，所以暂时不能生成有效的支付 URL。请配置支付渠道后，在 application-dev.yml 中配置支付渠道信息', payStatus=0: 等待支付}
+24-02-24.14:52:18.395 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-02-24.14:52:18.424 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.

@@ -16,50 +16,15 @@ app:
     # 白名单，不做频次拦截【微信的 openid】o0G6z6h-nHpZFUZVrcPJayOdN884
     white-list: o0G6z6h-nHpZFUZVrcPJayOdN884
 
-# 支付配置：如果你申请了支付渠道，则可以配置 enable = true，否则就配置 false 走流程测试
-wxpay:
-  config:
-    # 状态：true = 开启、false 关闭
-    enabled: false
-
-    # 申请支付主体的 appid
-    appid:
-
-    # 商户号
-    mchid:
-
-    # 回调地址
-    notify-url: http://myxh-chatqpt.nat300.top/api/v1/mall/pay_notify
-
-    # 商户 API 私钥路径
-    private-key-path: cert/apiclient_key.pem
-
-    # 商户证书序列号：openssl x509 -in apiclient_cert.pem -noout -serial
-    merchant-serial-number:
-
-    # 商户 APIV3 密钥
-    api-v3-key:
-
-# 线程池配置
-thread:
-  pool:
-    executor:
-      config:
-        core-pool-size: 20
-        max-pool-size: 50
-        keep-alive-time: 5000
-        block-queue-size: 5000
-        policy: CallerRunsPolicy
-
 # ChatGPT SDK Config
 chatgpt:
   sdk:
     config:
       # 官网地址 https://api.openai.com/
-      api-host: https://pro-share-api.zcyai.com/
+      api-host: https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/
 
       # 官网申请 https://platform.openai.com/account/api-keys
-      api-key: sk-e8Dgomrqhd2OZvx1Ef9f1a1e17D348F0A0E11a374cEdB398
+      api-key: sk-cxFtovolwcSmPElG5867C634010448AfA6Eb2b942d3a2aDc
 
       # 自主申请 http://api.xfg.im:8080/authorize?username=xfg&password=123 - 有时效性，主要为了大家学习使用
       # auth-token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs
@@ -85,13 +50,51 @@ wx:
     appid: wxa175a0b560bd00a2
     token: MYXH
 
+# 支付配置：如果你申请了支付渠道，则可以配置 enable = true，否则就配置 false 走流程测试
+wxpay:
+  config:
+    # 状态：true = 开启、false 关闭
+    enabled: true
+
+    # 申请支付主体的 appid
+    appid: wx4bd388e42758df34
+
+    # 商户号
+    mchid: 1649876094
+
+    # 回调地址
+    notify-url: http://myxh-chatqpt.nat300.top/api/v1/mall/pay_notify
+
+    # 商户 API 私钥路径
+    private-key-path: cert/apiclient_key.pem
+
+    # 商户证书序列号：openssl x509 -in apiclient_cert.pem -noout -serial
+    merchant-serial-number: 3D1FE714D0FE79E87139D4FF9782AD98A5103D30
+
+    # 商户 APIV3 密钥
+    api-v3-key: ERfdoklp309876uhjDDDD00poi91EDDl
+
+# 线程池配置
+thread:
+  pool:
+    executor:
+      config:
+        core-pool-size: 20
+        max-pool-size: 50
+        keep-alive-time: 5000
+        block-queue-size: 5000
+        policy: CallerRunsPolicy
+
 # 数据库配置：SpringBoot 默认连接池为 HikariDataSource
 spring:
   datasource:
+    # username: MYXH
     username: root
     password: 520.ILY!
+    # url: jdbc:mysql://127.0.0.1:3306/openai?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&useSSL=true
     url: jdbc:mysql://127.0.0.1:13306/openai?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&useSSL=true
     driver-class-name: com.mysql.cj.jdbc.Driver
+
   hikari:
     pool-name: Retail_HikariCP
 
