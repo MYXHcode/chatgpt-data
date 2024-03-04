@@ -13,7 +13,7 @@ services:
       # 可配置无密码，注意配置 SPRING_DATASOURCE_PASSWORD=
       # MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
       MYSQL_ROOT_PASSWORD: 520.ILY!
-      MYSQL_USER: MYXH
+      MYSQL_USER: root
       MYSQL_PASSWORD: 520.ILY!
 
     networks:

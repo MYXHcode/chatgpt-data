@@ -88,7 +88,7 @@ wx:
 # 数据库配置：SpringBoot 默认连接池为 HikariDataSource
 spring:
   datasource:
-    username: MYXH
+    username: root
     password: 520.ILY!
     url: jdbc:mysql://127.0.0.1:13306/openai?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&useSSL=true
     driver-class-name: com.mysql.cj.jdbc.Driver
