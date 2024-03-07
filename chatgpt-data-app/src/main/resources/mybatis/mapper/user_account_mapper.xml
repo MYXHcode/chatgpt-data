@@ -12,6 +12,13 @@
         <result column="update_time" property="updateTime"/>
     </resultMap>
 
+    <insert id="insert" parameterType="com.myxh.chatgpt.data.infrastructure.po.UserAccountPO">
+        INSERT INTO user_account(openid, total_quota, surplus_quota, model_types, status,
+                                 create_time, update_time)
+        VALUES (#{openid}, #{totalQuota}, #{surplusQuota}, #{modelTypes}, #{status},
+                now(), now())
+    </insert>
+
     <select id="queryUserAccount" parameterType="java.lang.String" resultMap="userAccountMap">
         SELECT openid, total_quota, surplus_quota, model_types, status
         FROM user_account

@@ -1,6 +1,28 @@
 # 命令执行 docker-compose up -d
+# docker-compose -f environment-docker-compose.yml up -d
 version: '3.9'
 services:
+  # Nginx
+  # yum install -y httpd-tools
+  nginx:
+    image: nginx:1.25.3
+    container_name: nginx
+    restart: always
+
+    ports:
+      - '443:443'
+      - '80:80'
+
+    volumes:
+      - ./nginx/logs:/var/log/nginx
+      - ./nginx/html:/usr/share/nginx/html
+      - ./nginx/conf/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/conf/conf.d:/etc/nginx/conf.d
+      - ./nginx/ssl:/etc/nginx/ssl/
+
+    privileged: true
+
+  # MySQL
   mysql:
     image: mysql:8.0.21
     container_name: mysql
@@ -25,6 +47,9 @@ services:
     ports:
       - "13306:3306"
 
+    volumes_from:
+      - mysql-job-dbdata
+
     volumes:
       - ./sql:/docker-entrypoint-initdb.d
 
@@ -41,9 +66,6 @@ services:
           cpus: '1.00'
           memory: 512M
 
-    volumes_from:
-      - mysql-job-dbdata
-
   # 自动加载数据
   mysql-job-dbdata:
     image: alpine:3.18.2
@@ -52,11 +74,12 @@ services:
     volumes:
       - /var/lib/mysql
 
-  # phpmyadmin https://hub.docker.com/_/phpmyadmin
+  # phpMyAdmin https://hub.docker.com/_/phpmyadmin
   phpmyadmin:
     image: phpmyadmin:5.2.1
     container_name: phpmyadmin
     hostname: phpmyadmin
+    restart: always
 
     ports:
       - "8899:80"
@@ -74,32 +97,13 @@ services:
     networks:
       - my-network
 
-  # RedisAdmin https://github.com/joeferner/redis-commander
-  redis-admin:
-    image: spryker/redis-commander:0.8.0
-    container_name: redis-admin
-    hostname: redis-commander
-    restart: always
-
-    ports:
-      - "8081:8081"
-
-    environment:
-      - REDIS_HOSTS=local:redis:6379
-
-    networks:
-      - my-network
-
-    depends_on:
-      redis:
-        condition: service_healthy
-
   # Redis
   redis:
     image: redis:7.2.0
     container_name: redis
     restart: always
     hostname: redis
+    privileged: true
 
     ports:
       - "6379:6379"
@@ -117,6 +121,104 @@ services:
       interval: 10s
       timeout: 5s
       retries: 3
+
+  # RedisAdmin https://github.com/joeferner/redis-commander
+  redis-admin:
+    image: spryker/redis-commander:0.8.0
+    container_name: redis-admin
+    hostname: redis-commander
+    restart: always
+
+    ports:
+      - "8081:8081"
+
+    environment:
+      - REDIS_HOSTS=local:redis:6379
+      - HTTP_USER=MYXH
+      - HTTP_PASSWORD=520.ILY!
+
+    networks:
+      - my-network
+
+    depends_on:
+      redis:
+        condition: service_healthy
+
+  #  chatgpt-data-app
+  chatgpt-data-app:
+    image: myxh/chatgpt-data-app:1.3
+    container_name: chatgpt-data-app
+
+    ports:
+      - "8090:8090"
+
+    environment:
+      - TZ=PRC
+      - SERVER_PORT=8090
+      - APP_CONFIG_API_VERSION=v1
+      - APP_CONFIG_CROSS_ORIGIN=*
+      - APP_CONFIG_LIMIT_COUNT=10
+      - THREAD_POOL_EXECUTOR_CONFIG_CORE_POOL_SIZE=20
+      - THREAD_POOL_EXECUTOR_CONFIG_MAX_POOL_SIZE=50
+      - THREAD_POOL_EXECUTOR_CONFIG_KEEP_ALIVE_TIME=5000
+      - THREAD_POOL_EXECUTOR_CONFIG_BLOCK_QUEUE_SIZE=5000
+      - THREAD_POOL_EXECUTOR_CONFIG_POLICY=CallerRunsPolicy
+      - APP_CONFIG_WHITE_LIST=o0G6z6h-nHpZFUZVrcPJayOdN884
+      - WXPAY_CONFIG_ENABLED=false
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=520.ILY!
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/openai?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&useSSL=true
+      - CHATGPT_SDK_CONFIG_ENABLED=false
+      # - CHATGPT_SDK_CONFIG_API_HOST=https://api.openai.com/
+      # - CHATGPT_SDK_CONFIG_API_KEY=sk-e8Dgomrqhd2OZvx1Ef9f1a1e17D348F0A0E11a374cEdB398
+      - CHATGLM_SDK_CONFIG_ENABLED=true
+      - CHATGLM_SDK_CONFIG_API_HOST=https://open.bigmodel.cn/
+      - CHATGLM_SDK_CONFIG_API_KEY=2abbbc41b164c2f21740e82582ed44b5.YQcsJ0j4CMwuLVfL
+      - WX_CONFIG_ORIGINALID=gh_8aed07a01479
+      - WX_CONFIG_APPID=wxa175a0b560bd00a2
+      - WX_CONFIG_TOKEN=MYXH
+
+    volumes:
+      - ./log:/var/log/x-api-app
+
+    networks:
+      - my-network
+
+    depends_on:
+      redis:
+        condition: service_healthy
+
+      mysql:
+        condition: service_healthy
+
+    logging:
+      driver: "json-file"
+
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+    restart: always
+
+  # chatgpt-web-app
+  chatgpt-web-app:
+    # container_name: chatgpt-web-local
+    container_name: chatgpt-web-cloud
+
+    # image: myxh/chatgpt-web-local:1.3
+    image: myxh/chatgpt-web-cloud:1.3
+
+    ports:
+      - "3000:3000"
+
+    networks:
+      - my-network
+
+    environment:
+      # - NEXT_PUBLIC_API_HOST_URL=http://localhost:8090
+      - NEXT_PUBLIC_API_HOST_URL=http://43.143.161.125:8090
+
+    restart: always
 
 networks:
   my-network:

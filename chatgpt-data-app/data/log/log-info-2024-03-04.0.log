@@ -1,0 +1,21 @@
+24-03-04.19:30:51.288 [main            ] INFO  ChatServiceTest        - Starting ChatServiceTest using Java 1.8.0_391 on MYXH-PC with PID 13576 (started by MYXH in D:\CodeProjects\Java\ChatGPT\chatgpt-data\chatgpt-data-app)
+24-03-04.19:30:51.291 [main            ] INFO  ChatServiceTest        - The following 1 profile is active: "dev"
+24-03-04.19:30:55.091 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-03-04.19:30:55.105 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-03-04.19:30:55.609 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 448 ms. Found 0 Redis repository interfaces.
+24-03-04.19:31:01.980 [main            ] INFO  Version                - Redisson 3.23.4
+24-03-04.19:31:03.970 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-03-04.19:31:04.007 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-03-04.19:31:19.754 [main            ] INFO  EndpointLinksResolver  - Exposing 14 endpoint(s) beneath base path '/actuator'
+24-03-04.19:31:20.054 [main            ] INFO  ChatServiceTest        - Started ChatServiceTest in 30.281 seconds (JVM running for 34.148)
+24-03-04.19:31:21.246 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-03-04.19:31:21.820 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-03-04.19:31:22.481 [main            ] INFO  OkHttpClient           - --> POST https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/v1/images/generations
+24-03-04.19:31:22.481 [main            ] INFO  OkHttpClient           - Content-Type: application/json; charset=UTF-8
+24-03-04.19:31:22.482 [main            ] INFO  OkHttpClient           - Content-Length: 100
+24-03-04.19:31:22.482 [main            ] INFO  OkHttpClient           - 
+24-03-04.19:31:22.484 [main            ] INFO  OkHttpClient           - {"model":"dall-e-3","prompt":"画一条小狗\r\n","n":1,"size":"1024x1024","response_format":"url"}
+24-03-04.19:31:22.484 [main            ] INFO  OkHttpClient           - --> END POST (100-byte body)
+24-03-04.19:31:22.775 [main            ] INFO  OkHttpClient           - <-- HTTP FAILED: javax.net.ssl.SSLException: Received fatal alert: internal_error
+24-03-04.19:31:22.825 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-03-04.19:31:22.861 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.

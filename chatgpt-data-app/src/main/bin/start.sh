@@ -1,5 +1,5 @@
 CONTAINER_NAME=chatgpt-data-app
-IMAGE_NAME=myxh/chatgpt-data-app:1.0
+IMAGE_NAME=myxh/chatgpt-data-app:1.3
 PORT=8090
 
 echo "容器部署开始 ${CONTAINER_NAME}"

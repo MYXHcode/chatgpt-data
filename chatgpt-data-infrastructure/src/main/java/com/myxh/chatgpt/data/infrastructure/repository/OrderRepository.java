@@ -1,5 +1,6 @@
 package com.myxh.chatgpt.data.infrastructure.repository;
 
+import com.myxh.chatgpt.data.domain.openai.model.valobj.UserAccountStatusVO;
 import com.myxh.chatgpt.data.domain.order.model.aggregates.CreateOrderAggregate;
 import com.myxh.chatgpt.data.domain.order.model.entity.*;
 import com.myxh.chatgpt.data.domain.order.model.valobj.OrderStatusVO;
@@ -178,6 +179,8 @@ public class OrderRepository implements IOrderRepository
         }
         else
         {
+            userAccountPOReq.setStatus(UserAccountStatusVO.AVAILABLE.getCode());
+            userAccountPOReq.setModelTypes("gpt-3.5-turbo,gpt-3.5-turbo-16k,gpt-4,chatglm_lite,chatglm_std,chatglm_pro,chatglm_turbo");
             userAccountDao.insert(userAccountPOReq);
         }
     }

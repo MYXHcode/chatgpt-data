@@ -7,7 +7,7 @@
     <parent>
         <groupId>com.myxh.chatgpt</groupId>
         <artifactId>chatgpt-data</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.3</version>
     </parent>
 
     <artifactId>chatgpt-data-domain</artifactId>
@@ -83,7 +83,7 @@
         <dependency>
             <groupId>com.myxh.chatgpt</groupId>
             <artifactId>chatgpt-data-types</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.3</version>
         </dependency>
     </dependencies>
 

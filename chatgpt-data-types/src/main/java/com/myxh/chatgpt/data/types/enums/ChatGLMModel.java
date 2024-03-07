@@ -18,6 +18,7 @@ public enum ChatGLMModel
     CHATGLM_LITE_32K("chatglm_lite_32k"),
     CHATGLM_STD("chatglm_std"),
     CHATGLM_PRO("chatglm_pro"),
+    CHATGLM_TURBO("chatglm_turbo")
     ;
 
     private final String code;
@@ -34,6 +35,8 @@ public enum ChatGLMModel
                 return ChatGLMModel.CHATGLM_STD;
             case "chatglm_pro":
                 return ChatGLMModel.CHATGLM_PRO;
+            case "chatglm_turbo":
+                return ChatGLMModel.CHATGLM_TURBO;
             case "chatGLM_6b_SSE":
             default:
                 return ChatGLMModel.CHATGLM_6B_SSE;

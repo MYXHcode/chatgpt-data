@@ -1,0 +1,80 @@
+24-03-06.10:16:48.197 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chatGPTAIServiceControllerOld': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.myxh.chatgpt.session.OpenAiSession' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+24-03-06.10:16:48.676 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.myxh.chatgpt.session.OpenAiSession' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.myxh.chatgpt.session.OpenAiSession' in your configuration.
+
+24-03-06.10:19:24.804 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chatGPTAIServiceControllerOld': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.myxh.chatgpt.session.OpenAiSession' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+24-03-06.10:19:25.095 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.myxh.chatgpt.session.OpenAiSession' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.myxh.chatgpt.session.OpenAiSession' in your configuration.
+
+24-03-06.10:23:10.144 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chatGPTAIServiceControllerOld': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.myxh.chatgpt.session.OpenAiSession' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+24-03-06.10:23:10.313 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.myxh.chatgpt.session.OpenAiSession' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.myxh.chatgpt.session.OpenAiSession' in your configuration.
+
+24-03-06.10:26:16.071 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chatGPTAIServiceControllerOld': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.myxh.chatgpt.session.OpenAiSession' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+24-03-06.10:26:16.495 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.myxh.chatgpt.session.OpenAiSession' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.myxh.chatgpt.session.OpenAiSession' in your configuration.
+
+24-03-06.10:36:40.289 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chatGPTAIServiceControllerOld': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.myxh.chatgpt.session.OpenAiSession' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+24-03-06.10:36:40.444 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.myxh.chatgpt.session.OpenAiSession' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.myxh.chatgpt.session.OpenAiSession' in your configuration.
+

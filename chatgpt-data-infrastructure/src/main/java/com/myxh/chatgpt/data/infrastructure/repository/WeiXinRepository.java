@@ -70,7 +70,7 @@ public class WeiXinRepository implements IWeiXinRepository
 
             // 存储值【3 分钟有效期】
             redisService.setValue(Key + "_" + code, openId, 3 * 60 * 1000);
-            redisService.setValue(Key + "_" + openId, code);
+            redisService.setValue(Key + "_" + openId, code, 3 * 60 * 1000);
 
             return code;
         }

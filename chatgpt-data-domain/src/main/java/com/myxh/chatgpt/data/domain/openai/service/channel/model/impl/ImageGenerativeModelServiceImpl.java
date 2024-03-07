@@ -14,8 +14,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter;
 
+import javax.annotation.Resource;
 import java.io.IOException;
 import java.util.List;
+import java.util.concurrent.ThreadPoolExecutor;
 
 /**
  * @author MYXH
@@ -29,6 +31,9 @@ public class ImageGenerativeModelServiceImpl implements IGenerativeModelService
 {
     @Autowired(required = false)
     protected OpenAiSession chatGPTOpenAiSession;
+
+    @Resource
+    private ThreadPoolExecutor executor;
 
     @Override
     public void doMessageResponse(ChatProcessAggregate chatProcess, ResponseBodyEmitter emitter) throws IOException
@@ -62,16 +67,35 @@ public class ImageGenerativeModelServiceImpl implements IGenerativeModelService
                 .size(ImageEnum.Size.size_1024.getCode())
                 .build();
 
-        ImageResponse imageResponse = chatGPTOpenAiSession.genImages(request);
-        List<Item> items = imageResponse.getData();
+        emitter.send("您的😊图片正在生成中，请耐心等待... \r\n");
 
-        for (Item item : items)
-        {
-            String url = item.getUrl();
-            log.info("url:{}", url);
-            emitter.send("![](" + url + ")");
-        }
+        executor.execute(() -> {
+            ImageResponse imageResponse;
 
-        emitter.complete();
+            try
+            {
+                imageResponse = chatGPTOpenAiSession.genImages(request);
+                List<Item> items = imageResponse.getData();
+
+                for (Item item : items)
+                {
+                    String url = item.getUrl();
+                    emitter.send("![](" + url + ")");
+                }
+
+                emitter.complete();
+            }
+            catch (IOException e)
+            {
+                try
+                {
+                    emitter.send("您的😭图片生成失败了，请调整说明... \r\n");
+                }
+                catch (IOException ex)
+                {
+                    throw new RuntimeException(ex);
+                }
+            }
+        });
     }
 }

@@ -13,6 +13,7 @@ import com.myxh.chatgpt.data.types.model.Response;
 import com.wechat.pay.java.core.notification.NotificationParser;
 import com.wechat.pay.java.service.partnerpayments.nativepay.model.Transaction;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -24,6 +25,7 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -213,10 +215,20 @@ public class SaleController
                 String transactionId = transaction.getTransactionId();
                 Integer total = transaction.getAmount().getTotal();
                 String successTime = transaction.getSuccessTime();
+                Date payTime = null;
+                if (StringUtils.isBlank(successTime))
+                {
+                    payTime = new Date();
+                }
+                else
+                {
+                    payTime = dateFormat.parse(successTime);
+                }
+
                 log.info("支付成功 orderId:{} total:{} successTime: {}", orderId, total, successTime);
 
                 // 更新订单
-                boolean isSuccess = orderService.changeOrderPaySuccess(orderId, transactionId, new BigDecimal(total).divide(new BigDecimal(100), 2, RoundingMode.HALF_UP), dateFormat.parse(successTime));
+                boolean isSuccess = orderService.changeOrderPaySuccess(orderId, transactionId, new BigDecimal(total).divide(new BigDecimal(100), 2, RoundingMode.HALF_UP), payTime);
 
                 if (isSuccess)
                 {

@@ -53,7 +53,7 @@ public class ChatServiceTest
         ResponseBodyEmitter emitter = new ResponseBodyEmitter();
 
         ChatProcessAggregate chatProcessAggregate = new ChatProcessAggregate();
-        chatProcessAggregate.setOpenid("nHpZFUZVrcPJayOdN884");
+        chatProcessAggregate.setOpenid("o0G6z6h-nHpZFUZVrcPJayOdN884");
         chatProcessAggregate.setModel(ChatGPTModel.DALL_E_3.getCode());
         chatProcessAggregate.setMessages(Collections.singletonList(MessageEntity.builder().role(Constants.Role.USER.getCode()).content("画一条小狗").build()));
 

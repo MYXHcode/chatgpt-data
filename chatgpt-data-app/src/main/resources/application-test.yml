@@ -1,6 +1,23 @@
 server:
   port: 8090
 
+  # 1 核 2G 内存，线程数经验值 200；4 核 8G 内存【accept-count=1000、max-threads=800、max-connections=10000】，线程数经验值 800。线程池过大，cpu 调度会消耗大量时间
+  tomcat:
+    mbeanregistry:
+      enabled: true
+
+    max-connections: 100
+
+    threads:
+      # 设定处理客户请求的线程的最大数目，决定了服务器可以同时响应客户请求的数，默认 200
+      max: 100
+
+      # 初始化线程数，最小空闲线程数，默认是 10
+      min-spare: 50
+
+    # 等待队列长度
+    accept-count: 10
+
 # 应用配置
 app:
   config:
@@ -20,8 +37,11 @@ app:
 chatgpt:
   sdk:
     config:
+      # 状态：true = 开启、false 关闭
+      enabled: false
+
       # 官网地址 https://api.openai.com/
-      api-host: https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/
+      api-host: https://pro-share-api.zcyai.com/
 
       # 官网申请 https://platform.openai.com/account/api-keys
       api-key: sk-cxFtovolwcSmPElG5867C634010448AfA6Eb2b942d3a2aDc
@@ -33,10 +53,12 @@ chatgpt:
 chatglm:
   sdk:
     config:
-      # 状态；true = 开启、false 关闭
+      # 状态：true = 开启、false 关闭
       enabled: true
+
       # 官网地址
       api-host: https://open.bigmodel.cn/
+
       # 官网申请 https://open.bigmodel.cn/usercenter/apikeys - 自己可申请
       api-secret-key: 2abbbc41b164c2f21740e82582ed44b5.YQcsJ0j4CMwuLVfL
 
@@ -54,7 +76,7 @@ wx:
 wxpay:
   config:
     # 状态：true = 开启、false 关闭
-    enabled: true
+    enabled: false
 
     # 申请支付主体的 appid
     appid: wx4bd388e42758df34
@@ -127,6 +149,7 @@ redis:
   sdk:
     config:
       host: 127.0.0.1
+      password: 520.ILY!
       port: 6379
       pool-size: 10
       min-idle-size: 5

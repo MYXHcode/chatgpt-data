@@ -36,13 +36,13 @@ CREATE TABLE `openai_order`
     `product_id`          INT(4)         NOT NULL COMMENT '商品 ID',
     `product_name`        VARCHAR(32)    NOT NULL COMMENT '商品名称',
     `product_quota`       INT(8)         NOT NULL COMMENT '商品额度',
-    `product_model_types` VARCHAR(128)            DEFAULT NULL COMMENT '可用模型：gpt-3.5-turbo, gpt-3.5-turbo-16k, gpt-4, gpt-4-32k',
+    `product_model_types` VARCHAR(256) DEFAULT NULL COMMENT '可用模型：gpt-3.5-turbo,gpt-3.5-turbo-16k,chatGLM_6b_SSE,chatglm_lite,chatglm_lite_32k,chatglm_std,chatglm_pro,chatglm_turbo,dall-e-2,dall-e-3',
     `order_id`            VARCHAR(12)    NOT NULL COMMENT '订单编号',
     `order_time`          DATETIME       NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '下单时间',
     `order_status`        TINYINT(1)     NOT NULL COMMENT '订单状态：0-创建完成、1-等待发货、2-发货完成、3-系统关单',
     `total_amount`        DECIMAL(10, 2) NOT NULL COMMENT '订单金额',
     `pay_type`            TINYINT(1)     NOT NULL DEFAULT '0' COMMENT '支付方式：0-微信支付',
-    `pay_url`             VARCHAR(128)            DEFAULT NULL COMMENT '支付地址：创建支付后，获得的URL地址',
+    `pay_url`             VARCHAR(128) DEFAULT NULL COMMENT '支付地址：创建支付后，获得的 URL 地址',
     `pay_amount`          DECIMAL(10, 2)          DEFAULT NULL COMMENT '支付金额：支付成功后，以回调信息更新金额',
     `transaction_id`      varchar(32)             DEFAULT NULL COMMENT '交易单号：支付成功后，回调信息的交易单号',
     `pay_status`          TINYINT(1)              DEFAULT NULL COMMENT '支付状态：0-等待支付、1-支付完成、2-支付失败、3-放弃支付',
@@ -63,34 +63,33 @@ LOCK TABLES `openai_order` WRITE;
 INSERT INTO `openai_order` (`id`, `openid`, `product_id`, `product_name`, `product_quota`, `product_model_types`,
                             `order_id`, `order_time`, `order_status`, `total_amount`, `pay_type`, `pay_url`,
                             `pay_amount`, `transaction_id`, `pay_status`, `pay_time`, `create_time`, `update_time`)
-VALUES (1, 'o0G6z6h-nHpZFUZVrcPJayOdN884', 1001, '测试商品', 100, NULL, '118845061424', '2024-02-18 17:02:42', 3, 0.01,
+VALUES (1, 'o0G6z6h-nHpZFUZVrcPJayOdN884', 1001, 'OpenAi 测试商品(ChatGPT 3.5)', 100, 'gpt-3.5-turbo,gpt-3.5-turbo-16',
+        '118845061424', '2024-02-18 17:02:42', 3, 10,
         0,
         'weixin://wxpay/bizpayurl?pr=NFByxsizz', NULL, NULL, 3, NULL, '2024-02-18 17:02:41', '2024-02-18 19:03:40'),
-       (2, 'o0G6z6h-nHpZFUZVrcPJayOdN884', 1001, '测试商品', 100, NULL, '730807176035', '2024-02-18 20:35:46', 2, 0.01,
+
+
+       (2, 'o0G6z6h-nHpZFUZVrcPJayOdN884', 1002, 'OpenAi 测试商品(ChatGLM 3.5)', 100,
+        'chatGLM_6b_SSE,chatglm_lite,chatglm_lite_32k,chatglm_std,chatglm_turbo', '730807176035', '2024-02-18 20:35:46',
+        2, 9.99,
         0,
-        'weixin://wxpay/bizpayurl?pr=0ckFdM2zz', 0.01, '4200001993202310054200967494', 1, '2024-02-18 20:09:10',
+        'weixin://wxpay/bizpayurl?pr=0ckFdM2zz', 9.99, '4200001993202310054200967494', 1, '2024-02-18 20:09:10',
         '2024-02-18 20:08:46', '2024-02-18 20:42:16'),
-       (3, 'o0G6z6h-nHpZFUZVrcPJayOdN884', 1002, 'OpenAi 测试商品(3.5)', 100, NULL, '175715149006',
-        '2024-02-18 18:41:17', 2, 0.01, 0,
-        'weixin://wxpay/bizpayurl?pr=EMrrTSYzz', 0.01, '4200002003202310079361212463', 1, '2024-02-18 18:52:06',
+
+       (3, 'o0G6z6h-nHpZFUZVrcPJayOdN884', 1003, 'OpenAi 测试商品(ChatGLM 3.5&4.0)', 200,
+        'chatGLM_6b_SSE,chatglm_lite,chatglm_lite_32k,chatglm_std,chatglm_pro,chatglm_turbo', '175715149006',
+        '2024-02-18 18:41:17', 2, 19.99, 0,
+        'weixin://wxpay/bizpayurl?pr=EMrrTSYzz', 19.99, '4200002003202310079361212463', 1, '2024-02-18 18:52:06',
         '2024-02-18 18:51:17', '2024-02-18 18:56:00'),
-       (4, 'o0G6z6h-nHpZFUZVrcPJayOdN884', 1002, 'OpenAi 测试商品(3.5)', 100, NULL, '535514648535',
-        '2024-02-18 18:57:27', 3, 0.01, 0,
+
+       (4, 'o0G6z6h-nHpZFUZVrcPJayOdN884', 1004, 'OpenAi 测试商品(DALL-E-2,DALL-E-3)', 200, 'dall-e-2,dall-e-3',
+        '535514648535',
+        '2024-02-18 18:57:27', 3, 49.99, 0,
         'weixin://wxpay/bizpayurl?pr=YlCE6Xszz', NULL, NULL, 3, NULL, '2024-02-18 18:57:27', '2024-02-18 19:03:38'),
-       (5, 'o0G6z6h-nHpZFUZVrcPJayOdN884', 1003, 'OpenAi 测试商品(3.5&4.0)', 200, NULL, '845537169226',
-        '2024-02-18 18:57:35', 3, 0.02, 0,
-        'weixin://wxpay/bizpayurl?pr=A0SVuiXzz', NULL, NULL, 0, NULL, '2024-02-18 18:57:34', '2024-02-18 19:03:37'),
-       (6, 'o0G6z6h-nHpZFUZVrcPJayOdN884', 1004, 'OpenAi 测试商品(3.5&4.0)', 200, NULL, '624271053503',
-        '2024-02-18 18:57:37', 3, 0.02, 0,
-        'weixin://wxpay/bizpayurl?pr=hHSv2M4zz', NULL, NULL, 0, NULL, '2024-02-18 18:57:36', '2024-02-18 19:03:36'),
-       (7, 'o0G6z6h-nHpZFUZVrcPJayOdN884', 1002, 'OpenAi 测试商品(3.5)', 100, NULL, '959500557346',
-        '2024-02-18 20:19:30', 3, 0.01, 0,
-        '因未配置支付渠道，所以暂时不能生成支付 URL', NULL, NULL, 0, NULL, '2024-02-18 20:19:29', '2024-02-18 09:12:19'),
-       (8, 'o0G6z6h-nHpZFUZVrcPJayOdN884', 1002, 'OpenAi 测试商品(3.5)', 100, NULL, '309388058761',
-        '2024-02-18 09:16:36', 2, 0.01, 0,
-        'weixin://wxpay/bizpayurl?pr=VmUfvQ0zz', 0.01, '4200001978202310081985000180', 1, '2024-02-18 09:24:07',
-        '2024-02-18 09:16:35', '2024-02-18 09:25:30'),
-       (9, 'o0G6z6h-nHpZFUZVrcPJayOdN884', 1001, '测试商品', 100, NULL, 759913647201, '2024-02-24 06:52:18', 0, 0.01, 0,
+
+       (5, 'o0G6z6h-nHpZFUZVrcPJayOdN884', 1003, 'OpenAi 测试商品(ChatGLM 3.5&4.0)', 200,
+        'chatGLM_6b_SSE,chatglm_lite,chatglm_lite_32k,chatglm_std,chatglm_pro,chatglm_turbo', 759913647201,
+        '2024-02-24 06:52:18', 0, 19.99, 0,
         '因你未配置支付渠道，所以暂时不能生成有效的支付 URL。请配置支付渠道后，在 application-dev.yml 中配置支付渠道信息',
         NULL, NULL, 0, NULL, '2024-02-24 14:52:18', '2024-02-24 14:52:18');
 
@@ -110,7 +109,7 @@ CREATE TABLE `openai_product`
     `product_id`          INT(4)         NOT NULL COMMENT '商品 ID',
     `product_name`        VARCHAR(32)    NOT NULL COMMENT '商品名称',
     `product_desc`        VARCHAR(128)   NOT NULL COMMENT '商品描述',
-    `product_model_types` VARCHAR(128)            DEFAULT NULL COMMENT '可用模型：gpt-3.5-turbo, gpt-3.5-turbo-16k, gpt-4, gpt-4-32k',
+    `product_model_types` VARCHAR(256) DEFAULT NULL COMMENT '可用模型：gpt-3.5-turbo,gpt-3.5-turbo-16k,chatGLM_6b_SSE,chatglm_lite,chatglm_lite_32k,chatglm_std,chatglm_pro,chatglm_turbo,dall-e-2,dall-e-3',
     `quota`               INT(8)         NOT NULL COMMENT '额度次数',
     `price`               DECIMAL(10, 2) NOT NULL COMMENT '商品价格',
     `sort`                INT(4)         NOT NULL COMMENT '商品排序',
@@ -128,14 +127,16 @@ LOCK TABLES `openai_product` WRITE;
 
 INSERT INTO `openai_product` (`id`, `product_id`, `product_name`, `product_desc`, `product_model_types`, `quota`,
                               `price`, `sort`, `is_enabled`, `create_time`, `update_time`)
-VALUES (1, 1001, '测试商品', '测试商品请勿下单', 'gpt-3.5-turbo,gpt-3.5-turbo-16k', 100, 0.01, 1, 1,
+VALUES (1, 1001, 'OpenAi 测试商品(ChatGPT 3.5)', '测试商品请勿下单', 'gpt-3.5-turbo,gpt-3.5-turbo-16', 100, 10, 1, 0,
         '2024-02-18 18:45:36', '2024-02-18 18:45:36'),
-       (2, 1002, 'OpenAi 测试商品(3.5)', '测试商品请勿下单', 'gpt-3.5-turbo,gpt-3.5-turbo-16k', 100, 0.01, 2, 1,
+       (2, 1002, 'OpenAi 测试商品(ChatGLM 3.5)', '测试商品请勿下单',
+        'chatGLM_6b_SSE,chatglm_lite,chatglm_lite_32k,chatglm_std,chatglm_turbo', 100, 9.99, 2, 1,
         '2024-02-18 18:45:42', '2024-02-18 18:45:42'),
-       (3, 1003, 'OpenAi 测试商品(3.5&4.0)', '测试商品请勿下单', 'gpt-3.5-turbo,gpt-3.5-turbo-16k,gpt-4', 100, 10.00, 3,
+       (3, 1003, 'OpenAi 测试商品(ChatGLM 3.5&4.0)', '测试商品请勿下单',
+        'chatGLM_6b_SSE,chatglm_lite,chatglm_lite_32k,chatglm_std,chatglm_pro,chatglm_turbo', 200, 19.99, 3,
         1, '2024-02-18 18:46:41', '2024-02-18 18:46:41'),
-       (4, 1004, 'OpenAi 测试商品(3.5&4.0)', '测试商品请勿下单', 'gpt-3.5-turbo,gpt-3.5-turbo-16k,gpt-4', 200, 19.99, 4,
-        1, '2024-02-18 09:28:47', '2024-02-18 09:28:47');
+       (4, 1004, 'OpenAi 测试商品(DALL-E-2,DALL-E-3)', '测试商品请勿下单', 'dall-e-2,dall-e-3', 200, 49.99, 0,
+        0, '2024-02-18 09:28:47', '2024-02-18 09:28:47');
 
 /*!40000 ALTER TABLE `openai_product`
     ENABLE KEYS */;
@@ -152,7 +153,7 @@ CREATE TABLE `user_account`
     `openid`        VARCHAR(64)  NOT NULL COMMENT '用户 ID：这里用的是微信 ID 作为唯一 ID，你也可以给用户创建唯一 ID，之后绑定微信 ID',
     `total_quota`   INT(11)      NOT NULL DEFAULT '0' COMMENT '总量额度：分配的总使用次数',
     `surplus_quota` INT(11)      NOT NULL DEFAULT '0' COMMENT '剩余额度：剩余的可使用次数',
-    `model_types`   VARCHAR(128) NOT NULL COMMENT '可用模型：gpt-3.5-turbo, gpt-3.5-turbo-16k, gpt-4, gpt-4-32k',
+    `model_types` VARCHAR(128) NOT NULL COMMENT '可用模型：gpt-3.5-turbo,gpt-3.5-turbo-16k,chatGLM_6b_SSE,chatglm_lite,chatglm_lite_32k,chatglm_std,chatglm_pro,chatglm_turbo,dall-e-2,dall-e-3',
     `status`        TINYINT(1)   NOT NULL DEFAULT '0' COMMENT '账户状态：0-可用、1-冻结',
     `create_time`   DATETIME     NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
     `update_time`   DATETIME     NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
@@ -168,8 +169,8 @@ LOCK TABLES `user_account` WRITE;
 
 INSERT INTO `user_account` (`id`, `openid`, `total_quota`, `surplus_quota`, `model_types`, `status`, `create_time`,
                             `update_time`)
-VALUES (1, 'o0G6z6h-nHpZFUZVrcPJayOdN884', 100, 90,
-        'gpt-3.5-turbo,gpt-3.5-turbo-16k,gpt-4,gpt-4-32k,chatGLM_6b_SSE,chatglm_lite,chatglm_lite_32k,chatglm_std,chatglm_pro,dall-e-2,dall-e-3',
+VALUES (1, 'o0G6z6h-nHpZFUZVrcPJayOdN884', 200, 200,
+        'gpt-3.5-turbo,gpt-3.5-turbo-16k,chatGLM_6b_SSE,chatglm_lite,chatglm_lite_32k,chatglm_std,chatglm_pro,chatglm_turbo,dall-e-2,dall-e-3',
         0, '2024-2-12 18:55:00',
         '2024-2-12 19:00:00');
 

@@ -1,0 +1,190 @@
+24-03-06.10:16:20.427 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on MYXH-PC with PID 34124 (D:\CodeProjects\Java\ChatGPT\chatgpt-data\chatgpt-data-app\target\classes started by MYXH in D:\CodeProjects\Java\ChatGPT\chatgpt-data)
+24-03-06.10:16:20.444 [main            ] INFO  Application            - The following 1 profile is active: "prod"
+24-03-06.10:16:26.327 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-03-06.10:16:26.334 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-03-06.10:16:26.721 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 333 ms. Found 0 Redis repository interfaces.
+24-03-06.10:16:30.172 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-03-06.10:16:30.175 [main            ] INFO  AprLifecycleListener   - Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+24-03-06.10:16:30.175 [main            ] INFO  AprLifecycleListener   - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+24-03-06.10:16:30.175 [main            ] INFO  AprLifecycleListener   - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+24-03-06.10:16:30.227 [main            ] INFO  AprLifecycleListener   - OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+24-03-06.10:16:30.269 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-03-06.10:16:30.270 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-03-06.10:16:30.271 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-03-06.10:16:31.904 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-03-06.10:16:31.904 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 11104 ms
+24-03-06.10:16:40.828 [main            ] INFO  Version                - Redisson 3.23.4
+24-03-06.10:16:43.963 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-03-06.10:16:44.049 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-03-06.10:16:48.197 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chatGPTAIServiceControllerOld': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.myxh.chatgpt.session.OpenAiSession' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+24-03-06.10:16:48.375 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+24-03-06.10:16:48.534 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+24-03-06.10:16:48.676 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.myxh.chatgpt.session.OpenAiSession' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.myxh.chatgpt.session.OpenAiSession' in your configuration.
+
+24-03-06.10:19:07.435 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on MYXH-PC with PID 14696 (D:\CodeProjects\Java\ChatGPT\chatgpt-data\chatgpt-data-app\target\classes started by MYXH in D:\CodeProjects\Java\ChatGPT\chatgpt-data)
+24-03-06.10:19:07.445 [main            ] INFO  Application            - The following 1 profile is active: "prod"
+24-03-06.10:19:11.487 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-03-06.10:19:11.494 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-03-06.10:19:11.826 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 255 ms. Found 0 Redis repository interfaces.
+24-03-06.10:19:15.152 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-03-06.10:19:15.154 [main            ] INFO  AprLifecycleListener   - Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+24-03-06.10:19:15.155 [main            ] INFO  AprLifecycleListener   - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+24-03-06.10:19:15.155 [main            ] INFO  AprLifecycleListener   - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+24-03-06.10:19:15.188 [main            ] INFO  AprLifecycleListener   - OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+24-03-06.10:19:15.225 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-03-06.10:19:15.226 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-03-06.10:19:15.228 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-03-06.10:19:16.458 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-03-06.10:19:16.459 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 8751 ms
+24-03-06.10:19:18.173 [main            ] INFO  Version                - Redisson 3.23.4
+24-03-06.10:19:21.092 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-03-06.10:19:21.150 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-03-06.10:19:24.804 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chatGPTAIServiceControllerOld': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.myxh.chatgpt.session.OpenAiSession' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+24-03-06.10:19:24.927 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+24-03-06.10:19:24.980 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+24-03-06.10:19:25.095 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.myxh.chatgpt.session.OpenAiSession' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.myxh.chatgpt.session.OpenAiSession' in your configuration.
+
+24-03-06.10:22:59.312 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on MYXH-PC with PID 19564 (D:\CodeProjects\Java\ChatGPT\chatgpt-data\chatgpt-data-app\target\classes started by MYXH in D:\CodeProjects\Java\ChatGPT\chatgpt-data)
+24-03-06.10:22:59.319 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-03-06.10:23:02.024 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-03-06.10:23:02.030 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-03-06.10:23:02.202 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 136 ms. Found 0 Redis repository interfaces.
+24-03-06.10:23:04.088 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-03-06.10:23:04.090 [main            ] INFO  AprLifecycleListener   - Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+24-03-06.10:23:04.091 [main            ] INFO  AprLifecycleListener   - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+24-03-06.10:23:04.091 [main            ] INFO  AprLifecycleListener   - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+24-03-06.10:23:04.107 [main            ] INFO  AprLifecycleListener   - OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+24-03-06.10:23:04.135 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-03-06.10:23:04.136 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-03-06.10:23:04.136 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-03-06.10:23:04.777 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-03-06.10:23:04.777 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5295 ms
+24-03-06.10:23:05.643 [main            ] INFO  Version                - Redisson 3.23.4
+24-03-06.10:23:07.434 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-03-06.10:23:07.488 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-03-06.10:23:10.144 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chatGPTAIServiceControllerOld': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.myxh.chatgpt.session.OpenAiSession' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+24-03-06.10:23:10.214 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+24-03-06.10:23:10.250 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+24-03-06.10:23:10.313 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.myxh.chatgpt.session.OpenAiSession' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.myxh.chatgpt.session.OpenAiSession' in your configuration.
+
+24-03-06.10:25:28.216 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on MYXH-PC with PID 36860 (D:\CodeProjects\Java\ChatGPT\chatgpt-data\chatgpt-data-app\target\classes started by MYXH in D:\CodeProjects\Java\ChatGPT\chatgpt-data)
+24-03-06.10:25:28.231 [main            ] INFO  Application            - The following 1 profile is active: "prod"
+24-03-06.10:25:39.300 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-03-06.10:25:39.313 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-03-06.10:25:39.903 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 485 ms. Found 0 Redis repository interfaces.
+24-03-06.10:25:51.919 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-03-06.10:25:51.923 [main            ] INFO  AprLifecycleListener   - Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+24-03-06.10:25:51.923 [main            ] INFO  AprLifecycleListener   - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+24-03-06.10:25:51.923 [main            ] INFO  AprLifecycleListener   - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+24-03-06.10:25:52.185 [main            ] INFO  AprLifecycleListener   - OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+24-03-06.10:25:52.529 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-03-06.10:25:52.541 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-03-06.10:25:52.542 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-03-06.10:25:59.122 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-03-06.10:25:59.123 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 30388 ms
+24-03-06.10:26:02.721 [main            ] INFO  Version                - Redisson 3.23.4
+24-03-06.10:26:07.269 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-03-06.10:26:07.577 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-03-06.10:26:16.071 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chatGPTAIServiceControllerOld': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.myxh.chatgpt.session.OpenAiSession' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+24-03-06.10:26:16.245 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+24-03-06.10:26:16.343 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+24-03-06.10:26:16.495 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.myxh.chatgpt.session.OpenAiSession' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.myxh.chatgpt.session.OpenAiSession' in your configuration.
+
+24-03-06.10:35:58.444 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on MYXH-PC with PID 14632 (D:\CodeProjects\Java\ChatGPT\chatgpt-data\chatgpt-data-app\target\classes started by MYXH in D:\CodeProjects\Java\ChatGPT\chatgpt-data)
+24-03-06.10:35:58.450 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-03-06.10:36:04.775 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-03-06.10:36:04.783 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-03-06.10:36:05.495 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 593 ms. Found 0 Redis repository interfaces.
+24-03-06.10:36:20.933 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-03-06.10:36:20.936 [main            ] INFO  AprLifecycleListener   - Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+24-03-06.10:36:20.936 [main            ] INFO  AprLifecycleListener   - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+24-03-06.10:36:20.936 [main            ] INFO  AprLifecycleListener   - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+24-03-06.10:36:21.091 [main            ] INFO  AprLifecycleListener   - OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+24-03-06.10:36:21.297 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-03-06.10:36:21.330 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-03-06.10:36:21.331 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-03-06.10:36:24.151 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-03-06.10:36:24.151 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 25551 ms
+24-03-06.10:36:27.880 [main            ] INFO  Version                - Redisson 3.23.4
+24-03-06.10:36:36.215 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-03-06.10:36:36.432 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-03-06.10:36:40.289 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chatGPTAIServiceControllerOld': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.myxh.chatgpt.session.OpenAiSession' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+24-03-06.10:36:40.342 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+24-03-06.10:36:40.374 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+24-03-06.10:36:40.444 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.myxh.chatgpt.session.OpenAiSession' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.myxh.chatgpt.session.OpenAiSession' in your configuration.
+

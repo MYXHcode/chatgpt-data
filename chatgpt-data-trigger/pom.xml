@@ -7,7 +7,7 @@
     <parent>
         <groupId>com.myxh.chatgpt</groupId>
         <artifactId>chatgpt-data</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.3</version>
     </parent>
 
     <artifactId>chatgpt-data-trigger</artifactId>
@@ -49,6 +49,11 @@
             <artifactId>redisson-spring-boot-starter</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.netflix.hystrix</groupId>
+            <artifactId>hystrix-javanica</artifactId>
+        </dependency>
+
         <!-- chatgpt-sdk-java https://github.com/MYXHcode/chatgpt-sdk-java-->
         <dependency>
             <groupId>com.myxh.chatgpt</groupId>
@@ -64,13 +69,13 @@
         <dependency>
             <groupId>com.myxh.chatgpt</groupId>
             <artifactId>chatgpt-data-types</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.3</version>
         </dependency>
 
         <dependency>
             <groupId>com.myxh.chatgpt</groupId>
             <artifactId>chatgpt-data-domain</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.3</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>

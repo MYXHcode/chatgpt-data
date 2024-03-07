@@ -1,21 +1,63 @@
-24-03-04.19:30:51.288 [main            ] INFO  ChatServiceTest        - Starting ChatServiceTest using Java 1.8.0_391 on MYXH-PC with PID 13576 (started by MYXH in D:\CodeProjects\Java\ChatGPT\chatgpt-data\chatgpt-data-app)
-24-03-04.19:30:51.291 [main            ] INFO  ChatServiceTest        - The following 1 profile is active: "dev"
-24-03-04.19:30:55.091 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-03-04.19:30:55.105 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-03-04.19:30:55.609 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 448 ms. Found 0 Redis repository interfaces.
-24-03-04.19:31:01.980 [main            ] INFO  Version                - Redisson 3.23.4
-24-03-04.19:31:03.970 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
-24-03-04.19:31:04.007 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
-24-03-04.19:31:19.754 [main            ] INFO  EndpointLinksResolver  - Exposing 14 endpoint(s) beneath base path '/actuator'
-24-03-04.19:31:20.054 [main            ] INFO  ChatServiceTest        - Started ChatServiceTest in 30.281 seconds (JVM running for 34.148)
-24-03-04.19:31:21.246 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-03-04.19:31:21.820 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-03-04.19:31:22.481 [main            ] INFO  OkHttpClient           - --> POST https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/v1/images/generations
-24-03-04.19:31:22.481 [main            ] INFO  OkHttpClient           - Content-Type: application/json; charset=UTF-8
-24-03-04.19:31:22.482 [main            ] INFO  OkHttpClient           - Content-Length: 100
-24-03-04.19:31:22.482 [main            ] INFO  OkHttpClient           - 
-24-03-04.19:31:22.484 [main            ] INFO  OkHttpClient           - {"model":"dall-e-3","prompt":"画一条小狗\r\n","n":1,"size":"1024x1024","response_format":"url"}
-24-03-04.19:31:22.484 [main            ] INFO  OkHttpClient           - --> END POST (100-byte body)
-24-03-04.19:31:22.775 [main            ] INFO  OkHttpClient           - <-- HTTP FAILED: javax.net.ssl.SSLException: Received fatal alert: internal_error
-24-03-04.19:31:22.825 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-03-04.19:31:22.861 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-03-07.14:59:26.075 [main            ] INFO  AuthTest               - Starting AuthTest using Java 1.8.0_391 on MYXH-PC with PID 34564 (started by MYXH in D:\CodeProjects\Java\ChatGPT\chatgpt-data\chatgpt-data-app)
+24-03-07.14:59:26.080 [main            ] INFO  AuthTest               - The following 1 profile is active: "dev"
+24-03-07.14:59:30.600 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-03-07.14:59:30.615 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-03-07.14:59:31.211 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 536 ms. Found 0 Redis repository interfaces.
+24-03-07.14:59:45.101 [main            ] INFO  Version                - Redisson 3.23.4
+24-03-07.14:59:47.480 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+24-03-07.14:59:47.820 [redisson-netty-2-20] INFO  MasterConnectionPool   - 24 connections initialized for localhost/127.0.0.1:6379
+24-03-07.14:59:52.314 [main            ] INFO  EndpointLinksResolver  - Exposing 14 endpoint(s) beneath base path '/actuator'
+24-03-07.14:59:52.865 [main            ] INFO  AuthTest               - Started AuthTest in 28.606 seconds (JVM running for 34.502)
+24-03-07.14:59:53.301 [main            ] ERROR TestContextManager     - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7b02881e] to prepare test instance [com.myxh.chatgpt.data.test.domain.auth.AuthTest@6906be0f]
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.myxh.chatgpt.data.test.domain.auth.AuthTest': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.myxh.chatgpt.data.domain.auth.service.IAuthService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:417)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:119)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.myxh.chatgpt.data.domain.auth.service.IAuthService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1801)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:544)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 29 common frames omitted
+24-03-07.15:01:51.246 [main            ] INFO  ApplicationTests       - Starting ApplicationTests using Java 1.8.0_391 on MYXH-PC with PID 24228 (started by MYXH in D:\CodeProjects\Java\ChatGPT\chatgpt-data\chatgpt-data-app)
+24-03-07.15:01:51.249 [main            ] INFO  ApplicationTests       - The following 1 profile is active: "dev"
+24-03-07.15:01:53.996 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-03-07.15:01:54.006 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-03-07.15:01:54.432 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 388 ms. Found 0 Redis repository interfaces.
+24-03-07.15:02:04.602 [main            ] INFO  Version                - Redisson 3.23.4
+24-03-07.15:02:06.319 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+24-03-07.15:02:06.492 [redisson-netty-2-20] INFO  MasterConnectionPool   - 24 connections initialized for localhost/127.0.0.1:6379
+24-03-07.15:02:09.549 [main            ] INFO  EndpointLinksResolver  - Exposing 14 endpoint(s) beneath base path '/actuator'
+24-03-07.15:02:09.970 [main            ] INFO  ApplicationTests       - Started ApplicationTests in 20.211 seconds (JVM running for 24.725)
