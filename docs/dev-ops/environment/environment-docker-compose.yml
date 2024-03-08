@@ -106,7 +106,7 @@ services:
     privileged: true
 
     ports:
-      - "6379:6379"
+      - "16379:6379"
 
     volumes:
       - ./redis/redis.conf:/usr/local/etc/redis/redis.conf
@@ -177,6 +177,8 @@ services:
       - WX_CONFIG_ORIGINALID=gh_8aed07a01479
       - WX_CONFIG_APPID=wxa175a0b560bd00a2
       - WX_CONFIG_TOKEN=MYXH
+      - SPRING_REDIS_HOST=redis
+      - SPRING_REDIS_PORT=6379
 
     volumes:
       - ./log:/var/log/x-api-app
