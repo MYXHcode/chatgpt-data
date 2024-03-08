@@ -1,0 +1,411 @@
+24-03-07.13:25:49.572 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on MYXH-PC with PID 4684 (D:\CodeProjects\Java\ChatGPT\chatgpt-data\chatgpt-data-app\target\classes started by MYXH in D:\CodeProjects\Java\ChatGPT\chatgpt-data)
+24-03-07.13:25:49.579 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-03-07.13:25:52.260 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-03-07.13:25:52.267 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-03-07.13:25:52.458 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 157 ms. Found 0 Redis repository interfaces.
+24-03-07.13:25:54.367 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-03-07.13:25:54.368 [main            ] INFO  AprLifecycleListener   - Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+24-03-07.13:25:54.369 [main            ] INFO  AprLifecycleListener   - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+24-03-07.13:25:54.369 [main            ] INFO  AprLifecycleListener   - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+24-03-07.13:25:54.398 [main            ] INFO  AprLifecycleListener   - OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+24-03-07.13:25:54.582 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-03-07.13:25:54.607 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-03-07.13:25:54.608 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-03-07.13:25:55.176 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-03-07.13:25:55.177 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5470 ms
+24-03-07.13:25:56.129 [main            ] INFO  Version                - Redisson 3.23.4
+24-03-07.13:26:00.783 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authRepository': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonClient' defined in class path resource [com/myxh/chatgpt/data/config/RedisClientConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:6379
+24-03-07.13:26:00.789 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+24-03-07.13:26:00.819 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+24-03-07.13:26:00.879 [main            ] ERROR SpringApplication      - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authRepository': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonClient' defined in class path resource [com/myxh/chatgpt/data/config/RedisClientConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:6379
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.myxh.chatgpt.data.Application.main(Application.java:21)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authRepository': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonClient' defined in class path resource [com/myxh/chatgpt/data/config/RedisClientConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:6379
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 17 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authRepository': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonClient' defined in class path resource [com/myxh/chatgpt/data/config/RedisClientConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:6379
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:544)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 31 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonClient' defined in class path resource [com/myxh/chatgpt/data/config/RedisClientConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:6379
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:544)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 47 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonClient' defined in class path resource [com/myxh/chatgpt/data/config/RedisClientConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:6379
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 63 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:6379
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 79 common frames omitted
+Caused by: org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:6379
+	at org.redisson.connection.pool.ConnectionPool.lambda$createConnection$0(ConnectionPool.java:132)
+	at java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:774)
+	at java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:750)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at org.redisson.connection.pool.ConnectionPool.promiseFailure(ConnectionPool.java:294)
+	at org.redisson.connection.pool.ConnectionPool.lambda$createConnection$6(ConnectionPool.java:253)
+	at java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:774)
+	at java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:750)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at org.redisson.client.RedisClient$1$1.run(RedisClient.java:248)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.util.concurrent.CompletionException: org.redisson.client.RedisException: ERR AUTH <password> called without any password configured for the default user. Are you sure your configuration is correct?. channel: [id: 0x4a6ff5c7, L:/127.0.0.1:11939 - R:127.0.0.1/127.0.0.1:6379] command: (AUTH), params: (password masked)
+	at java.util.concurrent.CompletableFuture.encodeRelay(CompletableFuture.java:326)
+	at java.util.concurrent.CompletableFuture.completeRelay(CompletableFuture.java:338)
+	at java.util.concurrent.CompletableFuture.uniRelay(CompletableFuture.java:925)
+	at java.util.concurrent.CompletableFuture$UniRelay.tryFire(CompletableFuture.java:913)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at org.redisson.client.protocol.CommandData.tryFailure(CommandData.java:87)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:381)
+	at org.redisson.client.handler.CommandDecoder.decodeCommand(CommandDecoder.java:205)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:144)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:120)
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:529)
+	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:366)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	... 4 common frames omitted
+Caused by: org.redisson.client.RedisException: ERR AUTH <password> called without any password configured for the default user. Are you sure your configuration is correct?. channel: [id: 0x4a6ff5c7, L:/127.0.0.1:11939 - R:127.0.0.1/127.0.0.1:6379] command: (AUTH), params: (password masked)
+	... 23 common frames omitted
+24-03-07.13:30:12.968 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on MYXH-PC with PID 25112 (D:\CodeProjects\Java\ChatGPT\chatgpt-data\chatgpt-data-app\target\classes started by MYXH in D:\CodeProjects\Java\ChatGPT\chatgpt-data)
+24-03-07.13:30:12.974 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-03-07.13:30:15.116 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-03-07.13:30:15.119 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-03-07.13:30:15.282 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 141 ms. Found 0 Redis repository interfaces.
+24-03-07.13:30:17.184 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-03-07.13:30:17.185 [main            ] INFO  AprLifecycleListener   - Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+24-03-07.13:30:17.185 [main            ] INFO  AprLifecycleListener   - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+24-03-07.13:30:17.186 [main            ] INFO  AprLifecycleListener   - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+24-03-07.13:30:17.196 [main            ] INFO  AprLifecycleListener   - OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+24-03-07.13:30:17.430 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-03-07.13:30:17.453 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-03-07.13:30:17.453 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-03-07.13:30:17.996 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-03-07.13:30:17.997 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4913 ms
+24-03-07.13:30:18.910 [main            ] INFO  Version                - Redisson 3.23.4
+24-03-07.13:30:20.461 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-03-07.13:30:20.498 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-03-07.13:30:23.035 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chatGPTAIServiceControllerOld': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.myxh.chatgpt.session.OpenAiSession' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+24-03-07.13:30:23.112 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+24-03-07.13:30:23.148 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+24-03-07.13:30:23.209 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.myxh.chatgpt.session.OpenAiSession' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.myxh.chatgpt.session.OpenAiSession' in your configuration.
+
+24-03-07.13:42:34.627 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on MYXH-PC with PID 32900 (D:\CodeProjects\Java\ChatGPT\chatgpt-data\chatgpt-data-app\target\classes started by MYXH in D:\CodeProjects\Java\ChatGPT\chatgpt-data)
+24-03-07.13:42:34.635 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-03-07.13:42:36.483 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-03-07.13:42:36.486 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-03-07.13:42:36.869 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 350 ms. Found 0 Redis repository interfaces.
+24-03-07.13:42:38.216 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-03-07.13:42:38.217 [main            ] INFO  AprLifecycleListener   - Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+24-03-07.13:42:38.217 [main            ] INFO  AprLifecycleListener   - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+24-03-07.13:42:38.218 [main            ] INFO  AprLifecycleListener   - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+24-03-07.13:42:38.225 [main            ] INFO  AprLifecycleListener   - OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+24-03-07.13:42:38.435 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-03-07.13:42:38.460 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-03-07.13:42:38.461 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-03-07.13:42:39.303 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-03-07.13:42:39.303 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4533 ms
+24-03-07.13:42:41.002 [main            ] INFO  Version                - Redisson 3.23.4
+24-03-07.13:42:42.529 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+24-03-07.13:42:42.765 [redisson-netty-2-20] INFO  MasterConnectionPool   - 24 connections initialized for localhost/127.0.0.1:6379
+24-03-07.13:42:43.705 [main            ] INFO  EndpointLinksResolver  - Exposing 14 endpoint(s) beneath base path '/actuator'
+24-03-07.13:42:43.768 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-03-07.13:42:43.795 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+24-03-07.13:42:43.823 [main            ] INFO  Application            - Started Application in 11.0 seconds (JVM running for 15.807)
+24-03-07.13:42:46.318 [RMI TCP Connection(3)-192.168.195.7] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-03-07.13:42:46.320 [RMI TCP Connection(3)-192.168.195.7] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-03-07.13:42:46.323 [RMI TCP Connection(3)-192.168.195.7] INFO  DispatcherServlet      - Completed initialization in 2 ms
+24-03-07.13:42:46.330 [RMI TCP Connection(2)-192.168.195.7] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-03-07.13:42:48.471 [RMI TCP Connection(2)-192.168.195.7] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-03-07.13:51:53.944 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-03-07.13:51:54.038 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-03-07.13:52:04.591 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on MYXH-PC with PID 24416 (D:\CodeProjects\Java\ChatGPT\chatgpt-data\chatgpt-data-app\target\classes started by MYXH in D:\CodeProjects\Java\ChatGPT\chatgpt-data)
+24-03-07.13:52:04.598 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-03-07.13:52:06.483 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-03-07.13:52:06.488 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-03-07.13:52:06.836 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 319 ms. Found 0 Redis repository interfaces.
+24-03-07.13:52:08.357 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-03-07.13:52:08.358 [main            ] INFO  AprLifecycleListener   - Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+24-03-07.13:52:08.358 [main            ] INFO  AprLifecycleListener   - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+24-03-07.13:52:08.358 [main            ] INFO  AprLifecycleListener   - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+24-03-07.13:52:08.366 [main            ] INFO  AprLifecycleListener   - OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+24-03-07.13:52:08.575 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-03-07.13:52:08.603 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-03-07.13:52:08.603 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-03-07.13:52:09.406 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-03-07.13:52:09.406 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4691 ms
+24-03-07.13:52:11.133 [main            ] INFO  Version                - Redisson 3.23.4
+24-03-07.13:52:12.658 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+24-03-07.13:52:12.828 [redisson-netty-2-20] INFO  MasterConnectionPool   - 24 connections initialized for localhost/127.0.0.1:6379
+24-03-07.13:52:13.853 [main            ] INFO  EndpointLinksResolver  - Exposing 14 endpoint(s) beneath base path '/actuator'
+24-03-07.13:52:13.912 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-03-07.13:52:13.939 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+24-03-07.13:52:13.965 [main            ] INFO  Application            - Started Application in 10.948 seconds (JVM running for 15.35)
+24-03-07.13:52:16.007 [RMI TCP Connection(3)-192.168.195.7] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-03-07.13:52:16.007 [RMI TCP Connection(3)-192.168.195.7] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-03-07.13:52:16.010 [RMI TCP Connection(3)-192.168.195.7] INFO  DispatcherServlet      - Completed initialization in 3 ms
+24-03-07.13:52:16.016 [RMI TCP Connection(2)-192.168.195.7] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-03-07.13:52:17.982 [RMI TCP Connection(2)-192.168.195.7] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-03-07.14:23:26.446 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-03-07.14:23:26.503 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-03-07.14:37:57.016 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on MYXH-PC with PID 14472 (D:\CodeProjects\Java\ChatGPT\chatgpt-data\chatgpt-data-app\target\classes started by MYXH in D:\CodeProjects\Java\ChatGPT\chatgpt-data)
+24-03-07.14:37:57.031 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-03-07.14:37:59.969 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-03-07.14:37:59.974 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-03-07.14:38:00.509 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 491 ms. Found 0 Redis repository interfaces.
+24-03-07.14:38:02.195 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-03-07.14:38:02.197 [main            ] INFO  AprLifecycleListener   - Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+24-03-07.14:38:02.198 [main            ] INFO  AprLifecycleListener   - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+24-03-07.14:38:02.198 [main            ] INFO  AprLifecycleListener   - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+24-03-07.14:38:02.230 [main            ] INFO  AprLifecycleListener   - OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+24-03-07.14:38:02.499 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-03-07.14:38:02.527 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-03-07.14:38:02.528 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-03-07.14:38:03.394 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-03-07.14:38:03.394 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6080 ms
+24-03-07.14:38:05.517 [main            ] INFO  Version                - Redisson 3.23.4
+24-03-07.14:38:07.398 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+24-03-07.14:38:07.563 [redisson-netty-2-20] INFO  MasterConnectionPool   - 24 connections initialized for localhost/127.0.0.1:6379
+24-03-07.14:38:08.812 [main            ] INFO  EndpointLinksResolver  - Exposing 14 endpoint(s) beneath base path '/actuator'
+24-03-07.14:38:08.904 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-03-07.14:38:08.937 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+24-03-07.14:38:08.972 [main            ] INFO  Application            - Started Application in 14.155 seconds (JVM running for 19.706)
+24-03-07.14:38:11.583 [RMI TCP Connection(2)-192.168.195.7] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-03-07.14:38:11.585 [RMI TCP Connection(2)-192.168.195.7] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-03-07.14:38:11.591 [RMI TCP Connection(2)-192.168.195.7] INFO  DispatcherServlet      - Completed initialization in 4 ms
+24-03-07.14:38:11.607 [RMI TCP Connection(3)-192.168.195.7] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-03-07.14:38:14.508 [RMI TCP Connection(3)-192.168.195.7] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-03-07.14:38:56.569 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-03-07.14:38:56.633 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-03-07.14:40:20.096 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on MYXH-PC with PID 33176 (D:\CodeProjects\Java\ChatGPT\chatgpt-data\chatgpt-data-app\target\classes started by MYXH in D:\CodeProjects\Java\ChatGPT\chatgpt-data)
+24-03-07.14:40:20.107 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-03-07.14:40:22.898 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-03-07.14:40:22.905 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-03-07.14:40:23.252 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 305 ms. Found 0 Redis repository interfaces.
+24-03-07.14:40:24.607 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-03-07.14:40:24.609 [main            ] INFO  AprLifecycleListener   - Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+24-03-07.14:40:24.609 [main            ] INFO  AprLifecycleListener   - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+24-03-07.14:40:24.609 [main            ] INFO  AprLifecycleListener   - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+24-03-07.14:40:24.627 [main            ] INFO  AprLifecycleListener   - OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+24-03-07.14:40:24.874 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-03-07.14:40:24.898 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-03-07.14:40:24.898 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-03-07.14:40:25.625 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-03-07.14:40:25.626 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5378 ms
+24-03-07.14:40:27.317 [main            ] INFO  Version                - Redisson 3.23.4
+24-03-07.14:40:28.957 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+24-03-07.14:40:29.193 [redisson-netty-2-20] INFO  MasterConnectionPool   - 24 connections initialized for localhost/127.0.0.1:6379
+24-03-07.14:40:30.328 [main            ] INFO  EndpointLinksResolver  - Exposing 14 endpoint(s) beneath base path '/actuator'
+24-03-07.14:40:30.395 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-03-07.14:40:30.421 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+24-03-07.14:40:30.452 [main            ] INFO  Application            - Started Application in 12.163 seconds (JVM running for 17.201)
+24-03-07.14:40:31.372 [RMI TCP Connection(1)-192.168.195.7] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-03-07.14:40:31.372 [RMI TCP Connection(1)-192.168.195.7] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-03-07.14:40:31.375 [RMI TCP Connection(1)-192.168.195.7] INFO  DispatcherServlet      - Completed initialization in 3 ms
+24-03-07.14:40:31.390 [RMI TCP Connection(2)-192.168.195.7] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-03-07.14:40:33.582 [RMI TCP Connection(2)-192.168.195.7] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-03-07.14:54:28.263 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-03-07.14:54:28.317 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-03-07.14:54:58.393 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on MYXH-PC with PID 15540 (D:\CodeProjects\Java\ChatGPT\chatgpt-data\chatgpt-data-app\target\classes started by MYXH in D:\CodeProjects\Java\ChatGPT\chatgpt-data)
+24-03-07.14:54:58.398 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-03-07.14:55:00.178 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-03-07.14:55:00.182 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-03-07.14:55:00.593 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 379 ms. Found 0 Redis repository interfaces.
+24-03-07.14:55:01.885 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-03-07.14:55:01.886 [main            ] INFO  AprLifecycleListener   - Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+24-03-07.14:55:01.887 [main            ] INFO  AprLifecycleListener   - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+24-03-07.14:55:01.887 [main            ] INFO  AprLifecycleListener   - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+24-03-07.14:55:01.896 [main            ] INFO  AprLifecycleListener   - OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+24-03-07.14:55:02.122 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-03-07.14:55:02.147 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-03-07.14:55:02.148 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-03-07.14:55:02.829 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-03-07.14:55:02.830 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4326 ms
+24-03-07.14:55:04.646 [main            ] INFO  Version                - Redisson 3.23.4
+24-03-07.14:55:06.136 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+24-03-07.14:55:06.340 [redisson-netty-2-20] INFO  MasterConnectionPool   - 24 connections initialized for localhost/127.0.0.1:6379
+24-03-07.14:55:07.524 [main            ] INFO  EndpointLinksResolver  - Exposing 14 endpoint(s) beneath base path '/actuator'
+24-03-07.14:55:07.587 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-03-07.14:55:07.610 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+24-03-07.14:55:07.638 [main            ] INFO  Application            - Started Application in 10.564 seconds (JVM running for 14.122)
+24-03-07.14:55:09.202 [RMI TCP Connection(2)-192.168.195.7] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-03-07.14:55:09.203 [RMI TCP Connection(2)-192.168.195.7] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-03-07.14:55:09.206 [RMI TCP Connection(2)-192.168.195.7] INFO  DispatcherServlet      - Completed initialization in 2 ms
+24-03-07.14:55:09.221 [RMI TCP Connection(1)-192.168.195.7] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-03-07.14:55:11.142 [RMI TCP Connection(1)-192.168.195.7] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-03-07.14:56:53.038 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-03-07.14:56:53.126 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-03-07.14:57:12.651 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on MYXH-PC with PID 7744 (D:\CodeProjects\Java\ChatGPT\chatgpt-data\chatgpt-data-app\target\classes started by MYXH in D:\CodeProjects\Java\ChatGPT\chatgpt-data)
+24-03-07.14:57:12.656 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-03-07.14:57:16.588 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-03-07.14:57:16.596 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-03-07.14:57:17.176 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 527 ms. Found 0 Redis repository interfaces.
+24-03-07.14:57:19.955 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-03-07.14:57:19.956 [main            ] INFO  AprLifecycleListener   - Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+24-03-07.14:57:19.957 [main            ] INFO  AprLifecycleListener   - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+24-03-07.14:57:19.957 [main            ] INFO  AprLifecycleListener   - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+24-03-07.14:57:19.969 [main            ] INFO  AprLifecycleListener   - OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+24-03-07.14:57:20.453 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-03-07.14:57:20.481 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-03-07.14:57:20.482 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-03-07.14:57:21.197 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-03-07.14:57:21.198 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 8346 ms
+24-03-07.14:57:23.141 [main            ] INFO  Version                - Redisson 3.23.4
+24-03-07.14:57:24.862 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+24-03-07.14:57:25.038 [redisson-netty-2-20] INFO  MasterConnectionPool   - 24 connections initialized for localhost/127.0.0.1:6379
+24-03-07.14:57:26.661 [main            ] INFO  EndpointLinksResolver  - Exposing 14 endpoint(s) beneath base path '/actuator'
+24-03-07.14:57:26.776 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-03-07.14:57:26.814 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+24-03-07.14:57:26.864 [main            ] INFO  Application            - Started Application in 16.658 seconds (JVM running for 24.098)
+24-03-07.14:57:30.665 [RMI TCP Connection(3)-192.168.195.7] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-03-07.14:57:30.665 [RMI TCP Connection(3)-192.168.195.7] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-03-07.14:57:30.670 [RMI TCP Connection(3)-192.168.195.7] INFO  DispatcherServlet      - Completed initialization in 5 ms
+24-03-07.14:57:30.690 [RMI TCP Connection(2)-192.168.195.7] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-03-07.14:57:34.375 [RMI TCP Connection(2)-192.168.195.7] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-03-07.14:58:36.645 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-03-07.14:58:36.699 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-03-07.15:08:40.967 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on MYXH-PC with PID 24644 (D:\CodeProjects\Java\ChatGPT\chatgpt-data\chatgpt-data-app\target\classes started by MYXH in D:\CodeProjects\Java\ChatGPT\chatgpt-data)
+24-03-07.15:08:40.977 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-03-07.15:08:42.943 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-03-07.15:08:42.950 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-03-07.15:08:43.335 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 358 ms. Found 0 Redis repository interfaces.
+24-03-07.15:08:45.039 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-03-07.15:08:45.040 [main            ] INFO  AprLifecycleListener   - Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+24-03-07.15:08:45.040 [main            ] INFO  AprLifecycleListener   - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+24-03-07.15:08:45.042 [main            ] INFO  AprLifecycleListener   - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+24-03-07.15:08:45.055 [main            ] INFO  AprLifecycleListener   - OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+24-03-07.15:08:45.421 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-03-07.15:08:45.451 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-03-07.15:08:45.451 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-03-07.15:08:46.239 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-03-07.15:08:46.239 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5150 ms
+24-03-07.15:08:49.033 [main            ] INFO  Version                - Redisson 3.23.4
+24-03-07.15:08:51.209 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+24-03-07.15:08:51.391 [redisson-netty-2-20] INFO  MasterConnectionPool   - 24 connections initialized for localhost/127.0.0.1:6379
+24-03-07.15:08:52.488 [main            ] INFO  EndpointLinksResolver  - Exposing 14 endpoint(s) beneath base path '/actuator'
+24-03-07.15:08:52.566 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-03-07.15:08:52.598 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+24-03-07.15:08:52.633 [main            ] INFO  Application            - Started Application in 12.802 seconds (JVM running for 16.38)
+24-03-07.15:08:55.213 [RMI TCP Connection(2)-192.168.195.7] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-03-07.15:08:55.214 [RMI TCP Connection(2)-192.168.195.7] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-03-07.15:08:55.217 [RMI TCP Connection(2)-192.168.195.7] INFO  DispatcherServlet      - Completed initialization in 3 ms
+24-03-07.15:08:55.231 [RMI TCP Connection(3)-192.168.195.7] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-03-07.15:08:57.397 [RMI TCP Connection(3)-192.168.195.7] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-03-07.15:14:37.178 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-03-07.15:14:37.326 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.

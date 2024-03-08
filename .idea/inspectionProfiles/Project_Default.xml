@@ -25,6 +25,7 @@
           <option value="http://localhost" />
           <option value="http://maven.apache.org/POM/" />
           <option value="http://maven.apache.org/xsd/" />
+          <option value="http://myxh-chatqpt.nat300.top" />
           <option value="http://primefaces.org/ui" />
           <option value="http://schema.cloudfoundry.org/spring/" />
           <option value="http://schemas.xmlsoap.org/" />

@@ -175,7 +175,7 @@ public class SaleController
      * 支付回调
      * 开发地址：http:/localhost:8090/api/v1/sale/pay_notify
      * 测试地址：http://myxh-chatqpt.nat300.top/api/v1/sale/pay_notify
-     * 线上地址：https://myxh-chatqpt.site/api/v1/sale/pay_notify
+     * 线上地址：https://api.myxh-chatqpt.site/api/v1/sale/pay_notify
      */
     @PostMapping("pay_notify")
     public void payNotify(@RequestBody String requestBody, HttpServletRequest request, HttpServletResponse response) throws IOException

@@ -5,4 +5,5 @@ scrape_configs:
   - job_name: 'x-api-app'
     metrics_path: '/actuator/prometheus'
     static_configs:
-      - targets: [ '192.168.164.7:8090' ]
+      # - targets: [ '192.168.164.7:8090' ]
+      - targets: [ '43.143.161.125:8090' ]

@@ -71,7 +71,7 @@ public class WeChatPayTest
         request.setAppid(appId);
         request.setMchid(merchantId);
         request.setDescription("测试商品标题");
-        request.setNotifyUrl("https://myxh-chatqpt.site");
+        request.setNotifyUrl("https://api.myxh-chatqpt.site");
         request.setOutTradeNo("100000010002");
 
         // 调用下单方法，得到应答

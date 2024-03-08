@@ -83,7 +83,7 @@ wxpay:
 
     # 回调地址
     # notify-url: http://myxh-chatqpt.site/api/v1/mall/pay_notify
-    notify-url: http://api.myxh-chatqpt.site/api/v1/mall/pay_notify
+    notify-url: https://api.myxh-chatqpt.site/api/v1/mall/pay_notify
 
     # 商户 API 私钥路径
     private-key-path: cert/apiclient_key.pem
