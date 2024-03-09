@@ -47,9 +47,6 @@ services:
     ports:
       - "13306:3306"
 
-    volumes_from:
-      - mysql-job-dbdata
-
     volumes:
       - ./sql:/docker-entrypoint-initdb.d
 
@@ -60,11 +57,8 @@ services:
       retries: 10
       start_period: 15s
 
-    deploy:
-      resources:
-        limits:
-          cpus: '1.00'
-          memory: 512M
+    volumes_from:
+      - mysql-job-dbdata
 
   # 自动加载数据
   mysql-job-dbdata:

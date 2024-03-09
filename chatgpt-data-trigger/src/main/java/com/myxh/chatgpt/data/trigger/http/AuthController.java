@@ -24,8 +24,7 @@ import javax.annotation.Resource;
  */
 @Slf4j
 @RestController()
-// @CrossOrigin("${app.config.cross-origin}")
-@CrossOrigin("*")
+@CrossOrigin("${app.config.cross-origin}")
 @RequestMapping("/api/${app.config.api-version}/auth/")
 public class AuthController
 {
