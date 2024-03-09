@@ -162,9 +162,9 @@ services:
       - SPRING_DATASOURCE_USERNAME=root
       - SPRING_DATASOURCE_PASSWORD=520.ILY!
       - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/openai?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&useSSL=true
-      - CHATGPT_SDK_CONFIG_ENABLED=false
-      # - CHATGPT_SDK_CONFIG_API_HOST=https://api.openai.com/
-      # - CHATGPT_SDK_CONFIG_API_KEY=sk-e8Dgomrqhd2OZvx1Ef9f1a1e17D348F0A0E11a374cEdB398
+      - CHATGPT_SDK_CONFIG_ENABLED=true
+      - CHATGPT_SDK_CONFIG_API_HOST=https://api.openai.com/
+      - CHATGPT_SDK_CONFIG_API_KEY=sk-e8Dgomrqhd2OZvx1Ef9f1a1e17D348F0A0E11a374cEdB398
       - CHATGLM_SDK_CONFIG_ENABLED=true
       - CHATGLM_SDK_CONFIG_API_HOST=https://open.bigmodel.cn/
       - CHATGLM_SDK_CONFIG_API_KEY=2abbbc41b164c2f21740e82582ed44b5.YQcsJ0j4CMwuLVfL
