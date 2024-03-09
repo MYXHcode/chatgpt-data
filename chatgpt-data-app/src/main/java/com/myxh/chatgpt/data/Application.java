@@ -3,6 +3,7 @@ package com.myxh.chatgpt.data;
 import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 /**
@@ -14,6 +15,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @SpringBootApplication
 @Configurable
 @EnableScheduling
+@ComponentScan(basePackages = {"com.myxh.chatgpt", "com.myxh.chatglm"})
 public class Application
 {
     public static void main(String[] args)
