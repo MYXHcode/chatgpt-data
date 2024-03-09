@@ -21,6 +21,8 @@ import java.util.Date;
  */
 @Slf4j
 @RestController
+// @CrossOrigin("${app.config.cross-origin}")
+@CrossOrigin("*")
 @RequestMapping("/api/${app.config.api-version}/wx/portal/{appid}")
 public class WeiXinPortalController
 {

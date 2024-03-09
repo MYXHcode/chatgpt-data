@@ -1,0 +1,42 @@
+24-03-08.14:38:01.187 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on MYXH-PC with PID 5272 (D:\CodeProjects\Java\ChatGPT\chatgpt-data\chatgpt-data-app\target\classes started by MYXH in D:\CodeProjects\Java\ChatGPT\chatgpt-data)
+24-03-08.14:38:01.197 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-03-08.14:38:10.198 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-03-08.14:38:10.205 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-03-08.14:38:11.778 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1498 ms. Found 0 Redis repository interfaces.
+24-03-08.14:38:16.174 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-03-08.14:38:16.177 [main            ] INFO  AprLifecycleListener   - Loaded Apache Tomcat Native library [2.0.5] using APR version [1.7.4].
+24-03-08.14:38:16.178 [main            ] INFO  AprLifecycleListener   - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+24-03-08.14:38:16.178 [main            ] INFO  AprLifecycleListener   - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+24-03-08.14:38:16.238 [main            ] INFO  AprLifecycleListener   - OpenSSL successfully initialized [OpenSSL 3.0.10 1 Aug 2023]
+24-03-08.14:38:16.964 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-03-08.14:38:17.015 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-03-08.14:38:17.015 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-03-08.14:38:18.971 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-03-08.14:38:18.971 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 17414 ms
+24-03-08.14:38:22.690 [main            ] INFO  Version                - Redisson 3.23.4
+24-03-08.14:38:26.319 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+24-03-08.14:38:27.133 [redisson-netty-2-20] INFO  MasterConnectionPool   - 24 connections initialized for localhost/127.0.0.1:6379
+24-03-08.14:38:29.555 [main            ] INFO  EndpointLinksResolver  - Exposing 14 endpoint(s) beneath base path '/actuator'
+24-03-08.14:38:29.721 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-03-08.14:38:29.726 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8090 is already in use
+24-03-08.14:38:29.907 [main            ] INFO  Http11NioProtocol      - Pausing ProtocolHandler ["http-nio-8090"]
+24-03-08.14:38:29.907 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+24-03-08.14:38:29.917 [main            ] INFO  Http11NioProtocol      - Stopping ProtocolHandler ["http-nio-8090"]
+24-03-08.14:38:29.918 [main            ] INFO  Http11NioProtocol      - Destroying ProtocolHandler ["http-nio-8090"]
+24-03-08.14:38:29.955 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+24-03-08.14:38:30.030 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8090 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8090 or configure this application to listen on another port.
+

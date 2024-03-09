@@ -36,7 +36,8 @@ import java.util.List;
  */
 @Slf4j
 @RestController()
-@CrossOrigin("${app.config.cross-origin}")
+// @CrossOrigin("${app.config.cross-origin}")
+@CrossOrigin("*")
 @RequestMapping("/api/${app.config.api-version}/sale/")
 public class SaleController
 {
