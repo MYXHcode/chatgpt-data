@@ -38,7 +38,7 @@ chatgpt:
   sdk:
     config:
       # 状态：true = 开启、false 关闭
-      enabled: false
+      enabled: true
 
       # 官网地址 https://api.openai.com/
       api-host: https://pro-share-api.zcyai.com/
@@ -139,6 +139,7 @@ spring:
     # 数据库连接超时时间，默认 30 秒，即 30000
     connection-timeout: 30000
     connection-test-query: SELECT 1
+
   type: com.zaxxer.hikari.HikariDataSource
 
   redis:
@@ -153,9 +154,9 @@ mybatis:
 redis:
   sdk:
     config:
-      host: redis
+      host: 127.0.0.1
       password: 520.ILY!
-      port: 6379
+      port: 16379
       pool-size: 10
       min-idle-size: 5
       idle-timeout: 30000
