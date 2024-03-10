@@ -127,7 +127,7 @@ LOCK TABLES `openai_product` WRITE;
 
 INSERT INTO `openai_product` (`id`, `product_id`, `product_name`, `product_desc`, `product_model_types`, `quota`,
                               `price`, `sort`, `is_enabled`, `create_time`, `update_time`)
-VALUES (1, 1001, 'OpenAi 测试商品(ChatGPT 3.5)', '测试商品请勿下单', 'gpt-3.5-turbo,gpt-3.5-turbo-16', 100, 10, 1, 0,
+VALUES (1, 1001, 'OpenAi 测试商品(ChatGPT 3.5)', '测试商品请勿下单', 'gpt-3.5-turbo,gpt-3.5-turbo-16', 100, 10, 1, 1,
         '2024-02-18 18:45:36', '2024-02-18 18:45:36'),
        (2, 1002, 'OpenAi 测试商品(ChatGLM 3.5)', '测试商品请勿下单',
         'chatGLM_6b_SSE,chatglm_lite,chatglm_lite_32k,chatglm_std,chatglm_turbo', 100, 9.99, 2, 1,
@@ -135,8 +135,8 @@ VALUES (1, 1001, 'OpenAi 测试商品(ChatGPT 3.5)', '测试商品请勿下单',
        (3, 1003, 'OpenAi 测试商品(ChatGLM 3.5&4.0)', '测试商品请勿下单',
         'chatGLM_6b_SSE,chatglm_lite,chatglm_lite_32k,chatglm_std,chatglm_pro,chatglm_turbo', 200, 19.99, 3,
         1, '2024-02-18 18:46:41', '2024-02-18 18:46:41'),
-       (4, 1004, 'OpenAi 测试商品(DALL-E-2,DALL-E-3)', '测试商品请勿下单', 'dall-e-2,dall-e-3', 200, 49.99, 0,
-        0, '2024-02-18 09:28:47', '2024-02-18 09:28:47');
+       (4, 1004, 'OpenAi 测试商品(DALL-E-2,DALL-E-3)', '测试商品请勿下单', 'dall-e-2,dall-e-3', 200, 49.99, 4,
+        1, '2024-02-18 09:28:47', '2024-02-18 09:28:47');
 
 /*!40000 ALTER TABLE `openai_product`
     ENABLE KEYS */;
